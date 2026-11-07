@@ -365,5 +365,65 @@ func _run_checks() -> void:
         _fail("Consumables inventory reset on space transition")
         return
 
-    print("TEST_PASS: iso math; 2 independent houses; loot/exit; save/load v1-v5; melee kill; death restart; 100x transitions; locked door; transition mutex; load-fail rollback; blocked-exit fallback; SurvivalStats fixed-step; consumables table/use/clamp/save")
+    # --- Medical items: treat wound / suppress infection via SurvivalStats ---
+    if not game.consumables.has_item("ITM_0083") or not game.consumables.has_item("ITM_0086"):
+        _fail("Normalized table missing medical entries")
+        return
+    if float(game.consumables.effect_of("ITM_0083").get("hp", 0.0)) <= 0.0:
+        _fail("Bleeding-control item must restore hp")
+        return
+    if float(game.consumables.effect_of("ITM_0086").get("infection", 0.0)) >= 0.0:
+        _fail("Anti-infection item must reduce infection")
+        return
+    # Wounded + infected: T heals hp first and consumes one medical item
+    game.player_hp = 40.0
+    game.stats.hp = 40.0
+    game.stats.infection = 55.0
+    var med_before: int = game._medical_count()
+    if med_before < 1:
+        _fail("Loot did not grant medical items")
+        return
+    game._heal_with_medical()
+    if game.player_hp <= 40.0:
+        _fail("Treating did not restore hp")
+        return
+    if game._medical_count() != med_before - 1:
+        _fail("Treating did not consume a medical item")
+        return
+    # infection is suppressed only once hp is full
+    game.player_hp = 100.0
+    game.stats.hp = 100.0
+    game.stats.infection = 55.0
+    var inf_before: float = game.stats.infection
+    game._heal_with_medical()
+    if game.stats.infection >= inf_before:
+        _fail("Anti-infection item did not reduce infection")
+        return
+    # hp clamp: cannot exceed 100
+    game.player_hp = 99.0
+    game.stats.hp = 99.0
+    game.consumables.add("ITM_0083", 1)
+    game._heal_with_medical()
+    if game.player_hp > 100.0:
+        _fail("Medical healing broke the hp clamp")
+        return
+    # Empty pack is refused without side effects
+    game.consumables.inventory.clear()
+    var hp_guard: float = game.player_hp
+    game._heal_with_medical()
+    if game.player_hp != hp_guard:
+        _fail("Treating with an empty pack mutated hp")
+        return
+    # v6 save/load preserves medical inventory
+    game.consumables.add("ITM_0083", 2)
+    game.consumables.add("ITM_0086", 1)
+    game._save_game()
+    var inv6: Dictionary = game.consumables.inventory_to_dict()
+    game.consumables.inventory.clear()
+    game._load_game()
+    if game.consumables.inventory_to_dict() != inv6:
+        _fail("v6 save/load lost medical inventory")
+        return
+
+    print("TEST_PASS: iso math; 2 independent houses; loot/exit; save/load v1-v6; melee kill; death restart; 100x transitions; locked door; transition mutex; load-fail rollback; blocked-exit fallback; SurvivalStats fixed-step; consumables table/use/clamp/save; medical treat/infection")
     quit(0)

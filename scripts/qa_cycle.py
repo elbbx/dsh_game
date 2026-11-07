@@ -51,20 +51,38 @@ def main():
         import re as _re
         src_items=json.loads((root/'data/runtime/items.json').read_text('utf8'))
         hr=_re.compile(r'hunger\s*-\s*(\d+(?:\.\d+)?)'); tr=_re.compile(r'thirst\s*-\s*(\d+(?:\.\d+)?)')
+        # 医疗规则原文只给效果类别，按类别映射为保守默认值（派生值，需标 derived）。
+        MED={'use MedicalSystem; target injury/infection':{'hp':25.0,'infection':-10.0},
+             'body-part bleeding control; action time 2-5s':{'hp':15.0},
+             'decrease ZombieInfection; never cure common cold':{'infection':-20.0}}
         expected={}
         for it in src_items:
             rule=it.get('usage_rule_raw') or ''
             eff={}
-            m=hr.search(rule)
-            if m: eff['hunger']=-float(m.group(1))
-            m=tr.search(rule)
-            if m: eff['thirst']=-float(m.group(1))
-            if eff: expected[it['id']]=eff
+            if rule in MED:
+                eff=dict(MED[rule])
+            else:
+                m=hr.search(rule)
+                if m: eff['hunger']=-float(m.group(1))
+                m=tr.search(rule)
+                if m: eff['thirst']=-float(m.group(1))
+            if eff: expected[it['id']]=(eff, rule in MED)
         tbl=json.loads((root/'game/data/consumables.json').read_text('utf8'))
-        got={e['id']:e['effects'] for e in tbl['items']}
-        assert got==expected, ('table drift', len(got), len(expected))
+        assert tbl.get('schema')=='overcastveil.consumables/2', ('schema', tbl.get('schema'))
+        got={}
+        derived_ok=True
+        for e in tbl['items']:
+            got[e['id']]=e['effects']
+            if e.get('derived'):
+                if not e.get('derived_from'):
+                    derived_ok=False
+            elif e['id'] in expected and expected[e['id']][1]:
+                derived_ok=False  # 医疗派生项必须标注 derived
+        assert got=={k:v[0] for k,v in expected.items()}, ('table drift', len(got), len(expected))
         assert tbl['count']==len(expected), ('count mismatch', tbl['count'], len(expected))
-        report['checks']['consumables_table']='PASS ('+str(len(expected))+' normalized consumables)'
+        assert derived_ok, 'derived flags inconsistent'
+        med_n=sum(1 for e in tbl['items'] if e.get('derived'))
+        report['checks']['consumables_table']='PASS ('+str(len(expected))+' consumables, '+str(med_n)+' derived medical)'
     except Exception as exc: report['checks']['consumables_table']='FAIL: '+repr(exc)
     godot=args.godot or shutil.which('godot') or shutil.which('godot4')
     if args.no_engine or not godot:

@@ -1,7 +1,7 @@
 {
-  "schema": "overcastveil.consumables/1",
+  "schema": "overcastveil.consumables/2",
   "source": "data/runtime/items.json",
-  "count": 82,
+  "count": 136,
   "items": [
     {
       "id": "ITM_0001",
@@ -740,6 +740,646 @@
       "effects": {
         "thirst": -25.0
       }
+    },
+    {
+      "id": "ITM_0083",
+      "display_name": "普通绷带",
+      "category": "医疗",
+      "usage_rule_raw": "body-part bleeding control; action time 2-5s",
+      "effects": {
+        "hp": 15.0
+      },
+      "derived": true,
+      "derived_from": "body-part bleeding control; action time 2-5s"
+    },
+    {
+      "id": "ITM_0084",
+      "display_name": "无菌绷带",
+      "category": "医疗",
+      "usage_rule_raw": "body-part bleeding control; action time 2-5s",
+      "effects": {
+        "hp": 15.0
+      },
+      "derived": true,
+      "derived_from": "body-part bleeding control; action time 2-5s"
+    },
+    {
+      "id": "ITM_0085",
+      "display_name": "止血绷带",
+      "category": "医疗",
+      "usage_rule_raw": "body-part bleeding control; action time 2-5s",
+      "effects": {
+        "hp": 15.0
+      },
+      "derived": true,
+      "derived_from": "body-part bleeding control; action time 2-5s"
+    },
+    {
+      "id": "ITM_0086",
+      "display_name": "压迫止血包",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0087",
+      "display_name": "纱布",
+      "category": "医疗",
+      "usage_rule_raw": "body-part bleeding control; action time 2-5s",
+      "effects": {
+        "hp": 15.0
+      },
+      "derived": true,
+      "derived_from": "body-part bleeding control; action time 2-5s"
+    },
+    {
+      "id": "ITM_0088",
+      "display_name": "酒精棉",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0089",
+      "display_name": "碘伏",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0090",
+      "display_name": "消毒液",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0091",
+      "display_name": "生理盐水",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0092",
+      "display_name": "手术缝线",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0093",
+      "display_name": "缝合针",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0094",
+      "display_name": "手术手套",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0095",
+      "display_name": "一次性注射器",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0096",
+      "display_name": "采血管",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0097",
+      "display_name": "夹板材料",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0098",
+      "display_name": "医用胶带",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0099",
+      "display_name": "止痛贴",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0100",
+      "display_name": "创可贴",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0101",
+      "display_name": "冷敷袋",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0102",
+      "display_name": "热敷袋",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0103",
+      "display_name": "急救包",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0104",
+      "display_name": "创伤急救包",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0105",
+      "display_name": "野外医疗包",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0106",
+      "display_name": "血液检测试纸",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0107",
+      "display_name": "口罩",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0108",
+      "display_name": "止痛药",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0109",
+      "display_name": "退烧药",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0110",
+      "display_name": "感冒药",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0111",
+      "display_name": "普通抗菌药",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0112",
+      "display_name": "强效抗菌药",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0113",
+      "display_name": "基础抗丧尸感染药",
+      "category": "医疗",
+      "usage_rule_raw": "decrease ZombieInfection; never cure common cold",
+      "effects": {
+        "infection": -20.0
+      },
+      "derived": true,
+      "derived_from": "decrease ZombieInfection; never cure common cold"
+    },
+    {
+      "id": "ITM_0114",
+      "display_name": "强化抗丧尸感染药",
+      "category": "医疗",
+      "usage_rule_raw": "decrease ZombieInfection; never cure common cold",
+      "effects": {
+        "infection": -20.0
+      },
+      "derived": true,
+      "derived_from": "decrease ZombieInfection; never cure common cold"
+    },
+    {
+      "id": "ITM_0115",
+      "display_name": "高级净化血清",
+      "category": "医疗",
+      "usage_rule_raw": "decrease ZombieInfection; never cure common cold",
+      "effects": {
+        "infection": -20.0
+      },
+      "derived": true,
+      "derived_from": "decrease ZombieInfection; never cure common cold"
+    },
+    {
+      "id": "ITM_0116",
+      "display_name": "镇静剂",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0117",
+      "display_name": "营养补充剂",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0118",
+      "display_name": "电解质片",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0119",
+      "display_name": "抗过敏药",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0120",
+      "display_name": "晕车药",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0121",
+      "display_name": "止吐药",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0122",
+      "display_name": "咳嗽药",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0123",
+      "display_name": "维生素片",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0124",
+      "display_name": "外伤消炎膏",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0125",
+      "display_name": "手术镊子",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0126",
+      "display_name": "缝合工具",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0127",
+      "display_name": "简易夹板",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0128",
+      "display_name": "固定支架",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0129",
+      "display_name": "医用剪刀",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0130",
+      "display_name": "体温计",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0131",
+      "display_name": "血压计",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0132",
+      "display_name": "小型医疗扫描器",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0133",
+      "display_name": "便携药箱",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0134",
+      "display_name": "高端手术工具",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0135",
+      "display_name": "便携净化器",
+      "category": "医疗",
+      "usage_rule_raw": "use MedicalSystem; target injury/infection",
+      "effects": {
+        "hp": 25.0,
+        "infection": -10.0
+      },
+      "derived": true,
+      "derived_from": "use MedicalSystem; target injury/infection"
+    },
+    {
+      "id": "ITM_0267",
+      "display_name": "纱布卷",
+      "category": "原料",
+      "usage_rule_raw": "body-part bleeding control; action time 2-5s",
+      "effects": {
+        "hp": 15.0
+      },
+      "derived": true,
+      "derived_from": "body-part bleeding control; action time 2-5s"
     }
   ]
 }

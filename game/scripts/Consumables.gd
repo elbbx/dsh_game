@@ -6,6 +6,8 @@ extends RefCounted
 ## 其它 usage_rule_raw（制作/医疗/工具）不猜测、不执行。
 
 const TABLE_PATH: String = "res://data/consumables.json"
+## 允许被消耗品修改的 SurvivalStats 字段白名单。
+const SUPPORTED_KEYS: Array[String] = ["hunger", "thirst", "hp", "infection"]
 
 var table: Dictionary = {}          ## item_id -> effects Dictionary
 var inventory: Dictionary = {}       ## item_id -> 剩余数量（原型用计数，非矩形格）
@@ -44,7 +46,8 @@ func reload() -> void:
         if typeof(raw_eff) == TYPE_DICTIONARY:
             for k in raw_eff.keys():
                 var key: String = String(k)
-                if key == "hunger" or key == "thirst":
+                ## 只接受 SurvivalStats 上真实存在的字段，未知键一律忽略。
+                if key in SUPPORTED_KEYS:
                     eff[key] = float(raw_eff[k])
         if not eff.is_empty():
             table[eid] = eff
@@ -87,6 +90,10 @@ func consume(item_id: String, stats: SurvivalStats) -> bool:
         stats.hunger = clampf(stats.hunger + float(eff["hunger"]), 0.0, 100.0)
     if eff.has("thirst"):
         stats.thirst = clampf(stats.thirst + float(eff["thirst"]), 0.0, 100.0)
+    if eff.has("hp"):
+        stats.hp = clampf(stats.hp + float(eff["hp"]), 0.0, 100.0)
+    if eff.has("infection"):
+        stats.infection = clampf(stats.infection + float(eff["infection"]), 0.0, 100.0)
     return true
 
 ## 找到库存中第一个能降低指定 need 的物品（用于 F/G 快捷键）。
