@@ -13,7 +13,7 @@
   "git_remote": "https://github.com/elbbx/dsh_game",
   "git_branch": "main",
   "last_completed_feature": null,
-  "next_focus": "S1 art/map base (TileMapLayer, 4/8-direction sprites, 3 outdoor/3 interior templates); or extend SurvivalStats gameplay effects; manual visual smoke still required before S0 done",
+  "next_focus": "S1 art/map base (TileMapLayer, 4/8-direction sprites); or extend consumables to medical/healing + rectangular inventory; manual visual smoke still required before S0 done",
   "current_feature": "S0-boot-and-core-loop",
   "current_status": "in_progress",
   "tests": {
@@ -25,7 +25,7 @@
   },
   "test_flags": {
     "engine_verified": true,
-    "automated_regression": "iso math; 2 independent same-template houses (no shared loot/kills/locks); loot/exit; save/load v1-v4; melee kill; death restart; 100x transitions; locked door; transition mutex; load-fail rollback; blocked-exit fallback; SurvivalStats fixed-step/FPS-independent/clamp/snapshot",
+    "automated_regression": "iso math; 2 independent same-template houses (no shared loot/kills/locks); loot/exit; save/load v1-v5; melee kill; death restart; 100x transitions; locked door; transition mutex; load-fail rollback; blocked-exit fallback; SurvivalStats fixed-step/FPS-independent; consumables table/use/clamp/save",
     "manual_visual_smoke": "manual_pending"
   },
   "blocked_on": [],
@@ -35,6 +35,6 @@
     "placeholder art (12 original PNGs, self-authored)",
     "manual visual/feel inspection not yet performed"
   ],
-  "last_test_report": "finished/reports/qa_20261107T130533Z.json",
+  "last_test_report": "finished/reports/qa_20261107T131448Z.json",
   "git_save_points": ["918e937", "8fbda4d"]
 }

@@ -11,7 +11,7 @@ def main():
     args=ap.parse_args()
     root=pathlib.Path(args.root).resolve()
     report={'date_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'root':str(root),'checks':{},'godot':None,'notes':[]}
-    required=['AGENTS.md','doc/GAME_BIBLE.md','doc/独立室内切换与建筑.md','finished/state.json','game/project.godot','game/scenes/main.tscn','game/scripts/Main.gd','game/scripts/SurvivalStats.gd','data/items_original.json','data/recipes_original.json','game/assets/assets_manifest.json','game/tests/PrototypeChecks.gd']
+    required=['AGENTS.md','doc/GAME_BIBLE.md','doc/独立室内切换与建筑.md','finished/state.json','game/project.godot','game/scenes/main.tscn','game/scripts/Main.gd','game/scripts/SurvivalStats.gd','game/scripts/Consumables.gd','game/data/consumables.json','data/items_original.json','data/recipes_original.json','game/assets/assets_manifest.json','game/tests/PrototypeChecks.gd']
     missing=[i for i in required if not (root/i).exists()]
     report['checks']['required_files']='FAIL: '+str(missing) if missing else 'PASS'
     try:
@@ -44,6 +44,28 @@ def main():
     report['checks']['prototype_features']='PASS' if all(t in script for t in ['func _transition','func _save_game','func _load_game','func _reset_run','func cell_to_screen','func _attack','func _process_zombies']) else 'FAIL: missing core functions'
     stats_script=(root/'game/scripts/SurvivalStats.gd').read_text('utf8')
     report['checks']['survival_stats']='PASS' if all(t in stats_script for t in ['class_name SurvivalStats','func advance','func _tick','func to_dict','func from_dict','const STEP_SECONDS']) else 'FAIL: missing SurvivalStats API'
+    cons_script=(root/'game/scripts/Consumables.gd').read_text('utf8')
+    report['checks']['consumables_api']='PASS' if all(t in cons_script for t in ['class_name Consumables','func reload','func consume','func first_for','func inventory_to_dict','func inventory_from_dict']) else 'FAIL: missing Consumables API'
+    # Normalized consumables table must be reproducible from the source item data.
+    try:
+        import re as _re
+        src_items=json.loads((root/'data/runtime/items.json').read_text('utf8'))
+        hr=_re.compile(r'hunger\s*-\s*(\d+(?:\.\d+)?)'); tr=_re.compile(r'thirst\s*-\s*(\d+(?:\.\d+)?)')
+        expected={}
+        for it in src_items:
+            rule=it.get('usage_rule_raw') or ''
+            eff={}
+            m=hr.search(rule)
+            if m: eff['hunger']=-float(m.group(1))
+            m=tr.search(rule)
+            if m: eff['thirst']=-float(m.group(1))
+            if eff: expected[it['id']]=eff
+        tbl=json.loads((root/'game/data/consumables.json').read_text('utf8'))
+        got={e['id']:e['effects'] for e in tbl['items']}
+        assert got==expected, ('table drift', len(got), len(expected))
+        assert tbl['count']==len(expected), ('count mismatch', tbl['count'], len(expected))
+        report['checks']['consumables_table']='PASS ('+str(len(expected))+' normalized consumables)'
+    except Exception as exc: report['checks']['consumables_table']='FAIL: '+repr(exc)
     godot=args.godot or shutil.which('godot') or shutil.which('godot4')
     if args.no_engine or not godot:
         report['checks']['godot_import']='SKIP: no engine requested' if args.no_engine else 'SKIP: Godot executable not found'

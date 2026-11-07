@@ -296,5 +296,74 @@ func _run_checks() -> void:
         _fail("SurvivalStats clock reset on space transition")
         return
 
-    print("TEST_PASS: iso math; 2 independent houses; loot/exit; save/load v1-v4; melee kill; death restart; 100x transitions; locked door; transition mutex; load-fail rollback; blocked-exit fallback; SurvivalStats fixed-step/FPS-independent/clamp/snapshot")
+    # --- Consumables: normalized table + use effects on SurvivalStats ---
+    if game.consumables.load_error != "":
+        _fail("Consumables table failed to load: " + game.consumables.load_error)
+        return
+    if not game.consumables.has_item("ITM_0001") or not game.consumables.has_item("ITM_0065"):
+        _fail("Normalized consumables table missing food/water entries")
+        return
+    if float(game.consumables.effect_of("ITM_0001").get("hunger", 0.0)) >= 0.0:
+        _fail("Food effect must reduce hunger")
+        return
+    if float(game.consumables.effect_of("ITM_0065").get("thirst", 0.0)) >= 0.0:
+        _fail("Water effect must reduce thirst")
+        return
+    # Unknown id / zero stock are rejected without mutating state
+    var pack_before: int = game.consumables.total_count()
+    if game.consumables.consume("NOT_AN_ITEM", game.stats):
+        _fail("Unknown item id was consumed")
+        return
+    if game.consumables.total_count() != pack_before:
+        _fail("Rejected consume mutated inventory")
+        return
+    # Loot granted food + water in both houses
+    if game.consumables.count("ITM_0001") < 1 or game.consumables.count("ITM_0065") < 1:
+        _fail("Loot did not grant consumables")
+        return
+    # Eat: hunger drops and one food is removed (clamped at 0)
+    game.hunger = 60.0
+    game.stats.hunger = 60.0
+    var food_before: int = game.consumables.count("ITM_0001")
+    game._consume_for("hunger")
+    if game.hunger >= 60.0 or game.consumables.count("ITM_0001") != food_before - 1:
+        _fail("Eating did not reduce hunger or consume one food")
+        return
+    # Drink: thirst drops and one water is removed
+    game.stats.thirst = 70.0
+    var water_before: int = game.consumables.count("ITM_0065")
+    game._consume_for("thirst")
+    if game.stats.thirst >= 70.0 or game.consumables.count("ITM_0065") != water_before - 1:
+        _fail("Drinking did not reduce thirst or consume one water")
+        return
+    # clamp: hunger cannot go below 0 even with repeated consumption is impossible
+    # here (stock limited), so verify the pure-data clamp directly
+    game.stats.hunger = 5.0
+    game.consumables.add("ITM_0001", 5)
+    game.stats.hunger = 5.0
+    game._consume_for("hunger")
+    if game.stats.hunger < 0.0 or game.stats.hunger > 100.0:
+        _fail("Consumable effect broke hunger clamp")
+        return
+    # v5 save/load preserves inventory and stats
+    game._save_game()
+    var inv_snapshot: Dictionary = game.consumables.inventory_to_dict()
+    game.consumables.inventory.clear()
+    game._load_game()
+    if game.consumables.inventory_to_dict() != inv_snapshot:
+        _fail("v5 save/load lost consumables inventory")
+        return
+    # Inventory survives a space transition (no reset)
+    var pack_after_transition: int = game.consumables.total_count()
+    game.player_cell = Vector2(14.0, 12.0)
+    game._transition(true, "BLD_A")
+    await create_timer(0.45).timeout
+    game.player_cell = Vector2(2.0, 7.0)
+    game._transition(false, "")
+    await create_timer(0.45).timeout
+    if game.consumables.total_count() != pack_after_transition:
+        _fail("Consumables inventory reset on space transition")
+        return
+
+    print("TEST_PASS: iso math; 2 independent houses; loot/exit; save/load v1-v5; melee kill; death restart; 100x transitions; locked door; transition mutex; load-fail rollback; blocked-exit fallback; SurvivalStats fixed-step; consumables table/use/clamp/save")
     quit(0)

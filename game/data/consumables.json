@@ -1,0 +1,745 @@
+{
+  "schema": "overcastveil.consumables/1",
+  "source": "data/runtime/items.json",
+  "count": 82,
+  "items": [
+    {
+      "id": "ITM_0001",
+      "display_name": "午餐肉罐头",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0002",
+      "display_name": "豆类罐头",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0003",
+      "display_name": "番茄罐头",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0004",
+      "display_name": "金枪鱼罐头",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0005",
+      "display_name": "玉米罐头",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0006",
+      "display_name": "豌豆罐头",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0007",
+      "display_name": "水果罐头",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0008",
+      "display_name": "炖牛肉罐头",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0009",
+      "display_name": "鸡肉罐头",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0010",
+      "display_name": "蘑菇罐头",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0011",
+      "display_name": "蔬菜汤罐头",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0012",
+      "display_name": "鱼汤罐头",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0013",
+      "display_name": "浓缩肉汤",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0014",
+      "display_name": "红烧豆罐头",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0015",
+      "display_name": "罐装香肠",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0016",
+      "display_name": "罐装咖喱",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0017",
+      "display_name": "苹果",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0018",
+      "display_name": "香蕉",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0019",
+      "display_name": "橙子",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0020",
+      "display_name": "土豆",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0021",
+      "display_name": "胡萝卜",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0022",
+      "display_name": "洋葱",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0023",
+      "display_name": "番茄",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0024",
+      "display_name": "生菜",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0025",
+      "display_name": "卷心菜",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0026",
+      "display_name": "蘑菇",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0027",
+      "display_name": "野莓",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0028",
+      "display_name": "玉米穗",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0029",
+      "display_name": "生鸡蛋",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0030",
+      "display_name": "生鸡肉",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0031",
+      "display_name": "生猪肉",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0032",
+      "display_name": "生牛肉",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0033",
+      "display_name": "生鱼",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0034",
+      "display_name": "生鹿肉",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0035",
+      "display_name": "生蘑菇",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0036",
+      "display_name": "南瓜",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0037",
+      "display_name": "西葫芦",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0038",
+      "display_name": "大蒜",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0039",
+      "display_name": "黄瓜",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0040",
+      "display_name": "菠菜",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0041",
+      "display_name": "面包",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0042",
+      "display_name": "吐司",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0043",
+      "display_name": "饼干",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0044",
+      "display_name": "巧克力",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0045",
+      "display_name": "坚果",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0046",
+      "display_name": "肉干",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0047",
+      "display_name": "烤土豆",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0048",
+      "display_name": "蔬菜汤",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0049",
+      "display_name": "肉类炖菜",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0050",
+      "display_name": "煎鸡蛋",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0051",
+      "display_name": "烤肉",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0052",
+      "display_name": "鱼汤",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0053",
+      "display_name": "熟米饭",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0054",
+      "display_name": "米饭炒菜",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0055",
+      "display_name": "烤鱼",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0056",
+      "display_name": "披萨",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0057",
+      "display_name": "罐装即食燕麦",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0058",
+      "display_name": "干粮包",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0059",
+      "display_name": "能量棒",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0060",
+      "display_name": "鸡肉三明治",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0061",
+      "display_name": "蔬菜三明治",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0062",
+      "display_name": "苹果派",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0063",
+      "display_name": "牛肉汉堡",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0064",
+      "display_name": "炖豆子",
+      "category": "食物",
+      "usage_rule_raw": "hunger -15; calories +250",
+      "effects": {
+        "hunger": -15.0
+      }
+    },
+    {
+      "id": "ITM_0065",
+      "display_name": "净水瓶",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -30; clean water",
+      "effects": {
+        "thirst": -30.0
+      }
+    },
+    {
+      "id": "ITM_0066",
+      "display_name": "脏水瓶",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -25; unsafe without purification",
+      "effects": {
+        "thirst": -25.0
+      }
+    },
+    {
+      "id": "ITM_0067",
+      "display_name": "矿泉水",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -30; clean water",
+      "effects": {
+        "thirst": -30.0
+      }
+    },
+    {
+      "id": "ITM_0068",
+      "display_name": "汽水",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -25; hydration +300ml",
+      "effects": {
+        "thirst": -25.0
+      }
+    },
+    {
+      "id": "ITM_0069",
+      "display_name": "果汁",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -25; hydration +300ml",
+      "effects": {
+        "thirst": -25.0
+      }
+    },
+    {
+      "id": "ITM_0070",
+      "display_name": "速溶咖啡",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -25; hydration +300ml",
+      "effects": {
+        "thirst": -25.0
+      }
+    },
+    {
+      "id": "ITM_0071",
+      "display_name": "热咖啡",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -25; hydration +300ml",
+      "effects": {
+        "thirst": -25.0
+      }
+    },
+    {
+      "id": "ITM_0072",
+      "display_name": "热茶",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -25; hydration +300ml",
+      "effects": {
+        "thirst": -25.0
+      }
+    },
+    {
+      "id": "ITM_0073",
+      "display_name": "茶包",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -25; hydration +300ml",
+      "effects": {
+        "thirst": -25.0
+      }
+    },
+    {
+      "id": "ITM_0074",
+      "display_name": "运动饮料",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -25; hydration +300ml",
+      "effects": {
+        "thirst": -25.0
+      }
+    },
+    {
+      "id": "ITM_0075",
+      "display_name": "牛奶",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -25; hydration +300ml",
+      "effects": {
+        "thirst": -25.0
+      }
+    },
+    {
+      "id": "ITM_0076",
+      "display_name": "罐装能量饮料",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -25; hydration +300ml",
+      "effects": {
+        "thirst": -25.0
+      }
+    },
+    {
+      "id": "ITM_0077",
+      "display_name": "热巧克力",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -25; hydration +300ml",
+      "effects": {
+        "thirst": -25.0
+      }
+    },
+    {
+      "id": "ITM_0078",
+      "display_name": "凉开水",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -30; clean water",
+      "effects": {
+        "thirst": -30.0
+      }
+    },
+    {
+      "id": "ITM_0079",
+      "display_name": "过滤水",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -30; clean water",
+      "effects": {
+        "thirst": -30.0
+      }
+    },
+    {
+      "id": "ITM_0080",
+      "display_name": "井水",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -25; unsafe without purification",
+      "effects": {
+        "thirst": -25.0
+      }
+    },
+    {
+      "id": "ITM_0081",
+      "display_name": "雨水",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -25; unsafe without purification",
+      "effects": {
+        "thirst": -25.0
+      }
+    },
+    {
+      "id": "ITM_0082",
+      "display_name": "柠檬水",
+      "category": "饮品",
+      "usage_rule_raw": "thirst -25; hydration +300ml",
+      "effects": {
+        "thirst": -25.0
+      }
+    }
+  ]
+}

@@ -57,6 +57,8 @@ var toast_timer: float = 0.0
 var zombies: Array = []   # 室外敌人（共用一张室外图）
 ## 生存状态纯数据（M02）。固定步长结算，与 FPS 解耦；存档保留 clock_ticks。
 var stats: SurvivalStats = SurvivalStats.new()
+## 消耗品效果服务（S2 切片，数据来自归一化 consumables.json）。
+var consumables: Consumables = Consumables.new()
 ## room_states[house_id] = {loot_claimed, interior_saved_cell, interior_zombies, door_locked}
 ## 每栋房屋独立，绝不共享已搜刮标记、击杀记录或门锁状态。
 var room_states: Dictionary = {}
@@ -87,6 +89,7 @@ func _reset_run() -> void:
     player_hp = 100.0
     hunger = 4.0
     stats.reset()
+    consumables.inventory.clear()
     bandages = 2
     scrap = 0
     hour = 8.0
@@ -253,6 +256,8 @@ func _unhandled_key_input(event: InputEvent) -> void:
                 bandages -= 1
                 player_hp = minf(100.0, player_hp + 32.0)
                 _toast("Used bandage", 1.4)
+        KEY_F: _consume_for("hunger")
+        KEY_G: _consume_for("thirst")
         KEY_F5: _save_game()
         KEY_F9: _load_game()
         KEY_U: _toggle_door_lock()
@@ -266,6 +271,23 @@ func _house_near_player() -> Dictionary:
         if player_cell.distance_to(h["door"]) < 2.1:
             return h
     return {}
+
+## 消耗一个能降低指定 need 的物品（F=食物 / G=饮水）。
+## 统计值通过 stats 应用后同步回权威字段，避免双份状态。
+func _consume_for(need: String) -> void:
+    if transitioning or player_hp <= 0.0: return
+    var item_id: String = consumables.first_for(need)
+    if item_id.is_empty():
+        _toast("No %s item in pack" % ("food" if need == "hunger" else "water"), 1.8)
+        return
+    stats.hp = player_hp
+    stats.hunger = hunger
+    if not consumables.consume(item_id, stats):
+        _toast("Cannot use item", 1.5)
+        return
+    hunger = stats.hunger
+    player_hp = stats.hp
+    _toast("Used %s (%s)" % [item_id, "food" if need == "hunger" else "water"], 1.8)
 
 ## 在门前按 U 切换门锁；仅影响当前靠近的那一栋，不串到其他房屋。
 func _toggle_door_lock() -> void:
@@ -293,7 +315,10 @@ func _interact() -> void:
             r["loot_claimed"] = true
             scrap += 3
             bandages += 1
-            _toast("LOOT (this house): 3 scrap + 1 bandage", 2.4)
+            ## 每栋房屋独立发放消耗品：食物罐头 + 饮用水（id 来自归一化效果表）。
+            consumables.add("ITM_0001", 1)
+            consumables.add("ITM_0065", 1)
+            _toast("LOOT: 3 scrap + 1 bandage + 1 food + 1 water", 2.4)
             return
         _toast("Find the exit or supply crate", 1.6)
         return
@@ -392,11 +417,12 @@ func _save_game() -> void:
     stats.hp = player_hp
     stats.hunger = hunger
     var state: Dictionary = {
-        "version": 4, "inside": inside, "house": active_house_id,
+        "version": 5, "inside": inside, "house": active_house_id,
         "player": [player_cell.x, player_cell.y],
         "outside": [outdoor_saved_cell.x, outdoor_saved_cell.y],
         "hp": player_hp, "hunger": hunger, "hour": hour,
         "bandages": bandages, "scrap": scrap, "stats": stats.to_dict(),
+        "consumables": consumables.inventory_to_dict(),
         "zombies": _serialize_zombies(zombies), "rooms": rooms,
     }
     var file: FileAccess = FileAccess.open(SAVE_PATH, FileAccess.WRITE)
@@ -441,7 +467,7 @@ func _load_game() -> void:
         return
     var p: Dictionary = parsed
     var ver: int = int(p.get("version", 0))
-    if ver != 4 and ver != 3 and ver != 2 and ver != 1:
+    if ver != 5 and ver != 4 and ver != 3 and ver != 2 and ver != 1:
         _toast("Unsupported save", 2.0)
         return
     var a: Array = p.get("player", [7, 9])
@@ -455,13 +481,16 @@ func _load_game() -> void:
     hour = float(p.get("hour", 8))
     bandages = int(p.get("bandages", 0))
     scrap = int(p.get("scrap", 0))
-    if ver == 4 and p.get("stats") is Dictionary:
+    if ver >= 4 and p.get("stats") is Dictionary:
         stats.from_dict(p["stats"])
     else:
         ## 旧存档无 stats 快照：以读到的 hp/hunger 为基值重建，时钟归零。
         stats.reset()
         stats.hp = player_hp
         stats.hunger = hunger
+    consumables.inventory.clear()
+    if ver >= 5 and p.get("consumables") is Dictionary:
+        consumables.inventory_from_dict(p["consumables"])
     zombies.clear()
     var outdoor: Array[Dictionary] = []
     for z in p.get("zombies", []):
@@ -477,7 +506,7 @@ func _load_game() -> void:
     room_states = {}
     for h in HOUSES:
         room_states[String(h["id"])] = _fresh_room_state()
-    if ver == 4 or ver == 3 or ver == 2:
+    if ver == 5 or ver == 4 or ver == 3 or ver == 2:
         active_house_id = String(p.get("house", ""))
         var rooms: Dictionary = p.get("rooms", {})
         for h in HOUSES:
@@ -515,11 +544,11 @@ func _update_ui() -> void:
         if not near.is_empty():
             var rs: Dictionary = room_states.get(String(near["id"]), _fresh_room_state())
             door_note = "  |  %s: %s" % [String(near["id"]), "LOCKED" if bool(rs.get("door_locked", false)) else "OPEN"]
-    hud.text = "OVERCASTVEIL / %s / %s%s\nHP:%d  HUNGER:%d  THIRST:%d  FATIGUE:%d  SAN:%d  INF:%d  COLD:%d\nBANDAGE:%d  SCRAP:%d  TICK:%d" % [where, time_text, door_note, int(player_hp), int(hunger), int(stats.thirst), int(stats.fatigue), int(stats.sanity), int(stats.infection), int(stats.cold), bandages, scrap, stats.clock_ticks]
+    hud.text = "OVERCASTVEIL / %s / %s%s\nHP:%d  HUNGER:%d  THIRST:%d  FATIGUE:%d  SAN:%d  INF:%d  COLD:%d\nBANDAGE:%d  SCRAP:%d  FOOD:%d  WATER:%d  TICK:%d" % [where, time_text, door_note, int(player_hp), int(hunger), int(stats.thirst), int(stats.fatigue), int(stats.sanity), int(stats.infection), int(stats.cold), bandages, scrap, consumables.count("ITM_0001"), consumables.count("ITM_0065"), stats.clock_ticks]
     if inside:
-        instructions.text = "WASD Move  |  E Loot / Exit  |  Space Attack  |  H Heal  |  F5 Save  F9 Load  |  R New run (on death)"
+        instructions.text = "WASD Move | E Loot/Exit | F Eat | G Drink | Space Attack | H Heal | F5 Save F9 Load | R New run"
     else:
-        instructions.text = "WASD Move  |  E Enter  |  U Lock/Unlock door  |  Space Attack  |  H Heal  |  F5 Save  F9 Load  |  R New run (on death)"
+        instructions.text = "WASD Move | E Enter | U Lock door | F Eat | G Drink | Space Attack | H Heal | F5 Save F9 Load | R New run"
 
 func _ground_tex(x: int, y: int) -> Texture2D:
     if inside: return FLOOR if posmod(x + y, 4) != 0 else FLOOR2
