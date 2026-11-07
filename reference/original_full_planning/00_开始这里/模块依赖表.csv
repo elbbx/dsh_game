@@ -1,0 +1,28 @@
+﻿模块ID,模块名称,依赖模块,继承原规划章节,核心接口,关键验收
+00,架构与数据契约,无,"1,16,17,35,36,37,38,39,40,42,53,54,56","WorldClock, EntityRegistry, EventBus, ConfigCatalog, TransactionCoordinator",数据契约冻结后其他模块才允许并行
+01,世界时间与动态天气,00,"2,43,52","WeatherSample, ClimateCell, WorldTimeSnapshot",同一区块重复读档天气一致
+02,七项状态与角色成长,"00,01","3,5,6,20","PlayerStats, SkillProgress, NutritionDelta",可重算和读档不重复升级
+03,伤势医疗感染与疾病,"00,02","4,44,62,103","InjuryRecord, InfectionState, TreatmentTransaction",中断不会无提示吞掉耗材
+04,背包装备快捷栏与输入,"00,02","7,100,101,104,105,106","ItemInstance, InventoryContainer, EquipmentSlots, QuickUseRequest",轮盘和背包期间世界不暂停
+05,圆环HUD与菜单,"02,03,04","15,65,102,106","StatusRingViewModel, HUDOverlay",体力停耗1秒后淡出
+06,物品库与掉落经济,"00,04","6,7,13,47,88","ItemDefinition, LootTable, LootContainerState",拾取不可跨世界复制
+07,武器战斗与枪械模组,"00,02,04","8,46","WeaponDefinition, AttachmentDefinition, DamageEvent, SoundEvent",三枪槽混用远近战
+08,敌人生成与人口调度,"00,01,10,11","9,12,17,29,33","PopulationCell, SpawnRequest, EnemyInstance",无视野内凭空生成和无限刷尸
+09,丧尸AI与声光感知,"07,08,11","9,12,27","PerceptionEvent, ZombieBlackboard, MoveIntent",追逐中区块切换不中断
+10,区块流送与开放世界,00,"2,17,22,23,52,53,94","ChunkKey, ChunkManifest, ActiveEntityIndex",快速驾驶不出现虚空地形
+11,导航网格与多层寻路,"00,10","9,27,28,39,94","NavChunk, PortalLink, PathQuery",破门后路径更新局部区域
+12,建筑外形户型与室内结构,"00,10,11","13,47,94","BuildingDefinition, FloorPlan, Room, Opening",所有房间可达且门宽合理
+13,家具摆放与室内搜刮,"06,12","13,47,60,61","FurnitureDefinition, PlacementRule, ContainerRef",家具不堵塞必要通路
+14,采矿伐木与可挖掘地形,"00,10,11","86,87,88,89,90,93,94,96,97,98,99","ResourceNode, ExcavationPatch, TreeState",挖矿同步导航及双世界共享
+15,制造冶炼建造与结构,"06,12,14","48,63,91,92,95","Recipe, CraftJob, BuildPlacement, StructurePart",材料原子扣除，离线完成不重复
+16,电网热源与据点运行,"12,15","45,49,51,64,95","PowerNode, CableEdge, DemandPriority",同一单位Wh能量守恒
+17,NPC交易任务与防守辅助,"06,09,12,16","14,49,50,95","NPCRecord, QuestRecord, TradeTransaction",任务奖励不可重复领
+18,载具驾驶改装与交通,"07,10,11,06","70,71,72,73,74,75,76,77,78,79,80,84,85","VehicleDefinition, VehicleInstance, VehicleInventory",高速跨区块不丢车
+19,SAN克苏鲁AI与异常关注,"02,10,11","10,11,27,28,29,30,31,34","EldritchBlackboard, AggroState, AttentionState",失去视线持续慢速追踪
+20,裂隙颠倒世界与车辆转层,"10,18,19,23","21,22,23,24,25,26,29,30,31,32,33,34,81,82,83","WorldLayer, SharedEntityState, RiftTransfer",车和货物只存在一份且可返程
+21,衣物防护卫生与环境疾病,"01,02,03,04","57,58,59,60,61,62,63,64,65,66,67,68,69","ClothingInstance, ThermalState, HygieneState",洗澡不治疗丧尸感染
+22,地图生成与场景兴趣点,"10,12","2,12,13,41,47","WorldSeed, Parcel, POIRecord, SpawnAnchor",同seed同结果无重叠楼
+23,存档事件日志与一致性,00,"17,23,38,56,83,96,105","SaveSnapshot, EventLedger, PendingTransaction",跨世界读档不复制物品
+24,音效反馈与可观察性,"07,09,19","8,9,10,12,43,76,102","SoundEvent, LightStimulus, DebugMetrics",枪声能引怪，声源唯一
+25,性能测试自动化与集成,"08,10,11,23","18,19,32,33,39,40,54,55,68,85,99,106","TestScenario, PerformanceBudget, AcceptanceRecord",30分钟进出区块/读档稳定
+26,供水农耕食物烹饪,"01,06,15","6,13,43,60,61,91","WaterTank, CropState, CookingJob",污染水不会被视为净水

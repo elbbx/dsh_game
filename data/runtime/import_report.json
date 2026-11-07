@@ -1,0 +1,7 @@
+{
+  "item_count": 578,
+  "recipe_count": 146,
+  "errors": [],
+  "warnings": [],
+  "note": "Original natural-language effects and station names retained as *_raw. They must be reviewed and mapped to actual engine rules before enabling the entire catalog."
+}

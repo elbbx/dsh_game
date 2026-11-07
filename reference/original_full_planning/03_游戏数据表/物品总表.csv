@@ -1,0 +1,724 @@
+﻿id,name,category,subcategory,weight_kg,grid,stack_max,quality_tiers,durability_max,base_value,usage_effect,access,source_zone
+ITM_0001,午餐肉罐头,食物,罐装,0.3,1x2,10,0-2,0,7,hunger -15; calories +250,quick_only,kitchen
+ITM_0002,豆类罐头,食物,罐装,0.32,1x2,10,0-2,0,14,hunger -15; calories +250,quick_only,kitchen
+ITM_0003,番茄罐头,食物,罐装,0.21,1x2,10,0-2,0,28,hunger -15; calories +250,quick_only,kitchen
+ITM_0004,金枪鱼罐头,食物,罐装,0.18,1x2,10,0-2,0,27,hunger -15; calories +250,quick_only,kitchen
+ITM_0005,玉米罐头,食物,罐装,0.35,1x2,10,0-2,0,10,hunger -15; calories +250,quick_only,kitchen
+ITM_0006,豌豆罐头,食物,罐装,0.29,1x2,10,0-2,0,7,hunger -15; calories +250,quick_only,kitchen
+ITM_0007,水果罐头,食物,罐装,0.17,1x2,10,0-2,0,10,hunger -15; calories +250,quick_only,kitchen
+ITM_0008,炖牛肉罐头,食物,罐装,0.21,1x2,10,0-2,0,24,hunger -15; calories +250,quick_only,kitchen
+ITM_0009,鸡肉罐头,食物,罐装,0.17,1x2,10,0-2,0,10,hunger -15; calories +250,quick_only,kitchen
+ITM_0010,蘑菇罐头,食物,罐装,0.31,1x2,10,0-2,0,29,hunger -15; calories +250,quick_only,kitchen
+ITM_0011,蔬菜汤罐头,食物,罐装,0.28,1x2,10,0-2,0,13,hunger -15; calories +250,quick_only,kitchen
+ITM_0012,鱼汤罐头,食物,罐装,0.26,1x2,10,0-2,0,14,hunger -15; calories +250,quick_only,kitchen
+ITM_0013,浓缩肉汤,食物,罐装,0.33,1x2,10,0-2,0,7,hunger -15; calories +250,quick_only,kitchen
+ITM_0014,红烧豆罐头,食物,罐装,0.32,1x2,10,0-2,0,12,hunger -15; calories +250,quick_only,kitchen
+ITM_0015,罐装香肠,食物,罐装,0.31,1x2,10,0-2,0,17,hunger -15; calories +250,quick_only,kitchen
+ITM_0016,罐装咖喱,食物,罐装,0.22,1x2,10,0-2,0,11,hunger -15; calories +250,quick_only,kitchen
+ITM_0017,苹果,食物,生鲜,0.37,1x2,10,0-2,0,18,hunger -15; calories +250,quick_only,kitchen
+ITM_0018,香蕉,食物,生鲜,0.18,1x2,10,0-2,0,16,hunger -15; calories +250,quick_only,kitchen
+ITM_0019,橙子,食物,生鲜,0.18,1x2,10,0-2,0,31,hunger -15; calories +250,quick_only,kitchen
+ITM_0020,土豆,食物,生鲜,0.24,1x2,10,0-2,0,13,hunger -15; calories +250,quick_only,kitchen
+ITM_0021,胡萝卜,食物,生鲜,0.33,1x2,10,0-2,0,30,hunger -15; calories +250,quick_only,kitchen
+ITM_0022,洋葱,食物,生鲜,0.26,1x2,10,0-2,0,9,hunger -15; calories +250,quick_only,kitchen
+ITM_0023,番茄,食物,生鲜,0.37,1x2,10,0-2,0,20,hunger -15; calories +250,quick_only,kitchen
+ITM_0024,生菜,食物,生鲜,0.18,1x2,10,0-2,0,13,hunger -15; calories +250,quick_only,kitchen
+ITM_0025,卷心菜,食物,生鲜,0.34,1x2,10,0-2,0,26,hunger -15; calories +250,quick_only,kitchen
+ITM_0026,蘑菇,食物,生鲜,0.35,1x2,10,0-2,0,19,hunger -15; calories +250,quick_only,kitchen
+ITM_0027,野莓,食物,生鲜,0.29,1x2,10,0-2,0,28,hunger -15; calories +250,quick_only,kitchen
+ITM_0028,玉米穗,食物,生鲜,0.18,1x2,10,0-2,0,25,hunger -15; calories +250,quick_only,kitchen
+ITM_0029,生鸡蛋,食物,生鲜,0.21,1x2,10,0-2,0,14,hunger -15; calories +250,quick_only,kitchen
+ITM_0030,生鸡肉,食物,生鲜,0.37,1x2,10,0-2,0,35,hunger -15; calories +250,quick_only,kitchen
+ITM_0031,生猪肉,食物,生鲜,0.21,1x2,10,0-2,0,8,hunger -15; calories +250,quick_only,kitchen
+ITM_0032,生牛肉,食物,生鲜,0.24,1x2,10,0-2,0,19,hunger -15; calories +250,quick_only,kitchen
+ITM_0033,生鱼,食物,生鲜,0.3,1x2,10,0-2,0,18,hunger -15; calories +250,quick_only,kitchen
+ITM_0034,生鹿肉,食物,生鲜,0.2,1x2,10,0-2,0,16,hunger -15; calories +250,quick_only,kitchen
+ITM_0035,生蘑菇,食物,生鲜,0.21,1x2,10,0-2,0,13,hunger -15; calories +250,quick_only,kitchen
+ITM_0036,南瓜,食物,生鲜,0.31,1x2,10,0-2,0,28,hunger -15; calories +250,quick_only,kitchen
+ITM_0037,西葫芦,食物,生鲜,0.3,1x2,10,0-2,0,26,hunger -15; calories +250,quick_only,kitchen
+ITM_0038,大蒜,食物,生鲜,0.3,1x2,10,0-2,0,24,hunger -15; calories +250,quick_only,kitchen
+ITM_0039,黄瓜,食物,生鲜,0.32,1x2,10,0-2,0,12,hunger -15; calories +250,quick_only,kitchen
+ITM_0040,菠菜,食物,生鲜,0.26,1x2,10,0-2,0,14,hunger -15; calories +250,quick_only,kitchen
+ITM_0041,面包,食物,熟食,0.37,1x2,10,0-2,0,28,hunger -15; calories +250,quick_only,kitchen
+ITM_0042,吐司,食物,熟食,0.31,1x2,10,0-2,0,14,hunger -15; calories +250,quick_only,kitchen
+ITM_0043,饼干,食物,熟食,0.31,1x2,10,0-2,0,33,hunger -15; calories +250,quick_only,kitchen
+ITM_0044,巧克力,食物,熟食,0.33,1x2,10,0-2,0,8,hunger -15; calories +250,quick_only,kitchen
+ITM_0045,坚果,食物,熟食,0.21,1x2,10,0-2,0,6,hunger -15; calories +250,quick_only,kitchen
+ITM_0046,肉干,食物,熟食,0.33,1x2,10,0-2,0,19,hunger -15; calories +250,quick_only,kitchen
+ITM_0047,烤土豆,食物,熟食,0.22,1x2,10,0-2,0,11,hunger -15; calories +250,quick_only,kitchen
+ITM_0048,蔬菜汤,食物,熟食,0.36,1x2,10,0-2,0,26,hunger -15; calories +250,quick_only,kitchen
+ITM_0049,肉类炖菜,食物,熟食,0.35,1x2,10,0-2,0,18,hunger -15; calories +250,quick_only,kitchen
+ITM_0050,煎鸡蛋,食物,熟食,0.21,1x2,10,0-2,0,20,hunger -15; calories +250,quick_only,kitchen
+ITM_0051,烤肉,食物,熟食,0.25,1x2,10,0-2,0,35,hunger -15; calories +250,quick_only,kitchen
+ITM_0052,鱼汤,食物,熟食,0.3,1x2,10,0-2,0,11,hunger -15; calories +250,quick_only,kitchen
+ITM_0053,熟米饭,食物,熟食,0.22,1x2,10,0-2,0,12,hunger -15; calories +250,quick_only,kitchen
+ITM_0054,米饭炒菜,食物,熟食,0.32,1x2,10,0-2,0,24,hunger -15; calories +250,quick_only,kitchen
+ITM_0055,烤鱼,食物,熟食,0.22,1x2,10,0-2,0,23,hunger -15; calories +250,quick_only,kitchen
+ITM_0056,披萨,食物,熟食,0.25,1x2,10,0-2,0,24,hunger -15; calories +250,quick_only,kitchen
+ITM_0057,罐装即食燕麦,食物,熟食,0.25,1x2,10,0-2,0,13,hunger -15; calories +250,quick_only,kitchen
+ITM_0058,干粮包,食物,熟食,0.37,1x2,10,0-2,0,12,hunger -15; calories +250,quick_only,kitchen
+ITM_0059,能量棒,食物,熟食,0.27,1x2,10,0-2,0,8,hunger -15; calories +250,quick_only,kitchen
+ITM_0060,鸡肉三明治,食物,熟食,0.32,1x2,10,0-2,0,34,hunger -15; calories +250,quick_only,kitchen
+ITM_0061,蔬菜三明治,食物,熟食,0.19,1x2,10,0-2,0,24,hunger -15; calories +250,quick_only,kitchen
+ITM_0062,苹果派,食物,熟食,0.2,1x2,10,0-2,0,26,hunger -15; calories +250,quick_only,kitchen
+ITM_0063,牛肉汉堡,食物,熟食,0.25,1x2,10,0-2,0,8,hunger -15; calories +250,quick_only,kitchen
+ITM_0064,炖豆子,食物,熟食,0.24,1x2,10,0-2,0,24,hunger -15; calories +250,quick_only,kitchen
+ITM_0065,净水瓶,饮品,饮品,0.9,1x3,5,0-2,0,35,thirst -30; clean water,quick_only,kitchen
+ITM_0066,脏水瓶,饮品,饮品,0.52,1x3,5,0-2,0,28,thirst -25; unsafe without purification,quick_only,kitchen
+ITM_0067,矿泉水,饮品,饮品,0.83,1x3,5,0-2,0,17,thirst -30; clean water,quick_only,kitchen
+ITM_0068,汽水,饮品,饮品,0.74,1x3,5,0-2,0,18,thirst -25; hydration +300ml,quick_only,kitchen
+ITM_0069,果汁,饮品,饮品,0.74,1x3,5,0-2,0,32,thirst -25; hydration +300ml,quick_only,kitchen
+ITM_0070,速溶咖啡,饮品,饮品,0.77,1x3,5,0-2,0,40,thirst -25; hydration +300ml,quick_only,kitchen
+ITM_0071,热咖啡,饮品,饮品,0.72,1x3,5,0-2,0,18,thirst -25; hydration +300ml,quick_only,kitchen
+ITM_0072,热茶,饮品,饮品,0.54,1x3,5,0-2,0,16,thirst -25; hydration +300ml,quick_only,kitchen
+ITM_0073,茶包,饮品,饮品,0.62,1x3,5,0-2,0,36,thirst -25; hydration +300ml,quick_only,kitchen
+ITM_0074,运动饮料,饮品,饮品,0.84,1x3,5,0-2,0,25,thirst -25; hydration +300ml,quick_only,kitchen
+ITM_0075,牛奶,饮品,饮品,0.89,1x3,5,0-2,0,42,thirst -25; hydration +300ml,quick_only,kitchen
+ITM_0076,罐装能量饮料,饮品,饮品,0.48,1x3,5,0-2,0,39,thirst -25; hydration +300ml,quick_only,kitchen
+ITM_0077,热巧克力,饮品,饮品,0.44,1x3,5,0-2,0,29,thirst -25; hydration +300ml,quick_only,kitchen
+ITM_0078,凉开水,饮品,饮品,0.54,1x3,5,0-2,0,31,thirst -30; clean water,quick_only,kitchen
+ITM_0079,过滤水,饮品,饮品,0.65,1x3,5,0-2,0,20,thirst -30; clean water,quick_only,kitchen
+ITM_0080,井水,饮品,饮品,0.47,1x3,5,0-2,0,34,thirst -25; unsafe without purification,quick_only,kitchen
+ITM_0081,雨水,饮品,饮品,0.47,1x3,5,0-2,0,34,thirst -25; unsafe without purification,quick_only,kitchen
+ITM_0082,柠檬水,饮品,饮品,0.86,1x3,5,0-2,0,47,thirst -25; hydration +300ml,quick_only,kitchen
+ITM_0083,普通绷带,医疗,耗材,0.13,1x1,10,0-2,0,13,body-part bleeding control; action time 2-5s,quick_only,clinic
+ITM_0084,无菌绷带,医疗,耗材,0.21,1x1,10,0-2,0,8,body-part bleeding control; action time 2-5s,quick_only,clinic
+ITM_0085,止血绷带,医疗,耗材,0.29,1x1,10,0-2,0,34,body-part bleeding control; action time 2-5s,quick_only,clinic
+ITM_0086,压迫止血包,医疗,耗材,0.3,1x1,10,0-2,0,32,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0087,纱布,医疗,耗材,0.18,1x1,10,0-2,0,5,body-part bleeding control; action time 2-5s,quick_only,clinic
+ITM_0088,酒精棉,医疗,耗材,0.17,1x1,10,0-2,0,22,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0089,碘伏,医疗,耗材,0.29,1x1,10,0-2,0,8,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0090,消毒液,医疗,耗材,0.25,1x1,10,0-2,0,32,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0091,生理盐水,医疗,耗材,0.14,1x1,10,0-2,0,27,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0092,手术缝线,医疗,耗材,0.22,1x1,10,0-2,0,9,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0093,缝合针,医疗,耗材,0.15,1x1,10,0-2,0,19,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0094,手术手套,医疗,耗材,0.29,1x1,10,0-2,0,11,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0095,一次性注射器,医疗,耗材,0.18,1x1,10,0-2,0,31,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0096,采血管,医疗,耗材,0.23,1x1,10,0-2,0,11,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0097,夹板材料,医疗,耗材,0.29,1x1,10,0-2,0,30,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0098,医用胶带,医疗,耗材,0.25,1x1,10,0-2,0,12,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0099,止痛贴,医疗,耗材,0.25,1x1,10,0-2,0,18,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0100,创可贴,医疗,耗材,0.3,1x1,10,0-2,0,27,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0101,冷敷袋,医疗,耗材,0.19,1x1,10,0-2,0,32,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0102,热敷袋,医疗,耗材,0.22,1x1,10,0-2,0,8,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0103,急救包,医疗,耗材,0.17,1x1,10,0-2,0,6,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0104,创伤急救包,医疗,耗材,0.19,1x1,10,0-2,0,22,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0105,野外医疗包,医疗,耗材,0.22,1x1,10,0-2,0,23,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0106,血液检测试纸,医疗,耗材,0.17,1x1,10,0-2,0,6,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0107,口罩,医疗,耗材,0.25,1x1,10,0-2,0,7,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0108,止痛药,医疗,药物,0.17,1x1,10,0-2,0,32,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0109,退烧药,医疗,药物,0.14,1x1,10,0-2,0,13,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0110,感冒药,医疗,药物,0.14,1x1,10,0-2,0,10,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0111,普通抗菌药,医疗,药物,0.18,1x1,10,0-2,0,19,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0112,强效抗菌药,医疗,药物,0.17,1x1,10,0-2,0,8,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0113,基础抗丧尸感染药,医疗,药物,0.25,1x1,10,0-2,0,34,decrease ZombieInfection; never cure common cold,quick_only,clinic
+ITM_0114,强化抗丧尸感染药,医疗,药物,0.23,1x1,10,0-2,0,20,decrease ZombieInfection; never cure common cold,quick_only,clinic
+ITM_0115,高级净化血清,医疗,药物,0.17,1x1,10,0-2,0,19,decrease ZombieInfection; never cure common cold,quick_only,clinic
+ITM_0116,镇静剂,医疗,药物,0.27,1x1,10,0-2,0,12,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0117,营养补充剂,医疗,药物,0.15,1x1,10,0-2,0,25,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0118,电解质片,医疗,药物,0.2,1x1,10,0-2,0,18,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0119,抗过敏药,医疗,药物,0.2,1x1,10,0-2,0,32,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0120,晕车药,医疗,药物,0.25,1x1,10,0-2,0,27,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0121,止吐药,医疗,药物,0.24,1x1,10,0-2,0,25,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0122,咳嗽药,医疗,药物,0.15,1x1,10,0-2,0,16,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0123,维生素片,医疗,药物,0.25,1x1,10,0-2,0,31,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0124,外伤消炎膏,医疗,药物,0.28,1x1,10,0-2,0,13,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0125,手术镊子,医疗,器械,0.16,2x2,1,0-2,0,21,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0126,缝合工具,医疗,器械,0.21,2x2,1,0-2,0,18,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0127,简易夹板,医疗,器械,0.16,2x2,1,0-2,0,18,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0128,固定支架,医疗,器械,0.17,2x2,1,0-2,0,33,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0129,医用剪刀,医疗,器械,0.14,2x2,1,0-2,0,28,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0130,体温计,医疗,器械,0.28,2x2,1,0-2,0,23,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0131,血压计,医疗,器械,0.15,2x2,1,0-2,0,24,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0132,小型医疗扫描器,医疗,器械,0.3,2x2,1,0-2,0,33,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0133,便携药箱,医疗,器械,0.13,2x2,1,0-2,0,5,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0134,高端手术工具,医疗,器械,0.29,2x2,1,0-2,0,33,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0135,便携净化器,医疗,器械,0.17,2x2,1,0-2,0,17,use MedicalSystem; target injury/infection,quick_only,clinic
+ITM_0136,石斧,工具,手持,2.13,2x3,1,0-4,100,49,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0137,木柄手斧,工具,手持,2.77,2x3,1,0-4,100,84,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0138,消防斧,工具,手持,1.4,2x3,1,0-4,100,41,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0139,伐木斧,工具,手持,1.3,2x3,1,0-4,100,39,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0140,镐头,工具,手持,1.75,2x3,1,0-4,100,61,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0141,石镐,工具,手持,2.63,2x3,1,0-4,100,62,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0142,铁镐,工具,手持,2.02,2x3,1,0-4,100,64,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0143,钢镐,工具,手持,2.99,2x3,1,0-4,100,77,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0144,电动钻机,工具,手持,2.43,2x3,1,0-4,100,64,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0145,采矿钻头,工具,手持,1.56,2x3,1,0-4,100,41,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0146,木锯,工具,手持,1.67,2x3,1,0-4,100,35,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0147,金属锯,工具,手持,2.28,2x3,1,0-4,100,63,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0148,电锯,工具,手持,1.4,2x3,1,0-4,100,39,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0149,折叠铲,工具,手持,1.4,2x3,1,0-4,100,47,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0150,铁锹,工具,手持,2.11,2x3,1,0-4,100,72,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0151,扳手,工具,手持,2.75,2x3,1,0-4,100,61,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0152,活动扳手,工具,手持,1.4,2x3,1,0-4,100,45,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0153,螺丝刀,工具,手持,1.44,2x3,1,0-4,100,34,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0154,十字螺丝刀,工具,手持,1.42,2x3,1,0-4,100,31,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0155,锤子,工具,手持,2.45,2x3,1,0-4,100,57,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0156,大锤,工具,手持,1.99,2x3,1,0-4,100,68,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0157,撬棍,工具,手持,2.27,2x3,1,0-4,100,64,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0158,钳子,工具,手持,2.31,2x3,1,0-4,100,66,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0159,绝缘钳,工具,手持,1.44,2x3,1,0-4,100,50,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0160,焊枪,工具,手持,2.29,2x3,1,0-4,100,62,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0161,卷尺,工具,手持,1.84,2x3,1,0-4,100,45,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0162,水平仪,工具,手持,1.65,2x3,1,0-4,100,56,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0163,电工表,工具,手持,1.83,2x3,1,0-4,100,45,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0164,缝纫工具,工具,手持,1.97,2x3,1,0-4,100,61,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0165,开锁工具,工具,手持,2.4,2x3,1,0-4,100,63,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0166,矿工头灯,工具,手持,1.84,2x3,1,0-4,100,61,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0167,绞盘,工具,手持,2.89,2x3,1,0-4,100,58,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0168,机械千斤顶,工具,手持,2.08,2x3,1,0-4,100,60,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0169,便携工作台,工具,设备,7.4750000000000005,3x3,1,0-4,100,152,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0170,木工工作台,工具,设备,5.525,3x3,1,0-4,100,127,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0171,金属加工台,工具,设备,4.375,3x3,1,0-4,100,117,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0172,枪械改装台,工具,设备,4.725,3x3,1,0-4,100,97,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0173,弹药压装台,工具,设备,6.975,3x3,1,0-4,100,151,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0174,药物制作台,工具,设备,4.45,3x3,1,0-4,100,104,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0175,研究台,工具,设备,6.800000000000001,3x3,1,0-4,100,159,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0176,熔炉,工具,设备,4.525,3x3,1,0-4,100,116,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0177,高温熔炉,工具,设备,6.025,3x3,1,0-4,100,121,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0178,砖窑,工具,设备,6.1,3x3,1,0-4,100,140,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0179,木炭窑,工具,设备,4.525,3x3,1,0-4,100,112,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0180,裁缝台,工具,设备,3.7,3x3,1,0-4,100,103,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0181,洗衣机,工具,设备,3.825,3x3,1,0-4,100,80,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0182,烘干机,工具,设备,7.025,3x3,1,0-4,100,164,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0183,水过滤器,工具,设备,5.6000000000000005,3x3,1,0-4,100,121,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0184,净水器,工具,设备,4.45,3x3,1,0-4,100,96,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0185,车载修理台,工具,设备,6.3,3x3,1,0-4,100,133,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0186,机械工作台,工具,设备,6.175000000000001,3x3,1,0-4,100,151,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0187,电气工作台,工具,设备,4.375,3x3,1,0-4,100,103,use ToolAction; wear durability,inventory_exception,mixed
+ITM_0188,煤炭,原料,矿物,1.3,1x1,100,0-2,0,56,fuel_kj and smelting/power/heat,equipped_or_context,natural
+ITM_0189,煤块,原料,矿物,2.05,1x1,100,0-2,0,44,fuel_kj and smelting/power/heat,equipped_or_context,natural
+ITM_0190,铁矿石,原料,矿物,1.78,1x1,100,0-2,0,62,smelt into ingot; heavy inventory,equipped_or_context,natural
+ITM_0191,富铁矿石,原料,矿物,1.33,1x1,100,0-2,0,27,smelt into ingot; heavy inventory,equipped_or_context,natural
+ITM_0192,铜矿石,原料,矿物,1.4,1x1,100,0-2,0,33,smelt into ingot; heavy inventory,equipped_or_context,natural
+ITM_0193,铅矿石,原料,矿物,1.79,1x1,100,0-2,0,44,crafting material,equipped_or_context,natural
+ITM_0194,硝石矿石,原料,矿物,1.18,1x1,100,0-2,0,38,crafting material,equipped_or_context,natural
+ITM_0195,石灰石,原料,矿物,1.68,1x1,100,0-2,0,47,crafting material,equipped_or_context,natural
+ITM_0196,砂石,原料,矿物,1.69,1x1,100,0-2,0,37,crafting material,equipped_or_context,natural
+ITM_0197,石块,原料,矿物,1.07,1x1,100,0-2,0,50,crafting material,equipped_or_context,natural
+ITM_0198,碎石,原料,矿物,1.86,1x1,100,0-2,0,42,crafting material,equipped_or_context,natural
+ITM_0199,砂,原料,矿物,1.67,1x1,100,0-2,0,60,crafting material,equipped_or_context,natural
+ITM_0200,黏土,原料,矿物,1.45,1x1,100,0-2,0,47,crafting material,equipped_or_context,natural
+ITM_0201,硫矿,原料,矿物,1.16,1x1,100,0-2,0,28,crafting material,equipped_or_context,natural
+ITM_0202,石英,原料,矿物,1.03,1x1,100,0-2,0,32,crafting material,equipped_or_context,natural
+ITM_0203,盐岩,原料,矿物,2.12,1x1,100,0-2,0,68,crafting material,equipped_or_context,natural
+ITM_0204,油页岩,原料,矿物,2.21,1x1,100,0-2,0,46,crafting material,equipped_or_context,natural
+ITM_0205,铝矿石,原料,矿物,2.12,1x1,100,0-2,0,49,crafting material,equipped_or_context,natural
+ITM_0206,锌矿石,原料,矿物,1.84,1x1,100,0-2,0,58,crafting material,equipped_or_context,natural
+ITM_0207,废矿渣,原料,矿物,1.11,1x1,100,0-2,0,47,crafting material,equipped_or_context,natural
+ITM_0208,水泥熟料,原料,矿物,1.69,1x1,100,0-2,0,61,crafting material,equipped_or_context,natural
+ITM_0209,矿用支撑梁,原料,矿物,1.49,1x1,100,0-2,0,49,crafting material,equipped_or_context,natural
+ITM_0210,原木,原料,林业,1.93,1x1,100,0-2,0,68,crafting material,equipped_or_context,natural
+ITM_0211,松木原木,原料,林业,2.16,1x1,100,0-2,0,71,crafting material,equipped_or_context,natural
+ITM_0212,橡木原木,原料,林业,1.18,1x1,100,0-2,0,49,crafting material,equipped_or_context,natural
+ITM_0213,枯木,原料,林业,2.01,1x1,100,0-2,0,69,crafting material,equipped_or_context,natural
+ITM_0214,树枝,原料,林业,1.5,1x1,100,0-2,0,36,crafting material,equipped_or_context,natural
+ITM_0215,树皮,原料,林业,1.91,1x1,100,0-2,0,49,crafting material,equipped_or_context,natural
+ITM_0216,木片,原料,林业,1.97,1x1,100,0-2,0,53,crafting material,equipped_or_context,natural
+ITM_0217,木板,原料,林业,2.0,1x1,100,0-2,0,68,crafting material,equipped_or_context,natural
+ITM_0218,木梁,原料,林业,1.91,1x1,100,0-2,0,46,crafting material,equipped_or_context,natural
+ITM_0219,木炭,原料,林业,1.32,1x1,100,0-2,0,52,fuel_kj and smelting/power/heat,equipped_or_context,natural
+ITM_0220,木浆,原料,林业,1.87,1x1,100,0-2,0,50,crafting material,equipped_or_context,natural
+ITM_0221,绳索,原料,林业,2.09,1x1,100,0-2,0,69,crafting material,equipped_or_context,natural
+ITM_0222,草纤维,原料,林业,1.58,1x1,100,0-2,0,38,crafting material,equipped_or_context,natural
+ITM_0223,树脂,原料,林业,2.02,1x1,100,0-2,0,55,crafting material,equipped_or_context,natural
+ITM_0224,干柴,原料,林业,1.42,1x1,100,0-2,0,55,fuel_kj and smelting/power/heat,equipped_or_context,natural
+ITM_0225,湿木柴,原料,林业,1.99,1x1,100,0-2,0,47,crafting material,equipped_or_context,natural
+ITM_0226,树苗,原料,林业,1.26,1x1,100,0-2,0,47,crafting material,equipped_or_context,natural
+ITM_0227,松树苗,原料,林业,1.22,1x1,100,0-2,0,35,crafting material,equipped_or_context,natural
+ITM_0228,橡树苗,原料,林业,1.33,1x1,100,0-2,0,29,crafting material,equipped_or_context,natural
+ITM_0229,铁锭,原料,工业,2.21,1x1,100,0-2,0,53,crafting material,equipped_or_context,natural
+ITM_0230,铜锭,原料,工业,1.42,1x1,100,0-2,0,45,crafting material,equipped_or_context,natural
+ITM_0231,钢锭,原料,工业,1.48,1x1,100,0-2,0,56,crafting material,equipped_or_context,natural
+ITM_0232,铅锭,原料,工业,1.66,1x1,100,0-2,0,34,crafting material,equipped_or_context,natural
+ITM_0233,铝锭,原料,工业,1.12,1x1,100,0-2,0,31,crafting material,equipped_or_context,natural
+ITM_0234,金属废料,原料,工业,1.2,1x1,100,0-2,0,33,crafting material,equipped_or_context,natural
+ITM_0235,螺丝,原料,工业,1.02,1x1,100,0-2,0,40,crafting material,equipped_or_context,natural
+ITM_0236,螺栓,原料,工业,1.53,1x1,100,0-2,0,54,crafting material,equipped_or_context,natural
+ITM_0237,螺母,原料,工业,1.98,1x1,100,0-2,0,53,crafting material,equipped_or_context,natural
+ITM_0238,轴承,原料,工业,1.75,1x1,100,0-2,0,52,crafting material,equipped_or_context,natural
+ITM_0239,齿轮,原料,工业,1.12,1x1,100,0-2,0,51,crafting material,equipped_or_context,natural
+ITM_0240,弹簧,原料,工业,1.71,1x1,100,0-2,0,43,crafting material,equipped_or_context,natural
+ITM_0241,橡胶,原料,工业,1.03,1x1,100,0-2,0,34,crafting material,equipped_or_context,natural
+ITM_0242,塑料片,原料,工业,0.98,1x1,100,0-2,0,49,crafting material,equipped_or_context,natural
+ITM_0243,胶水,原料,工业,2.0,1x1,100,0-2,0,62,crafting material,equipped_or_context,natural
+ITM_0244,电线,原料,工业,1.89,1x1,100,0-2,0,61,crafting material,equipped_or_context,natural
+ITM_0245,绝缘线,原料,工业,1.91,1x1,100,0-2,0,45,crafting material,equipped_or_context,natural
+ITM_0246,电路板,原料,工业,1.44,1x1,100,0-2,0,31,crafting material,equipped_or_context,natural
+ITM_0247,电池芯,原料,工业,2.18,1x1,100,0-2,0,73,crafting material,equipped_or_context,natural
+ITM_0248,锂电池模块,原料,工业,1.4,1x1,100,0-2,0,39,crafting material,equipped_or_context,natural
+ITM_0249,小型马达,原料,工业,1.82,1x1,100,0-2,0,40,crafting material,equipped_or_context,natural
+ITM_0250,电磁线圈,原料,工业,1.89,1x1,100,0-2,0,47,crafting material,equipped_or_context,natural
+ITM_0251,太阳能电池片,原料,工业,1.62,1x1,100,0-2,0,54,crafting material,equipped_or_context,natural
+ITM_0252,玻璃片,原料,工业,1.5,1x1,100,0-2,0,43,crafting material,equipped_or_context,natural
+ITM_0253,玻璃板,原料,工业,1.86,1x1,100,0-2,0,55,crafting material,equipped_or_context,natural
+ITM_0254,橡胶密封圈,原料,工业,1.14,1x1,100,0-2,0,36,crafting material,equipped_or_context,natural
+ITM_0255,机油,原料,工业,1.82,1x1,100,0-2,0,49,crafting material,equipped_or_context,natural
+ITM_0256,润滑脂,原料,工业,1.84,1x1,100,0-2,0,65,crafting material,equipped_or_context,natural
+ITM_0257,燃油,原料,工业,1.2,1x1,100,0-2,0,43,crafting material,equipped_or_context,natural
+ITM_0258,木钉,原料,工业,1.36,1x1,100,0-2,0,45,crafting material,equipped_or_context,natural
+ITM_0259,铁钉,原料,工业,2.04,1x1,100,0-2,0,50,crafting material,equipped_or_context,natural
+ITM_0260,水泥,原料,工业,1.34,1x1,100,0-2,0,40,crafting material,equipped_or_context,natural
+ITM_0261,混凝土,原料,工业,1.98,1x1,100,0-2,0,59,crafting material,equipped_or_context,natural
+ITM_0262,砖块,原料,工业,1.81,1x1,100,0-2,0,51,crafting material,equipped_or_context,natural
+ITM_0263,碎布,原料,工业,1.54,1x1,100,0-2,0,52,crafting material,equipped_or_context,natural
+ITM_0264,布料,原料,工业,1.25,1x1,100,0-2,0,41,crafting material,equipped_or_context,natural
+ITM_0265,皮革,原料,工业,1.99,1x1,100,0-2,0,65,crafting material,equipped_or_context,natural
+ITM_0266,胶带,原料,工业,1.91,1x1,100,0-2,0,60,crafting material,equipped_or_context,natural
+ITM_0267,纱布卷,原料,工业,1.08,1x1,100,0-2,0,38,body-part bleeding control; action time 2-5s,equipped_or_context,natural
+ITM_0268,火药,原料,工业,1.82,1x1,100,0-2,0,56,crafting material,equipped_or_context,natural
+ITM_0269,弹壳,原料,工业,1.4,1x1,100,0-2,0,55,crafting material,equipped_or_context,natural
+ITM_0270,火帽,原料,工业,2.19,1x1,100,0-2,0,51,crafting material,equipped_or_context,natural
+ITM_0271,木墙,建筑,结构,7.33,2x3,10,0-2,0,154,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0272,木窗框,建筑,结构,8.01,2x3,10,0-2,0,165,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0273,木门,建筑,结构,4.02,2x3,10,0-2,0,88,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0274,加固木门,建筑,结构,8.92,2x3,10,0-2,0,198,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0275,木地板,建筑,结构,8.23,2x3,10,0-2,0,167,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0276,木屋顶,建筑,结构,6.22,2x3,10,0-2,0,153,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0277,木楼梯,建筑,结构,7.11,2x3,10,0-2,0,149,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0278,木栅栏,建筑,结构,7.56,2x3,10,0-2,0,164,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0279,铁栅栏,建筑,结构,6.42,2x3,10,0-2,0,136,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0280,铁门,建筑,结构,4.65,2x3,10,0-2,0,116,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0281,加固铁门,建筑,结构,3.93,2x3,10,0-2,0,103,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0282,金属墙,建筑,结构,8.29,2x3,10,0-2,0,194,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0283,金属屋顶,建筑,结构,4.44,2x3,10,0-2,0,102,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0284,混凝土墙,建筑,结构,5.02,2x3,10,0-2,0,126,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0285,混凝土柱,建筑,结构,8.79,2x3,10,0-2,0,192,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0286,水泥地面,建筑,结构,6.27,2x3,10,0-2,0,143,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0287,铁丝网,建筑,结构,5.17,2x3,10,0-2,0,131,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0288,木路障,建筑,结构,4.52,2x3,10,0-2,0,95,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0289,金属路障,建筑,结构,7.99,2x3,10,0-2,0,181,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0290,沙袋,建筑,结构,6.61,2x3,10,0-2,0,150,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0291,瞭望塔底座,建筑,结构,6.94,2x3,10,0-2,0,163,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0292,瞭望塔楼梯,建筑,结构,8.45,2x3,10,0-2,0,189,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0293,瞭望塔平台,建筑,结构,8.06,2x3,10,0-2,0,190,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0294,炮塔基座,建筑,结构,6.47,2x3,10,0-2,0,156,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0295,雨水收集器,建筑,结构,8.52,2x3,10,0-2,0,185,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0296,储水箱,建筑,结构,8.48,2x3,10,0-2,0,193,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0297,排水管,建筑,结构,8.29,2x3,10,0-2,0,180,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0298,防水布,建筑,结构,5.22,2x3,10,0-2,0,112,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0299,木箱,建筑,结构,8.18,2x3,10,0-2,0,172,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0300,金属箱,建筑,结构,7.81,2x3,10,0-2,0,173,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0301,货架,建筑,结构,6.37,2x3,10,0-2,0,135,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0302,汽油发电机,建筑,供电,5.3,2x3,10,0-2,0,109,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0303,燃烧式发电炉,建筑,供电,7.54,2x3,10,0-2,0,158,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0304,太阳能板,建筑,供电,5.29,2x3,10,0-2,0,116,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0305,太阳能阵列,建筑,供电,8.45,2x3,10,0-2,0,172,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0306,电力中继器,建筑,供电,4.61,2x3,10,0-2,0,100,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0307,锂电池组,建筑,供电,5.85,2x3,10,0-2,0,122,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0308,大型蓄电柜,建筑,供电,7.5,2x3,10,0-2,0,153,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0309,电线包,建筑,供电,6.02,2x3,10,0-2,0,131,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0310,电闸盒,建筑,供电,6.67,2x3,10,0-2,0,147,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0311,吊灯,建筑,供电,4.22,2x3,10,0-2,0,111,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0312,壁灯,建筑,供电,6.04,2x3,10,0-2,0,149,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0313,探照灯,建筑,供电,7.83,2x3,10,0-2,0,179,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0314,电动哨塔,建筑,供电,4.0,2x3,10,0-2,0,109,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0315,自动炮台,建筑,供电,7.8,2x3,10,0-2,0,169,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0316,供电取暖器,建筑,供电,6.33,2x3,10,0-2,0,138,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0317,便携电暖器,建筑,供电,5.42,2x3,10,0-2,0,121,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0318,冰柜,建筑,供电,8.25,2x3,10,0-2,0,192,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0319,电冰箱,建筑,供电,6.04,2x3,10,0-2,0,144,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0320,电磁炉,建筑,供电,7.65,2x3,10,0-2,0,179,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0321,电动水泵,建筑,供电,6.98,2x3,10,0-2,0,147,place via ConstructionSystem,equipped_or_context,mixed
+ITM_0322,棉T恤,服装,内层,0.85,2x2,1,0-2,100,26,thermal/wetness layered,equipped_or_context,mixed
+ITM_0323,长袖衬衣,服装,内层,0.82,2x2,1,0-2,100,17,thermal/wetness layered,equipped_or_context,mixed
+ITM_0324,保暖内衣,服装,内层,0.78,2x2,1,0-2,100,37,thermal/wetness layered,equipped_or_context,mixed
+ITM_0325,羊毛内衣,服装,内层,0.98,2x2,1,0-2,100,32,thermal/wetness layered,equipped_or_context,mixed
+ITM_0326,背心,服装,内层,1.01,2x2,1,0-2,100,47,thermal/wetness layered,equipped_or_context,mixed
+ITM_0327,运动内衣,服装,内层,0.84,2x2,1,0-2,100,21,thermal/wetness layered,equipped_or_context,mixed
+ITM_0328,短裤,服装,内层,1.19,2x2,1,0-2,100,41,thermal/wetness layered,equipped_or_context,mixed
+ITM_0329,棉内裤,服装,内层,0.54,2x2,1,0-2,100,23,thermal/wetness layered,equipped_or_context,mixed
+ITM_0330,厚袜子,服装,内层,0.92,2x2,1,0-2,100,40,thermal/wetness layered,equipped_or_context,mixed
+ITM_0331,薄袜子,服装,内层,0.54,2x2,1,0-2,100,31,thermal/wetness layered,equipped_or_context,mixed
+ITM_0332,工作衬衫,服装,内层,0.81,2x2,1,0-2,100,44,thermal/wetness layered,equipped_or_context,mixed
+ITM_0333,护士制服上衣,服装,内层,0.83,2x2,1,0-2,100,18,thermal/wetness layered,equipped_or_context,mixed
+ITM_0334,牛仔裤,服装,外层,0.7,2x2,1,0-2,100,25,thermal/wetness layered,equipped_or_context,mixed
+ITM_0335,工装裤,服装,外层,0.66,2x2,1,0-2,100,24,thermal/wetness layered,equipped_or_context,mixed
+ITM_0336,运动裤,服装,外层,0.75,2x2,1,0-2,100,44,thermal/wetness layered,equipped_or_context,mixed
+ITM_0337,军裤,服装,外层,0.78,2x2,1,0-2,100,40,thermal/wetness layered,equipped_or_context,mixed
+ITM_0338,棉夹克,服装,外层,1.17,2x2,1,0-2,100,37,thermal/wetness layered,equipped_or_context,mixed
+ITM_0339,皮夹克,服装,外层,0.69,2x2,1,0-2,100,16,thermal/wetness layered,equipped_or_context,mixed
+ITM_0340,冲锋衣,服装,外层,0.84,2x2,1,0-2,100,40,thermal/wetness layered,equipped_or_context,mixed
+ITM_0341,雨衣,服装,外层,0.89,2x2,1,0-2,100,29,thermal/wetness layered,equipped_or_context,mixed
+ITM_0342,羽绒服,服装,外层,0.67,2x2,1,0-2,100,16,thermal/wetness layered,equipped_or_context,mixed
+ITM_0343,冬季大衣,服装,外层,1.05,2x2,1,0-2,100,42,thermal/wetness layered,equipped_or_context,mixed
+ITM_0344,军用外套,服装,外层,0.55,2x2,1,0-2,100,12,thermal/wetness layered,equipped_or_context,mixed
+ITM_0345,医护外套,服装,外层,1.17,2x2,1,0-2,100,30,thermal/wetness layered,equipped_or_context,mixed
+ITM_0346,消防外套,服装,外层,1.09,2x2,1,0-2,100,41,thermal/wetness layered,equipped_or_context,mixed
+ITM_0347,工作连体服,服装,外层,0.62,2x2,1,0-2,100,17,thermal/wetness layered,equipped_or_context,mixed
+ITM_0348,防水裤,服装,外层,0.84,2x2,1,0-2,100,20,thermal/wetness layered,equipped_or_context,mixed
+ITM_0349,登山裤,服装,外层,0.9,2x2,1,0-2,100,25,thermal/wetness layered,equipped_or_context,mixed
+ITM_0350,工地反光衣,服装,外层,0.84,2x2,1,0-2,100,25,thermal/wetness layered,equipped_or_context,mixed
+ITM_0351,连帽卫衣,服装,外层,1.04,2x2,1,0-2,100,26,thermal/wetness layered,equipped_or_context,mixed
+ITM_0352,睡衣,服装,外层,0.93,2x2,1,0-2,100,42,thermal/wetness layered,equipped_or_context,mixed
+ITM_0353,雨裤,服装,外层,1.01,2x2,1,0-2,100,45,thermal/wetness layered,equipped_or_context,mixed
+ITM_0354,防风外套,服装,外层,1.08,2x2,1,0-2,100,31,thermal/wetness layered,equipped_or_context,mixed
+ITM_0355,围巾,服装,外层,0.59,2x2,1,0-2,100,12,thermal/wetness layered,equipped_or_context,mixed
+ITM_0356,防寒帽,服装,外层,1.15,2x2,1,0-2,100,42,thermal/wetness layered,equipped_or_context,mixed
+ITM_0357,棒球帽,服装,外层,0.98,2x2,1,0-2,100,32,thermal/wetness layered,equipped_or_context,mixed
+ITM_0358,军帽,服装,外层,0.79,2x2,1,0-2,100,38,thermal/wetness layered,equipped_or_context,mixed
+ITM_0359,自行车头盔,装备,盔甲,1.47,2x2,1,0-4,100,48,defense/container/weight,equipped_or_context,mixed
+ITM_0360,摩托车头盔,装备,盔甲,2.23,2x2,1,0-4,100,65,defense/container/weight,equipped_or_context,mixed
+ITM_0361,军用头盔,装备,盔甲,1.54,2x2,1,0-4,100,53,defense/container/weight,equipped_or_context,mixed
+ITM_0362,防弹头盔,装备,盔甲,2.35,2x2,1,0-4,100,75,defense/container/weight,equipped_or_context,mixed
+ITM_0363,皮护臂,装备,盔甲,2.22,2x2,1,0-4,100,70,defense/container/weight,equipped_or_context,mixed
+ITM_0364,金属护臂,装备,盔甲,1.36,2x2,1,0-4,100,46,defense/container/weight,equipped_or_context,mixed
+ITM_0365,战术手套,装备,盔甲,2.37,2x2,1,0-4,100,59,defense/container/weight,equipped_or_context,mixed
+ITM_0366,耐割手套,装备,盔甲,1.99,2x2,1,0-4,100,61,defense/container/weight,equipped_or_context,mixed
+ITM_0367,防弹背心,装备,盔甲,1.74,2x2,1,0-4,100,51,defense/container/weight,equipped_or_context,mixed
+ITM_0368,重型防弹衣,装备,盔甲,2.16,2x2,1,0-4,100,44,defense/container/weight,equipped_or_context,mixed
+ITM_0369,防咬袖套,装备,盔甲,2.47,2x2,1,0-4,100,76,defense/container/weight,equipped_or_context,mixed
+ITM_0370,护膝,装备,盔甲,1.92,2x2,1,0-4,100,52,defense/container/weight,equipped_or_context,mixed
+ITM_0371,护腿,装备,盔甲,2.64,2x2,1,0-4,100,73,defense/container/weight,equipped_or_context,mixed
+ITM_0372,战术靴,装备,盔甲,2.53,2x2,1,0-4,100,65,defense/container/weight,equipped_or_context,mixed
+ITM_0373,防水靴,装备,盔甲,2.25,2x2,1,0-4,100,59,defense/container/weight,equipped_or_context,mixed
+ITM_0374,防毒面具,装备,盔甲,1.44,2x2,1,0-4,100,45,defense/container/weight,equipped_or_context,mixed
+ITM_0375,呼吸过滤器,装备,盔甲,2.65,2x2,1,0-4,100,62,defense/container/weight,equipped_or_context,mixed
+ITM_0376,护目镜,装备,盔甲,2.11,2x2,1,0-4,100,72,defense/container/weight,equipped_or_context,mixed
+ITM_0377,防护面罩,装备,盔甲,1.99,2x2,1,0-4,100,55,defense/container/weight,equipped_or_context,mixed
+ITM_0378,矿工面罩,装备,盔甲,1.88,2x2,1,0-4,100,64,defense/container/weight,equipped_or_context,mixed
+ITM_0379,小腰包,装备,容器,2.29,2x3,1,0-4,100,54,defense/container/weight,equipped_or_context,mixed
+ITM_0380,战术腰包,装备,容器,1.66,2x3,1,0-4,100,41,defense/container/weight,equipped_or_context,mixed
+ITM_0381,校园背包,装备,容器,2.44,2x3,1,0-4,100,51,defense/container/weight,equipped_or_context,mixed
+ITM_0382,登山背包,装备,容器,1.6,2x3,1,0-4,100,47,defense/container/weight,equipped_or_context,mixed
+ITM_0383,军用背包,装备,容器,1.54,2x3,1,0-4,100,45,defense/container/weight,equipped_or_context,mixed
+ITM_0384,大型远征包,装备,容器,2.04,2x3,1,0-4,100,62,defense/container/weight,equipped_or_context,mixed
+ITM_0385,简易医疗包,装备,容器,1.75,2x3,1,0-4,100,36,defense/container/weight,equipped_or_context,mixed
+ITM_0386,战术背心,装备,容器,1.93,2x3,1,0-4,100,49,defense/container/weight,equipped_or_context,mixed
+ITM_0387,弹药袋,装备,容器,1.45,2x3,1,0-4,100,36,defense/container/weight,equipped_or_context,mixed
+ITM_0388,工具袋,装备,容器,1.71,2x3,1,0-4,100,43,defense/container/weight,equipped_or_context,mixed
+ITM_0389,密封防水袋,装备,容器,1.69,2x3,1,0-4,100,62,defense/container/weight,equipped_or_context,mixed
+ITM_0390,旅行箱,装备,容器,2.08,2x3,1,0-4,100,70,defense/container/weight,equipped_or_context,mixed
+ITM_0391,工具箱,装备,容器,1.59,2x3,1,0-4,100,32,defense/container/weight,equipped_or_context,mixed
+ITM_0392,背带水壶,装备,容器,1.96,2x3,1,0-4,100,46,defense/container/weight,equipped_or_context,mixed
+ITM_0393,钥匙串,装备,容器,1.3,2x3,1,0-4,100,50,defense/container/weight,equipped_or_context,mixed
+ITM_0394,9毫米手枪,武器,远程,2.79,2x5,1,0-4,100,73,handheld combat,equipped_or_context,police
+ITM_0395,45口径手枪,武器,远程,3.62,2x5,1,0-4,100,95,handheld combat,equipped_or_context,police
+ITM_0396,消音手枪,武器,远程,2.95,2x5,1,0-4,100,82,handheld combat,equipped_or_context,police
+ITM_0397,冲锋枪,武器,远程,2.99,2x5,1,0-4,100,85,handheld combat,equipped_or_context,police
+ITM_0398,紧凑型冲锋枪,武器,远程,1.86,2x5,1,0-4,100,47,handheld combat,equipped_or_context,police
+ITM_0399,突击步枪,武器,远程,2.35,2x5,1,0-4,100,70,handheld combat,equipped_or_context,police
+ITM_0400,卡宾步枪,武器,远程,2.4,2x5,1,0-4,100,70,handheld combat,equipped_or_context,police
+ITM_0401,半自动步枪,武器,远程,3.2,2x5,1,0-4,100,80,handheld combat,equipped_or_context,police
+ITM_0402,栓动步枪,武器,远程,3.14,2x5,1,0-4,100,74,handheld combat,equipped_or_context,police
+ITM_0403,狙击步枪,武器,远程,2.83,2x5,1,0-4,100,80,handheld combat,equipped_or_context,police
+ITM_0404,双管霰弹枪,武器,远程,3.13,2x5,1,0-4,100,74,handheld combat,equipped_or_context,police
+ITM_0405,泵动霰弹枪,武器,远程,3.49,2x5,1,0-4,100,78,handheld combat,equipped_or_context,police
+ITM_0406,自动霰弹枪,武器,远程,2.55,2x5,1,0-4,100,59,handheld combat,equipped_or_context,police
+ITM_0407,轻机枪,武器,远程,2.11,2x5,1,0-4,100,49,handheld combat,equipped_or_context,police
+ITM_0408,弩,武器,远程,2.57,2x5,1,0-4,100,75,handheld combat,equipped_or_context,police
+ITM_0409,猎弓,武器,远程,3.1,2x5,1,0-4,100,87,handheld combat,equipped_or_context,police
+ITM_0410,信号枪,武器,远程,3.46,2x5,1,0-4,100,76,handheld combat,equipped_or_context,police
+ITM_0411,厨房刀,武器,近战,2.33,1x4,1,0-4,100,62,handheld combat,equipped_or_context,police
+ITM_0412,猎刀,武器,近战,2.48,1x4,1,0-4,100,68,handheld combat,equipped_or_context,police
+ITM_0413,战术刀,武器,近战,4.14,1x4,1,0-4,100,99,handheld combat,equipped_or_context,police
+ITM_0414,棒球棍,武器,近战,3.24,1x4,1,0-4,100,68,handheld combat,equipped_or_context,police
+ITM_0415,警棍,武器,近战,3.8,1x4,1,0-4,100,86,handheld combat,equipped_or_context,police
+ITM_0416,铁棍,武器,近战,2.36,1x4,1,0-4,100,53,handheld combat,equipped_or_context,police
+ITM_0417,砍刀,武器,近战,2.54,1x4,1,0-4,100,73,handheld combat,equipped_or_context,police
+ITM_0418,消防斧武器,武器,近战,3.09,1x4,1,0-4,100,70,handheld combat,equipped_or_context,police
+ITM_0419,长柄斧,武器,近战,1.93,1x4,1,0-4,100,40,handheld combat,equipped_or_context,police
+ITM_0420,战锤,武器,近战,3.14,1x4,1,0-4,100,85,handheld combat,equipped_or_context,police
+ITM_0421,长矛,武器,近战,4.07,1x4,1,0-4,100,102,handheld combat,equipped_or_context,police
+ITM_0422,简易长矛,武器,近战,3.89,1x4,1,0-4,100,93,handheld combat,equipped_or_context,police
+ITM_0423,开山刀,武器,近战,2.06,1x4,1,0-4,100,42,handheld combat,equipped_or_context,police
+ITM_0424,铁锹武器,武器,近战,3.19,1x4,1,0-4,100,79,handheld combat,equipped_or_context,police
+ITM_0425,战术短斧,武器,近战,2.96,1x4,1,0-4,100,70,handheld combat,equipped_or_context,police
+ITM_0426,9毫米子弹,弹药,弹药,0.02,1x1,60,0-2,0,2,weapon compatible ammo,equipped_or_context,mixed
+ITM_0427,45口径子弹,弹药,弹药,0.03,1x1,60,0-2,0,28,weapon compatible ammo,equipped_or_context,mixed
+ITM_0428,556子弹,弹药,弹药,0.03,1x1,60,0-2,0,27,weapon compatible ammo,equipped_or_context,mixed
+ITM_0429,762子弹,弹药,弹药,0.02,1x1,60,0-2,0,16,weapon compatible ammo,equipped_or_context,mixed
+ITM_0430,12号霰弹,弹药,弹药,0.02,1x1,60,0-2,0,21,weapon compatible ammo,equipped_or_context,mixed
+ITM_0431,猎枪独头弹,弹药,弹药,0.04,1x1,60,0-2,0,5,weapon compatible ammo,equipped_or_context,mixed
+ITM_0432,22口径子弹,弹药,弹药,0.02,1x1,60,0-2,0,19,weapon compatible ammo,equipped_or_context,mixed
+ITM_0433,弩箭,弹药,弹药,0.04,1x1,60,0-2,0,3,weapon compatible ammo,equipped_or_context,mixed
+ITM_0434,普通箭,弹药,弹药,0.04,1x1,60,0-2,0,4,weapon compatible ammo,equipped_or_context,mixed
+ITM_0435,穿甲弹,弹药,弹药,0.03,1x1,60,0-2,0,14,weapon compatible ammo,equipped_or_context,mixed
+ITM_0436,曳光弹,弹药,弹药,0.03,1x1,60,0-2,0,26,weapon compatible ammo,equipped_or_context,mixed
+ITM_0437,空弹匣,弹药,弹药,0.04,1x1,60,0-2,0,25,weapon compatible ammo,equipped_or_context,mixed
+ITM_0438,9毫米弹匣,弹药,弹药,0.03,1x1,60,0-2,0,15,weapon compatible ammo,equipped_or_context,mixed
+ITM_0439,556弹匣,弹药,弹药,0.04,1x1,60,0-2,0,10,weapon compatible ammo,equipped_or_context,mixed
+ITM_0440,762弹匣,弹药,弹药,0.04,1x1,60,0-2,0,14,weapon compatible ammo,equipped_or_context,mixed
+ITM_0441,12号弹仓组件,弹药,弹药,0.03,1x1,60,0-2,0,20,weapon compatible ammo,equipped_or_context,mixed
+ITM_0442,小型红点瞄具,枪械,配件,0.49,1x2,1,0-2,0,33,attachment stat modifier,equipped_or_context,military
+ITM_0443,全息瞄具,枪械,配件,0.51,1x2,1,0-2,0,35,attachment stat modifier,equipped_or_context,military
+ITM_0444,三倍镜,枪械,配件,0.58,1x2,1,0-2,0,18,attachment stat modifier,equipped_or_context,military
+ITM_0445,四倍镜,枪械,配件,0.61,1x2,1,0-2,0,15,attachment stat modifier,equipped_or_context,military
+ITM_0446,八倍镜,枪械,配件,0.55,1x2,1,0-2,0,17,attachment stat modifier,equipped_or_context,military
+ITM_0447,机械瞄具,枪械,配件,0.78,1x2,1,0-2,0,21,attachment stat modifier,equipped_or_context,military
+ITM_0448,战术枪灯,枪械,配件,0.46,1x2,1,0-2,0,24,attachment stat modifier,equipped_or_context,military
+ITM_0449,激光指示器,枪械,配件,0.87,1x2,1,0-2,0,33,attachment stat modifier,equipped_or_context,military
+ITM_0450,垂直握把,枪械,配件,0.63,1x2,1,0-2,0,20,attachment stat modifier,equipped_or_context,military
+ITM_0451,斜角握把,枪械,配件,0.63,1x2,1,0-2,0,22,attachment stat modifier,equipped_or_context,military
+ITM_0452,轻型枪托,枪械,配件,0.87,1x2,1,0-2,0,32,attachment stat modifier,equipped_or_context,military
+ITM_0453,重型枪托,枪械,配件,0.5,1x2,1,0-2,0,18,attachment stat modifier,equipped_or_context,military
+ITM_0454,短枪管,枪械,配件,1.0,1x2,1,0-2,0,46,attachment stat modifier,equipped_or_context,military
+ITM_0455,长枪管,枪械,配件,0.93,1x2,1,0-2,0,37,attachment stat modifier,equipped_or_context,military
+ITM_0456,消音器,枪械,配件,0.85,1x2,1,0-2,0,47,attachment stat modifier,equipped_or_context,military
+ITM_0457,制退器,枪械,配件,0.57,1x2,1,0-2,0,15,attachment stat modifier,equipped_or_context,military
+ITM_0458,枪口补偿器,枪械,配件,0.78,1x2,1,0-2,0,36,attachment stat modifier,equipped_or_context,military
+ITM_0459,标准护木,枪械,配件,0.54,1x2,1,0-2,0,19,attachment stat modifier,equipped_or_context,military
+ITM_0460,扩展护木,枪械,配件,0.95,1x2,1,0-2,0,22,attachment stat modifier,equipped_or_context,military
+ITM_0461,加长弹匣,枪械,配件,0.49,1x2,1,0-2,0,35,attachment stat modifier,equipped_or_context,military
+ITM_0462,快速弹匣,枪械,配件,0.64,1x2,1,0-2,0,36,attachment stat modifier,equipped_or_context,military
+ITM_0463,枪械导轨,枪械,配件,0.95,1x2,1,0-2,0,49,attachment stat modifier,equipped_or_context,military
+ITM_0464,瞄具转接座,枪械,配件,0.63,1x2,1,0-2,0,16,attachment stat modifier,equipped_or_context,military
+ITM_0465,枪背带,枪械,配件,0.73,1x2,1,0-2,0,24,attachment stat modifier,equipped_or_context,military
+ITM_0466,枪械清洁套件,枪械,配件,0.87,1x2,1,0-2,0,26,attachment stat modifier,equipped_or_context,military
+ITM_0467,汽车电瓶,载具,零件,5.38,2x2,2,0-4,100,123,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0468,重型电瓶,载具,零件,5.11,2x2,2,0-4,100,122,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0469,发动机零件,载具,零件,3.42,2x2,2,0-4,100,82,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0470,散热器,载具,零件,6.37,2x2,2,0-4,100,147,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0471,水泵总成,载具,零件,4.31,2x2,2,0-4,100,89,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0472,燃油泵,载具,零件,4.22,2x2,2,0-4,100,106,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0473,油箱,载具,零件,6.8,2x2,2,0-4,100,155,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0474,机油滤清器,载具,零件,5.75,2x2,2,0-4,100,116,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0475,空气滤芯,载具,零件,7.5,2x2,2,0-4,100,172,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0476,汽车轮胎,载具,零件,6.74,2x2,2,0-4,100,153,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0477,越野轮胎,载具,零件,3.42,2x2,2,0-4,100,93,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0478,雪地轮胎,载具,零件,3.99,2x2,2,0-4,100,96,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0479,备用轮毂,载具,零件,6.02,2x2,2,0-4,100,150,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0480,刹车片,载具,零件,4.43,2x2,2,0-4,100,107,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0481,刹车盘,载具,零件,5.1,2x2,2,0-4,100,129,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0482,避震器,载具,零件,5.34,2x2,2,0-4,100,109,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0483,传动轴,载具,零件,5.25,2x2,2,0-4,100,119,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0484,车窗玻璃,载具,零件,4.67,2x2,2,0-4,100,115,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0485,车门,载具,零件,3.69,2x2,2,0-4,100,79,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0486,挡风玻璃,载具,零件,4.65,2x2,2,0-4,100,116,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0487,车灯,载具,零件,5.36,2x2,2,0-4,100,129,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0488,雨刷,载具,零件,7.27,2x2,2,0-4,100,172,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0489,汽车钥匙胚,载具,零件,6.48,2x2,2,0-4,100,131,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0490,火花塞,载具,零件,5.18,2x2,2,0-4,100,114,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0491,皮带,载具,零件,4.32,2x2,2,0-4,100,90,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0492,排气管,载具,零件,7.37,2x2,2,0-4,100,160,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0493,消音排气管,载具,零件,6.93,2x2,2,0-4,100,165,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0494,车载收音机,载具,零件,7.45,2x2,2,0-4,100,171,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0495,车载储物箱,载具,零件,6.94,2x2,2,0-4,100,153,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0496,拖车连接器,载具,零件,5.01,2x2,2,0-4,100,107,VehiclePartState repair/replace,equipped_or_context,garage
+ITM_0497,单人床,家具,可搜刮,40.9,3x3,1,0-2,100,838,placeable/container,equipped_or_context,room
+ITM_0498,双人床,家具,可搜刮,48.48,3x3,1,0-2,100,990,placeable/container,equipped_or_context,room
+ITM_0499,折叠床,家具,可搜刮,38.48,3x3,1,0-2,100,771,placeable/container,equipped_or_context,room
+ITM_0500,床头柜,家具,可搜刮,30.88,3x3,1,0-2,100,635,placeable/container,equipped_or_context,room
+ITM_0501,衣柜,家具,可搜刮,28.55,3x3,1,0-2,100,581,placeable/container,equipped_or_context,room
+ITM_0502,书桌,家具,可搜刮,38.35,3x3,1,0-2,100,790,placeable/container,equipped_or_context,room
+ITM_0503,办公桌,家具,可搜刮,39.83,3x3,1,0-2,100,797,placeable/container,equipped_or_context,room
+ITM_0504,餐桌,家具,可搜刮,55.4,3x3,1,0-2,100,1128,placeable/container,equipped_or_context,room
+ITM_0505,餐椅,家具,可搜刮,49.85,3x3,1,0-2,100,1020,placeable/container,equipped_or_context,room
+ITM_0506,沙发,家具,可搜刮,29.42,3x3,1,0-2,100,606,placeable/container,equipped_or_context,room
+ITM_0507,茶几,家具,可搜刮,24.8,3x3,1,0-2,100,510,placeable/container,equipped_or_context,room
+ITM_0508,书架,家具,可搜刮,27.35,3x3,1,0-2,100,574,placeable/container,equipped_or_context,room
+ITM_0509,橱柜,家具,可搜刮,53.48,3x3,1,0-2,100,1084,placeable/container,equipped_or_context,room
+ITM_0510,吊柜,家具,可搜刮,54.57,3x3,1,0-2,100,1112,placeable/container,equipped_or_context,room
+ITM_0511,冰箱家具,家具,可搜刮,50.9,3x3,1,0-2,100,1034,placeable/container,equipped_or_context,room
+ITM_0512,厨灶,家具,可搜刮,54.1,3x3,1,0-2,100,1092,placeable/container,equipped_or_context,room
+ITM_0513,洗手盆,家具,可搜刮,40.6,3x3,1,0-2,100,821,placeable/container,equipped_or_context,room
+ITM_0514,浴缸,家具,可搜刮,37.62,3x3,1,0-2,100,768,placeable/container,equipped_or_context,room
+ITM_0515,淋浴间,家具,可搜刮,55.62,3x3,1,0-2,100,1120,placeable/container,equipped_or_context,room
+ITM_0516,马桶,家具,可搜刮,38.92,3x3,1,0-2,100,783,placeable/container,equipped_or_context,room
+ITM_0517,洗衣台,家具,可搜刮,36.6,3x3,1,0-2,100,762,placeable/container,equipped_or_context,room
+ITM_0518,储物架,家具,可搜刮,43.48,3x3,1,0-2,100,893,placeable/container,equipped_or_context,room
+ITM_0519,药柜,家具,可搜刮,52.4,3x3,1,0-2,100,1076,placeable/container,equipped_or_context,room
+ITM_0520,金属柜,家具,可搜刮,26.6,3x3,1,0-2,100,557,placeable/container,equipped_or_context,room
+ITM_0521,武器柜,家具,可搜刮,49.55,3x3,1,0-2,100,1005,placeable/container,equipped_or_context,room
+ITM_0522,工具柜,家具,可搜刮,35.2,3x3,1,0-2,100,730,placeable/container,equipped_or_context,room
+ITM_0523,医院病床,家具,可搜刮,40.55,3x3,1,0-2,100,838,placeable/container,equipped_or_context,room
+ITM_0524,收银柜台,家具,可搜刮,24.45,3x3,1,0-2,100,513,placeable/container,equipped_or_context,room
+ITM_0525,货架家具,家具,可搜刮,33.9,3x3,1,0-2,100,697,placeable/container,equipped_or_context,room
+ITM_0526,车库工作架,家具,可搜刮,42.85,3x3,1,0-2,100,879,placeable/container,equipped_or_context,room
+ITM_0527,打火机,杂项,生存,0.64,1x2,10,0-2,0,17,utility action,quick_only,mixed
+ITM_0528,火柴,杂项,生存,0.62,1x2,10,0-2,0,28,utility action,quick_only,mixed
+ITM_0529,火把,杂项,生存,0.57,1x2,10,0-2,0,29,utility action,quick_only,mixed
+ITM_0530,手电筒,杂项,生存,0.78,1x2,10,0-2,0,28,utility action,quick_only,mixed
+ITM_0531,强光手电,杂项,生存,0.62,1x2,10,0-2,0,23,utility action,quick_only,mixed
+ITM_0532,望远镜,杂项,生存,0.83,1x2,10,0-2,0,39,utility action,quick_only,mixed
+ITM_0533,夜视镜,杂项,生存,0.51,1x2,10,0-2,0,23,utility action,quick_only,mixed
+ITM_0534,无线电,杂项,生存,0.51,1x2,10,0-2,0,35,utility action,quick_only,mixed
+ITM_0535,备用电池,杂项,生存,0.6,1x2,10,0-2,0,23,utility action,quick_only,mixed
+ITM_0536,防水火柴,杂项,生存,0.77,1x2,10,0-2,0,38,utility action,quick_only,mixed
+ITM_0537,燃烧瓶,杂项,生存,0.86,1x2,10,0-2,0,30,utility action,quick_only,mixed
+ITM_0538,信号棒,杂项,生存,0.59,1x2,10,0-2,0,33,utility action,quick_only,mixed
+ITM_0539,地图,杂项,生存,0.79,1x2,10,0-2,0,36,utility action,quick_only,mixed
+ITM_0540,指南针,杂项,生存,0.89,1x2,10,0-2,0,33,utility action,quick_only,mixed
+ITM_0541,雨伞,杂项,生存,0.88,1x2,10,0-2,0,22,utility action,quick_only,mixed
+ITM_0542,滤水片,杂项,生存,0.65,1x2,10,0-2,0,32,utility action,quick_only,mixed
+ITM_0543,肥皂,杂项,生存,0.56,1x2,10,0-2,0,15,utility action,quick_only,mixed
+ITM_0544,洗衣粉,杂项,生存,0.84,1x2,10,0-2,0,31,utility action,quick_only,mixed
+ITM_0545,酒精,杂项,生存,0.44,1x2,10,0-2,0,38,utility action,quick_only,mixed
+ITM_0546,洗发水,杂项,生存,0.62,1x2,10,0-2,0,36,utility action,quick_only,mixed
+ITM_0547,毛巾,杂项,生存,0.46,1x2,10,0-2,0,37,utility action,quick_only,mixed
+ITM_0548,干毛巾,杂项,生存,0.72,1x2,10,0-2,0,19,utility action,quick_only,mixed
+ITM_0549,防水睡袋,杂项,生存,0.43,1x2,10,0-2,0,34,utility action,quick_only,mixed
+ITM_0550,野营帐篷,杂项,生存,0.88,1x2,10,0-2,0,28,utility action,quick_only,mixed
+ITM_0551,便携炉灶,杂项,生存,0.71,1x2,10,0-2,0,27,utility action,quick_only,mixed
+ITM_0552,锅,杂项,生存,0.72,1x2,10,0-2,0,42,utility action,quick_only,mixed
+ITM_0553,平底锅,杂项,生存,0.56,1x2,10,0-2,0,33,utility action,quick_only,mixed
+ITM_0554,切菜刀,杂项,生存,0.83,1x2,10,0-2,0,29,utility action,quick_only,mixed
+ITM_0555,餐盘,杂项,生存,0.88,1x2,10,0-2,0,38,utility action,quick_only,mixed
+ITM_0556,杯子,杂项,生存,0.76,1x2,10,0-2,0,40,utility action,quick_only,mixed
+ITM_0557,鱼钩,杂项,生存,0.64,1x2,10,0-2,0,30,utility action,quick_only,mixed
+ITM_0558,鱼线,杂项,生存,0.41,1x2,10,0-2,0,11,utility action,quick_only,mixed
+ITM_0559,捕兽夹,杂项,生存,0.51,1x2,10,0-2,0,32,utility action,quick_only,mixed
+ITM_0560,菜种子,杂项,生存,0.86,1x2,10,0-2,0,25,utility action,quick_only,mixed
+ITM_0561,小麦种子,杂项,生存,0.77,1x2,10,0-2,0,29,utility action,quick_only,mixed
+ITM_0562,马铃薯种子,杂项,生存,0.89,1x2,10,0-2,0,42,utility action,quick_only,mixed
+ITM_0563,苹果种子,杂项,生存,0.71,1x2,10,0-2,0,42,utility action,quick_only,mixed
+ITM_0564,异常样本,神秘,道具,0.29,1x1,5,0-2,0,11,SAN/occult crafting,equipped_or_context,mixed
+ITM_0565,T1观察者碎片,神秘,道具,0.5,1x1,5,0-2,0,39,SAN/occult crafting,equipped_or_context,mixed
+ITM_0566,未知生物组织,神秘,道具,0.27,1x1,5,0-2,0,16,SAN/occult crafting,equipped_or_context,mixed
+ITM_0567,净化晶体,神秘,道具,0.53,1x1,5,0-2,0,20,SAN/occult crafting,equipped_or_context,mixed
+ITM_0568,裂隙探针,神秘,道具,0.38,1x1,5,0-2,0,21,SAN/occult crafting,equipped_or_context,mixed
+ITM_0569,SAN安定符,神秘,道具,0.31,1x1,5,0-2,0,23,SAN/occult crafting,equipped_or_context,mixed
+ITM_0570,未知符文,神秘,道具,0.4,1x1,5,0-2,0,30,SAN/occult crafting,equipped_or_context,mixed
+ITM_0571,异常录音带,神秘,道具,0.53,1x1,5,0-2,0,16,SAN/occult crafting,equipped_or_context,mixed
+ITM_0572,古旧研究笔记,神秘,道具,0.32,1x1,5,0-2,0,26,SAN/occult crafting,equipped_or_context,mixed
+ITM_0573,神秘学书籍,神秘,道具,0.56,1x1,5,0-2,0,31,SAN/occult crafting,equipped_or_context,mixed
+ITM_0574,临时封印材料,神秘,道具,0.49,1x1,5,0-2,0,25,SAN/occult crafting,equipped_or_context,mixed
+ITM_0575,裂隙锚定器,神秘,道具,0.57,1x1,5,0-2,0,16,SAN/occult crafting,equipped_or_context,mixed
+ITM_0576,高级封印装置,神秘,道具,0.34,1x1,5,0-2,0,27,SAN/occult crafting,equipped_or_context,mixed
+ITM_0577,异界探照器,神秘,道具,0.35,1x1,5,0-2,0,16,SAN/occult crafting,equipped_or_context,mixed
+ITM_0578,异常屏蔽片,神秘,道具,0.49,1x1,5,0-2,0,38,SAN/occult crafting,equipped_or_context,mixed
+ITM_0579,玉米罐头,食物,罐装,0.34,1x2,10,0-2,0,10,hunger -14; calories +180,quick_only,kitchen
+ITM_0580,豌豆罐头,食物,罐装,0.34,1x2,10,0-2,0,10,hunger -14; calories +180,quick_only,kitchen
+ITM_0581,番茄罐头,食物,罐装,0.34,1x2,10,0-2,0,10,hunger -14; calories +180,quick_only,kitchen
+ITM_0582,土豆泥罐头,食物,罐装,0.34,1x2,10,0-2,0,10,hunger -14; calories +180,quick_only,kitchen
+ITM_0583,金枪鱼罐头,食物,罐装,0.34,1x2,10,0-2,0,10,hunger -14; calories +180,quick_only,kitchen
+ITM_0584,沙丁鱼罐头,食物,罐装,0.34,1x2,10,0-2,0,10,hunger -14; calories +180,quick_only,kitchen
+ITM_0585,鸡肉汤罐头,食物,罐装,0.34,1x2,10,0-2,0,10,hunger -14; calories +180,quick_only,kitchen
+ITM_0586,牛肉汤罐头,食物,罐装,0.34,1x2,10,0-2,0,10,hunger -14; calories +180,quick_only,kitchen
+ITM_0587,水果鸡尾酒罐头,食物,罐装,0.34,1x2,10,0-2,0,10,hunger -14; calories +180,quick_only,kitchen
+ITM_0588,桃子罐头,食物,罐装,0.34,1x2,10,0-2,0,10,hunger -14; calories +180,quick_only,kitchen
+ITM_0589,燕麦片,食物,干货,0.5,1x1,20,0-2,0,8,hunger -6; calories +90,quick_only,kitchen
+ITM_0590,玉米片,食物,干货,0.5,1x1,20,0-2,0,8,hunger -6; calories +90,quick_only,kitchen
+ITM_0591,通心粉,食物,干货,0.5,1x1,20,0-2,0,8,hunger -6; calories +90,quick_only,kitchen
+ITM_0592,意面,食物,干货,0.5,1x1,20,0-2,0,8,hunger -6; calories +90,quick_only,kitchen
+ITM_0593,米粉,食物,干货,0.5,1x1,20,0-2,0,8,hunger -6; calories +90,quick_only,kitchen
+ITM_0594,面粉,食物,干货,0.5,1x1,20,0-2,0,8,hunger -6; calories +90,quick_only,kitchen
+ITM_0595,砂糖,食物,干货,0.5,1x1,20,0-2,0,8,hunger -6; calories +90,quick_only,kitchen
+ITM_0596,盐包,食物,干货,0.2,1x1,20,0-2,0,8,hunger -6; calories +90,quick_only,kitchen
+ITM_0597,咖啡粉,食物,干货,0.5,1x1,20,0-2,0,8,hunger -6; calories +90,quick_only,kitchen
+ITM_0598,奶粉,食物,干货,0.5,1x1,20,0-2,0,8,hunger -6; calories +90,quick_only,kitchen
+ITM_0599,红茶包,食物,干货,0.2,1x1,20,0-2,0,8,hunger -6; calories +90,quick_only,kitchen
+ITM_0600,即食汤料,食物,干货,0.5,1x1,20,0-2,0,8,hunger -6; calories +90,quick_only,kitchen
+ITM_0601,苹果,食物,生鲜,0.16,1x1,12,0-1,0,4,hunger -5; calories +35; freshness +1,quick_only,market
+ITM_0602,橙子,食物,生鲜,0.16,1x1,12,0-1,0,4,hunger -5; calories +35; freshness +1,quick_only,market
+ITM_0603,香蕉,食物,生鲜,0.16,1x1,12,0-1,0,4,hunger -5; calories +35; freshness +1,quick_only,market
+ITM_0604,土豆,食物,生鲜,0.16,1x1,12,0-1,0,4,hunger -5; calories +35; freshness +1,quick_only,market
+ITM_0605,洋葱,食物,生鲜,0.16,1x1,12,0-1,0,4,hunger -5; calories +35; freshness +1,quick_only,market
+ITM_0606,胡萝卜,食物,生鲜,0.16,1x1,12,0-1,0,4,hunger -5; calories +35; freshness +1,quick_only,market
+ITM_0607,卷心菜,食物,生鲜,0.16,1x1,12,0-1,0,4,hunger -5; calories +35; freshness +1,quick_only,market
+ITM_0608,番茄,食物,生鲜,0.16,1x1,12,0-1,0,4,hunger -5; calories +35; freshness +1,quick_only,market
+ITM_0609,黄瓜,食物,生鲜,0.16,1x1,12,0-1,0,4,hunger -5; calories +35; freshness +1,quick_only,market
+ITM_0610,蘑菇,食物,生鲜,0.16,1x1,12,0-1,0,4,hunger -5; calories +35; freshness +1,quick_only,market
+ITM_0611,生菜,食物,生鲜,0.16,1x1,12,0-1,0,4,hunger -5; calories +35; freshness +1,quick_only,market
+ITM_0612,浆果,食物,生鲜,0.16,1x1,12,0-1,0,4,hunger -5; calories +35; freshness +1,quick_only,market
+ITM_0613,烤土豆,食物,熟食,0.38,2x1,6,0-2,0,18,hunger -22; calories +320; morale +2,quick_only,kitchen
+ITM_0614,炒蔬菜,食物,熟食,0.38,2x1,6,0-2,0,18,hunger -22; calories +320; morale +2,quick_only,kitchen
+ITM_0615,牛肉炖菜,食物,熟食,0.38,2x1,6,0-2,0,18,hunger -22; calories +320; morale +2,quick_only,kitchen
+ITM_0616,鸡肉炖菜,食物,熟食,0.38,2x1,6,0-2,0,18,hunger -22; calories +320; morale +2,quick_only,kitchen
+ITM_0617,番茄意面,食物,熟食,0.38,2x1,6,0-2,0,18,hunger -22; calories +320; morale +2,quick_only,kitchen
+ITM_0618,蛋炒饭,食物,熟食,0.38,2x1,6,0-2,0,18,hunger -22; calories +320; morale +2,quick_only,kitchen
+ITM_0619,煎蛋早餐,食物,熟食,0.38,2x1,6,0-2,0,18,hunger -22; calories +320; morale +2,quick_only,kitchen
+ITM_0620,蔬菜汤,食物,熟食,0.38,2x1,6,0-2,0,18,hunger -22; calories +320; morale +2,quick_only,kitchen
+ITM_0621,烤鱼,食物,熟食,0.38,2x1,6,0-2,0,18,hunger -22; calories +320; morale +2,quick_only,kitchen
+ITM_0622,烤肉串,食物,熟食,0.38,2x1,6,0-2,0,18,hunger -22; calories +320; morale +2,quick_only,kitchen
+ITM_0623,三明治,食物,熟食,0.38,2x1,6,0-2,0,18,hunger -22; calories +320; morale +2,quick_only,kitchen
+ITM_0624,汉堡,食物,熟食,0.38,2x1,6,0-2,0,18,hunger -22; calories +320; morale +2,quick_only,kitchen
+ITM_0625,矿泉水,饮料,瓶装水,0.5,1x2,6,0-2,0,4,thirst -18,quick_only,market
+ITM_0626,保温壶热水,饮料,热饮,0.8,1x2,2,0-2,0,6,thirst -16; warmth +3,quick_only,kitchen
+ITM_0627,橙汁,饮料,果汁,0.45,1x2,6,0-2,0,7,thirst -14; calories +80,quick_only,market
+ITM_0628,运动饮料,饮料,功能饮料,0.45,1x2,6,0-2,0,12,thirst -16; stamina_regen +4,quick_only,market
+ITM_0629,能量饮料,饮料,功能饮料,0.35,1x2,6,0-2,0,14,thirst -8; fatigue -6,quick_only,market
+ITM_0630,罐装咖啡,饮料,咖啡,0.28,1x1,8,0-2,0,9,thirst -8; fatigue -5,quick_only,office
+ITM_0631,罐装茶饮,饮料,茶饮,0.28,1x1,8,0-2,0,8,thirst -10; stress -2,quick_only,office
+ITM_0632,止咳糖浆,药品,呼吸道药物,0.25,1x1,4,0-2,0,16,cold_symptom -10; cough_noise -25%,quick_only,medical
+ITM_0633,退烧药,药品,解热药,0.05,1x1,20,0-2,0,10,fever -12,quick_only,medical
+ITM_0634,电解质冲剂,药品,恢复,0.02,1x1,12,0-2,0,12,thirst -5; fatigue -2; sickness -2,quick_only,medical
+ITM_0635,医用葡萄糖,药品,恢复,0.15,1x1,6,0-2,0,11,energy +8; dizziness -6,quick_only,medical
+ITM_0636,肾上腺素注射剂,药品,急救注射,0.08,1x1,4,0-2,0,28,downed_recover +1; stamina +12,quick_only,medical
+ITM_0637,消炎软膏,药品,外用药,0.12,1x1,6,0-2,0,12,wound_infection_risk -12,quick_only,medical
+ITM_0638,抗真菌喷雾,药品,外用药,0.18,1x1,4,0-2,0,12,skin_sickness -8,quick_only,medical
+ITM_0639,止泻药,药品,肠胃药,0.05,1x1,20,0-2,0,9,food_sickness -6,quick_only,medical
+ITM_0640,消毒湿巾,医疗,消毒用品,0.02,1x1,20,0-2,0,6,wound_clean +6,quick_only,medical
+ITM_0641,冷敷袋,医疗,急救用品,0.2,1x1,6,0-2,0,8,pain -4; swelling -5,quick_only,medical
+ITM_0642,止血粉,医疗,止血用品,0.03,1x1,10,0-2,0,9,bleeding -10,quick_only,medical
+ITM_0643,胸腔封闭贴,医疗,创伤用品,0.1,1x1,4,0-2,0,22,major_chest_wound stabilize,quick_only,medical
+ITM_0644,外科镊子,医疗工具,手术器械,0.14,1x2,2,0-2,120,26,tool:remove_shrapnel,equip_or_quick,hospital
+ITM_0645,止血钳,医疗工具,手术器械,0.2,1x2,2,0-2,140,24,tool:clamp_bleeding,equip_or_quick,hospital
+ITM_0646,缝合针持器,医疗工具,手术器械,0.18,1x2,2,0-2,130,24,tool:suture_advanced,equip_or_quick,hospital
+ITM_0647,简易担架,医疗工具,搬运设备,3.2,3x5,1,0-2,180,40,carry_downed_npc,equip_or_quick,hospital
+ITM_0648,手锯,工具,木工工具,0.6,2x3,1,0-2,180,18,tool:cut_wood; gather +8,equip_or_quick,garage
+ITM_0649,弓锯,工具,木工工具,0.6,2x3,1,0-2,180,18,tool:fine_cut; gather +7,equip_or_quick,garage
+ITM_0650,电钻,工具,动力工具,0.6,2x3,1,0-2,180,18,tool:drill; build_speed +8,equip_or_quick,garage
+ITM_0651,冲击扳手,工具,动力工具,0.6,2x3,1,0-2,180,18,tool:vehicle_repair +10,equip_or_quick,garage
+ITM_0652,砖瓦锤,工具,施工工具,0.6,2x3,1,0-2,180,18,tool:masonry +8,equip_or_quick,garage
+ITM_0653,泥刀,工具,施工工具,0.6,2x3,1,0-2,180,18,tool:plaster +6,equip_or_quick,garage
+ITM_0654,钢卷尺,工具,测量工具,0.6,2x3,1,0-2,180,18,tool:measure +5,equip_or_quick,garage
+ITM_0655,水准仪,工具,测量工具,0.6,2x3,1,0-2,180,18,tool:align +5,equip_or_quick,garage
+ITM_0656,电烙铁,工具,电工工具,0.6,2x3,1,0-2,180,18,tool:solder +8,equip_or_quick,garage
+ITM_0657,压线钳,工具,电工工具,0.6,2x3,1,0-2,180,18,tool:crimp +7,equip_or_quick,garage
+ITM_0658,割草刀,工具,园艺工具,0.6,2x3,1,0-2,180,18,tool:brush_clear +6,equip_or_quick,garage
+ITM_0659,手推车,工具,搬运工具,7.0,3x4,1,0-2,180,18,carry_bonus +14,equip_or_quick,garage
+ITM_0660,燃油切割机,工具,动力工具,0.6,2x3,1,0-2,180,18,tool:metal_cut +12,equip_or_quick,garage
+ITM_0661,链锯,工具,动力工具,0.6,2x3,1,0-2,180,18,tool:tree_cut +14,equip_or_quick,garage
+ITM_0662,胶合板,材料,木材,1.4,2x3,12,0-2,0,8,craft:wood_sheet,inventory,construction
+ITM_0663,石膏板,材料,建材,2.2,2x3,10,0-2,0,9,craft:wall_panel,inventory,construction
+ITM_0664,瓷砖箱,材料,建材,4.0,2x3,6,0-2,0,12,craft:floor_tile,inventory,construction
+ITM_0665,PVC管,材料,建材,1.0,1x3,12,0-2,0,7,craft:plumbing,inventory,construction
+ITM_0666,铜线卷,材料,电工材料,0.8,1x2,10,0-2,0,12,craft:wiring,inventory,electrical
+ITM_0667,配电开关,材料,电工材料,0.2,1x1,20,0-2,0,14,craft:switch,inventory,electrical
+ITM_0668,继电器,材料,电工材料,0.1,1x1,20,0-2,0,18,craft:relay,inventory,electrical
+ITM_0669,逆变器模块,材料,电工材料,1.2,2x2,4,0-2,0,26,craft:power,inventory,electrical
+ITM_0670,滤水芯,材料,净水材料,0.35,1x1,8,0-2,0,12,craft:water_filter,inventory,utility
+ITM_0671,活性炭包,材料,净水材料,0.25,1x1,10,0-2,0,8,craft:water_filter,inventory,utility
+ITM_0672,橡胶密封圈,材料,维修件,0.05,1x1,20,0-2,0,4,craft:repair_seal,inventory,garage
+ITM_0673,轴承组,材料,维修件,0.3,1x1,10,0-2,0,10,craft:mechanic,inventory,garage
+ITM_0674,点火线圈,材料,维修件,0.4,1x1,6,0-2,0,18,craft:vehicle_ignition,inventory,garage
+ITM_0675,小型电机,材料,机电件,1.2,2x2,4,0-2,0,22,craft:motor_device,inventory,garage
+ITM_0676,铅酸电池芯,材料,储能件,2.4,2x2,4,0-2,0,24,craft:battery,inventory,garage
+ITM_0677,伺服电机,材料,机电件,1.5,2x2,4,0-2,0,28,craft:auto_turret,inventory,military
+ITM_0678,破布束,材料,布料,0.18,1x1,20,0-2,0,2,craft:bandage,inventory,residential
+ITM_0679,羊毛布,材料,布料,0.45,1x2,10,0-2,0,8,craft:warm_cloth,inventory,residential
+ITM_0680,皮革片,材料,布料,0.25,1x1,16,0-2,0,7,craft:armor,inventory,residential
+ITM_0681,玻璃纤维板,材料,复合材料,0.9,2x2,8,0-2,0,18,craft:vehicle_body,inventory,industrial
+ITM_0682,连帽雨披,衣物,外层,1.2,2x3,1,0-2,140,16,warmth +6; waterproof +20,equip_only,residential
+ITM_0683,轻型抓绒衣,衣物,中层,0.8,2x2,1,0-2,110,12,warmth +10,equip_only,residential
+ITM_0684,保暖秋裤,衣物,内层,0.4,1x2,1,0-2,90,8,warmth +6,equip_only,residential
+ITM_0685,防割护袖,护甲,局部护具,0.6,1x2,1,0-2,120,15,scratch_def +12,equip_only,police
+ITM_0686,防刺手套,护甲,局部护具,0.5,1x1,1,0-2,110,14,bite_def +6; scratch_def +8,equip_only,police
+ITM_0687,反光雨裤,衣物,外层,0.9,2x2,1,0-2,120,12,waterproof +14,equip_only,industrial
+ITM_0688,工地安全背心,衣物,外层,0.35,1x2,1,0-2,80,7,visibility +6,equip_only,industrial
+ITM_0689,单筒望远镜,视觉设备,观察,0.42,1x2,1,0-2,140,25,vision_zoom +1,equip_or_quick,military
+ITM_0690,双筒望远镜,视觉设备,观察,0.65,2x2,1,0-2,150,35,vision_zoom +2,equip_or_quick,military
+ITM_0691,战术手电,视觉设备,照明,0.22,1x2,1,0-2,90,12,light +8,equip_or_quick,police
+ITM_0692,头灯,视觉设备,照明,0.18,1x1,1,0-2,80,14,light +6; hands_free,equip_only,garage
+ITM_0693,化学荧光棒,视觉设备,照明,0.05,1x1,10,0-2,0,3,light +3; duration 20m,quick_only,military
+ITM_0694,9x19毫米手枪弹,弹药,子弹,0.012,1x1,60,0-2,0,4,ammo,inventory,military
+ITM_0695,12号霰弹,弹药,子弹,0.012,1x1,60,0-2,0,4,ammo,inventory,military
+ITM_0696,5.56毫米步枪弹,弹药,子弹,0.012,1x1,60,0-2,0,4,ammo,inventory,military
+ITM_0697,7.62毫米步枪弹,弹药,子弹,0.012,1x1,60,0-2,0,4,ammo,inventory,military
+ITM_0698,.45ACP手枪弹,弹药,子弹,0.012,1x1,60,0-2,0,4,ammo,inventory,military
+ITM_0699,.308猎枪弹,弹药,子弹,0.012,1x1,60,0-2,0,4,ammo,inventory,military
+ITM_0700,箭矢,弹药,子弹,0.012,1x1,60,0-2,0,4,ammo,inventory,military
+ITM_0701,弩箭,弹药,子弹,0.012,1x1,60,0-2,0,4,ammo,inventory,military
+ITM_0702,燃烧瓶,弹药,子弹,0.012,1x1,60,0-2,0,4,ammo,inventory,military
+ITM_0703,土制爆炸物,投掷物,爆炸/燃烧,0.7,1x1,4,0-2,0,18,throw_damage +1,quick_only,military
+ITM_0704,电工手册,书籍,技能书,0.45,1x2,4,0-2,0,12,skill_xp_bonus +1,inventory,residential
+ITM_0705,基础医学指南,书籍,技能书,0.45,1x2,4,0-2,0,12,skill_xp_bonus +1,inventory,residential
+ITM_0706,高级急救教材,书籍,技能书,0.45,1x2,4,0-2,0,12,skill_xp_bonus +1,inventory,residential
+ITM_0707,野外生存图鉴,书籍,技能书,0.45,1x2,4,0-2,0,12,skill_xp_bonus +1,inventory,residential
+ITM_0708,木工入门,书籍,技能书,0.45,1x2,4,0-2,0,12,skill_xp_bonus +1,inventory,residential
+ITM_0709,机械修理手册,书籍,技能书,0.45,1x2,4,0-2,0,12,skill_xp_bonus +1,inventory,residential
+ITM_0710,发电设备维护手册,书籍,技能书,0.45,1x2,4,0-2,0,12,skill_xp_bonus +1,inventory,residential
+ITM_0711,枪械保养指南,书籍,技能书,0.45,1x2,4,0-2,0,12,skill_xp_bonus +1,inventory,residential
+ITM_0712,裁缝与防具修补,书籍,技能书,0.45,1x2,4,0-2,0,12,skill_xp_bonus +1,inventory,residential
+ITM_0713,烹饪食谱大全,书籍,技能书,0.45,1x2,4,0-2,0,12,skill_xp_bonus +1,inventory,residential
+ITM_0714,钥匙串,杂项,实用道具,0.2,1x1,10,0-2,0,8,utility,inventory,mixed
+ITM_0715,车库遥控器,杂项,实用道具,0.2,1x1,10,0-2,60,8,utility,inventory,mixed
+ITM_0716,打火机燃料,杂项,实用道具,0.2,1x1,10,0-2,60,8,utility,inventory,mixed
+ITM_0717,火柴盒,杂项,实用道具,0.2,1x1,10,0-2,0,8,utility,inventory,mixed
+ITM_0718,手持收音机,杂项,实用道具,0.2,1x1,10,0-2,60,8,utility,equip_or_quick,mixed
+ITM_0719,电池组,杂项,实用道具,0.2,1x1,10,0-2,0,8,utility,inventory,mixed
+ITM_0720,撬棍,杂项,实用道具,0.2,1x1,10,0-2,0,8,utility,equip_or_quick,mixed
+ITM_0721,金属探测器,杂项,实用道具,0.2,1x1,10,0-2,60,8,utility,equip_or_quick,mixed
+ITM_0722,折叠铲,杂项,实用道具,0.2,1x1,10,0-2,0,8,utility,equip_or_quick,mixed
+ITM_0723,垃圾袋,杂项,实用道具,0.05,1x1,10,0-2,0,8,utility,inventory,mixed

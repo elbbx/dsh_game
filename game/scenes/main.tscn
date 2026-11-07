@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/Main.gd" id="1_main"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_main")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 0)
+enabled = true
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HUD" type="Panel" parent="UI"]
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 298.0
+offset_bottom = 68.0
+
+[node name="Status" type="Label" parent="UI/HUD"]
+offset_left = 9.0
+offset_top = 6.0
+offset_right = 278.0
+offset_bottom = 58.0
+text = "Loading..."
+
+[node name="Instructions" type="Label" parent="UI"]
+offset_left = 8.0
+offset_top = 316.0
+offset_right = 620.0
+offset_bottom = 352.0
+text = "WASD Move   E Interact   Space Attack   H Heal   F5 Save   F9 Load"
+
+[node name="Toast" type="Label" parent="UI"]
+offset_left = 180.0
+offset_top = 78.0
+offset_right = 560.0
+offset_bottom = 115.0
+text = ""
+
+[node name="Fade" type="ColorRect" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0)

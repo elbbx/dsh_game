@@ -1,0 +1,3300 @@
+[
+  {
+    "id": "RCP_0001",
+    "product_id": "ITM_0217",
+    "product_amount": 4,
+    "ingredients": [
+      {
+        "item_id": "ITM_0210",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 20.0,
+    "skill": "制作",
+    "required_level": 1,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 20 秒→完成后一次性结算→将木板放入产物容器"
+  },
+  {
+    "id": "RCP_0002",
+    "product_id": "ITM_0218",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0210",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 40.0,
+    "skill": "制作",
+    "required_level": 4,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 40 秒→完成后一次性结算→将木梁放入产物容器"
+  },
+  {
+    "id": "RCP_0003",
+    "product_id": "ITM_0216",
+    "product_amount": 8,
+    "ingredients": [
+      {
+        "item_id": "ITM_0210",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "手工",
+    "duration_sec": 20.0,
+    "skill": "生存",
+    "required_level": 0,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 20 秒→完成后一次性结算→将木片放入产物容器"
+  },
+  {
+    "id": "RCP_0004",
+    "product_id": "ITM_0224",
+    "product_amount": 4,
+    "ingredients": [
+      {
+        "item_id": "ITM_0213",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "手工",
+    "duration_sec": 20.0,
+    "skill": "生存",
+    "required_level": 0,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 20 秒→完成后一次性结算→将干柴放入产物容器"
+  },
+  {
+    "id": "RCP_0005",
+    "product_id": "ITM_0219",
+    "product_amount": 3,
+    "ingredients": [
+      {
+        "item_id": "ITM_0224",
+        "amount": 5
+      }
+    ],
+    "station_id_raw": "木炭窑",
+    "duration_sec": 180.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 180 秒→完成后一次性结算→将木炭放入产物容器"
+  },
+  {
+    "id": "RCP_0006",
+    "product_id": "ITM_0229",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0190",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0188",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "熔炉",
+    "duration_sec": 180.0,
+    "skill": "制作",
+    "required_level": 6,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 180 秒→完成后一次性结算→将铁锭放入产物容器"
+  },
+  {
+    "id": "RCP_0007",
+    "product_id": "ITM_0230",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0192",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0188",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "熔炉",
+    "duration_sec": 180.0,
+    "skill": "制作",
+    "required_level": 6,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 180 秒→完成后一次性结算→将铜锭放入产物容器"
+  },
+  {
+    "id": "RCP_0008",
+    "product_id": "ITM_0231",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0188",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "高温熔炉",
+    "duration_sec": 300.0,
+    "skill": "制作",
+    "required_level": 12,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 300 秒→完成后一次性结算→将钢锭放入产物容器"
+  },
+  {
+    "id": "RCP_0009",
+    "product_id": "ITM_0232",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0193",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0188",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "熔炉",
+    "duration_sec": 210.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 210 秒→完成后一次性结算→将铅锭放入产物容器"
+  },
+  {
+    "id": "RCP_0010",
+    "product_id": "ITM_0233",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0205",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0188",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "高温熔炉",
+    "duration_sec": 240.0,
+    "skill": "制作",
+    "required_level": 13,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 240 秒→完成后一次性结算→将铝锭放入产物容器"
+  },
+  {
+    "id": "RCP_0011",
+    "product_id": "ITM_0262",
+    "product_amount": 4,
+    "ingredients": [
+      {
+        "item_id": "ITM_0200",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0188",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "砖窑",
+    "duration_sec": 120.0,
+    "skill": "制作",
+    "required_level": 3,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 120 秒→完成后一次性结算→将砖块放入产物容器"
+  },
+  {
+    "id": "RCP_0012",
+    "product_id": "ITM_0260",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0195",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0188",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "高温熔炉",
+    "duration_sec": 180.0,
+    "skill": "制作",
+    "required_level": 9,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 180 秒→完成后一次性结算→将水泥放入产物容器"
+  },
+  {
+    "id": "RCP_0013",
+    "product_id": "ITM_0261",
+    "product_amount": 4,
+    "ingredients": [
+      {
+        "item_id": "ITM_0260",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0199",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0198",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0065",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 100.0,
+    "skill": "制作",
+    "required_level": 8,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 100 秒→完成后一次性结算→将混凝土放入产物容器"
+  },
+  {
+    "id": "RCP_0014",
+    "product_id": "ITM_0259",
+    "product_amount": 12,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 20.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 20 秒→完成后一次性结算→将铁钉放入产物容器"
+  },
+  {
+    "id": "RCP_0015",
+    "product_id": "ITM_0235",
+    "product_amount": 8,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 28.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 28 秒→完成后一次性结算→将螺丝放入产物容器"
+  },
+  {
+    "id": "RCP_0016",
+    "product_id": "ITM_0239",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 65.0,
+    "skill": "机械",
+    "required_level": 8,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 65 秒→完成后一次性结算→将齿轮放入产物容器"
+  },
+  {
+    "id": "RCP_0017",
+    "product_id": "ITM_0244",
+    "product_amount": 8,
+    "ingredients": [
+      {
+        "item_id": "ITM_0230",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0241",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "电气工作台",
+    "duration_sec": 40.0,
+    "skill": "电力",
+    "required_level": 3,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 40 秒→完成后一次性结算→将电线放入产物容器"
+  },
+  {
+    "id": "RCP_0018",
+    "product_id": "ITM_0245",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0244",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0242",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "电气工作台",
+    "duration_sec": 35.0,
+    "skill": "电力",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 35 秒→完成后一次性结算→将绝缘线放入产物容器"
+  },
+  {
+    "id": "RCP_0019",
+    "product_id": "ITM_0246",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0230",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0242",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0249",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "电气工作台",
+    "duration_sec": 100.0,
+    "skill": "电力",
+    "required_level": 11,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 100 秒→完成后一次性结算→将电路板放入产物容器"
+  },
+  {
+    "id": "RCP_0020",
+    "product_id": "ITM_0248",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0247",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0244",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0246",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "电气工作台",
+    "duration_sec": 160.0,
+    "skill": "电力",
+    "required_level": 14,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 160 秒→完成后一次性结算→将锂电池模块放入产物容器"
+  },
+  {
+    "id": "RCP_0021",
+    "product_id": "ITM_0304",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0251",
+        "amount": 6
+      },
+      {
+        "item_id": "ITM_0253",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0233",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0244",
+        "amount": 4
+      }
+    ],
+    "station_id_raw": "电气工作台",
+    "duration_sec": 240.0,
+    "skill": "电力",
+    "required_level": 12,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 240 秒→完成后一次性结算→将太阳能板放入产物容器"
+  },
+  {
+    "id": "RCP_0022",
+    "product_id": "ITM_0305",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0304",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0231",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0244",
+        "amount": 6
+      }
+    ],
+    "station_id_raw": "电气工作台",
+    "duration_sec": 480.0,
+    "skill": "电力",
+    "required_level": 19,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 480 秒→完成后一次性结算→将太阳能阵列放入产物容器"
+  },
+  {
+    "id": "RCP_0023",
+    "product_id": "ITM_0306",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0246",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0244",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0229",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0242",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "电气工作台",
+    "duration_sec": 100.0,
+    "skill": "电力",
+    "required_level": 6,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 100 秒→完成后一次性结算→将电力中继器放入产物容器"
+  },
+  {
+    "id": "RCP_0024",
+    "product_id": "ITM_0307",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0248",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0231",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0246",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "电气工作台",
+    "duration_sec": 250.0,
+    "skill": "电力",
+    "required_level": 17,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 250 秒→完成后一次性结算→将锂电池组放入产物容器"
+  },
+  {
+    "id": "RCP_0025",
+    "product_id": "ITM_0302",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0249",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0229",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0244",
+        "amount": 6
+      },
+      {
+        "item_id": "ITM_0255",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0257",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "机械工作台",
+    "duration_sec": 300.0,
+    "skill": "机械",
+    "required_level": 15,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 300 秒→完成后一次性结算→将汽油发电机放入产物容器"
+  },
+  {
+    "id": "RCP_0026",
+    "product_id": "ITM_0303",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0231",
+        "amount": 6
+      },
+      {
+        "item_id": "ITM_0262",
+        "amount": 8
+      },
+      {
+        "item_id": "ITM_0246",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0244",
+        "amount": 4
+      }
+    ],
+    "station_id_raw": "机械工作台",
+    "duration_sec": 360.0,
+    "skill": "电力",
+    "required_level": 18,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 360 秒→完成后一次性结算→将燃烧式发电炉放入产物容器"
+  },
+  {
+    "id": "RCP_0027",
+    "product_id": "ITM_0314",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0246",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0249",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0231",
+        "amount": 8
+      },
+      {
+        "item_id": "ITM_0244",
+        "amount": 8
+      }
+    ],
+    "station_id_raw": "电气工作台",
+    "duration_sec": 380.0,
+    "skill": "电力",
+    "required_level": 20,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 380 秒→完成后一次性结算→将电动哨塔放入产物容器"
+  },
+  {
+    "id": "RCP_0028",
+    "product_id": "ITM_0271",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 3
+      }
+    ],
+    "station_id_raw": "手工",
+    "duration_sec": 70.0,
+    "skill": "制作",
+    "required_level": 2,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 70 秒→完成后一次性结算→将木墙放入产物容器"
+  },
+  {
+    "id": "RCP_0029",
+    "product_id": "ITM_0275",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "手工",
+    "duration_sec": 40.0,
+    "skill": "制作",
+    "required_level": 2,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 40 秒→完成后一次性结算→将木地板放入产物容器"
+  },
+  {
+    "id": "RCP_0030",
+    "product_id": "ITM_0273",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 4,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将木门放入产物容器"
+  },
+  {
+    "id": "RCP_0031",
+    "product_id": "ITM_0278",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 3
+      }
+    ],
+    "station_id_raw": "手工",
+    "duration_sec": 75.0,
+    "skill": "制作",
+    "required_level": 3,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 75 秒→完成后一次性结算→将木栅栏放入产物容器"
+  },
+  {
+    "id": "RCP_0032",
+    "product_id": "ITM_0279",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 4
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 120.0,
+    "skill": "制作",
+    "required_level": 11,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 120 秒→完成后一次性结算→将铁栅栏放入产物容器"
+  },
+  {
+    "id": "RCP_0033",
+    "product_id": "ITM_0282",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 6
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 5
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 145.0,
+    "skill": "制作",
+    "required_level": 12,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 145 秒→完成后一次性结算→将金属墙放入产物容器"
+  },
+  {
+    "id": "RCP_0034",
+    "product_id": "ITM_0284",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0261",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0231",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "手工",
+    "duration_sec": 180.0,
+    "skill": "制作",
+    "required_level": 12,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 180 秒→完成后一次性结算→将混凝土墙放入产物容器"
+  },
+  {
+    "id": "RCP_0035",
+    "product_id": "ITM_0293",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0218",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0217",
+        "amount": 9
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 12
+      }
+    ],
+    "station_id_raw": "手工",
+    "duration_sec": 280.0,
+    "skill": "制作",
+    "required_level": 13,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 280 秒→完成后一次性结算→将瞭望塔平台放入产物容器"
+  },
+  {
+    "id": "RCP_0036",
+    "product_id": "ITM_0292",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0218",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0217",
+        "amount": 8
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 10
+      }
+    ],
+    "station_id_raw": "手工",
+    "duration_sec": 240.0,
+    "skill": "制作",
+    "required_level": 11,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 240 秒→完成后一次性结算→将瞭望塔楼梯放入产物容器"
+  },
+  {
+    "id": "RCP_0037",
+    "product_id": "ITM_0295",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0242",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0217",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0244",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 140.0,
+    "skill": "生存",
+    "required_level": 12,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 140 秒→完成后一次性结算→将雨水收集器放入产物容器"
+  },
+  {
+    "id": "RCP_0038",
+    "product_id": "ITM_0296",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0242",
+        "amount": 8
+      },
+      {
+        "item_id": "ITM_0254",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 5
+      }
+    ],
+    "station_id_raw": "机械工作台",
+    "duration_sec": 170.0,
+    "skill": "制作",
+    "required_level": 10,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 170 秒→完成后一次性结算→将储水箱放入产物容器"
+  },
+  {
+    "id": "RCP_0039",
+    "product_id": "ITM_0290",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0199",
+        "amount": 8
+      },
+      {
+        "item_id": "ITM_0264",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "手工",
+    "duration_sec": 60.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 60 秒→完成后一次性结算→将沙袋放入产物容器"
+  },
+  {
+    "id": "RCP_0040",
+    "product_id": "ITM_0299",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 6
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 3,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将木箱放入产物容器"
+  },
+  {
+    "id": "RCP_0041",
+    "product_id": "ITM_0300",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 4
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 145.0,
+    "skill": "制作",
+    "required_level": 9,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 145 秒→完成后一次性结算→将金属箱放入产物容器"
+  },
+  {
+    "id": "RCP_0042",
+    "product_id": "ITM_0142",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0217",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0221",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 120.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 120 秒→完成后一次性结算→将铁镐放入产物容器"
+  },
+  {
+    "id": "RCP_0043",
+    "product_id": "ITM_0143",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0231",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0217",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0241",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 160.0,
+    "skill": "制作",
+    "required_level": 15,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 160 秒→完成后一次性结算→将钢镐放入产物容器"
+  },
+  {
+    "id": "RCP_0044",
+    "product_id": "ITM_0139",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0218",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 125.0,
+    "skill": "生存",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 125 秒→完成后一次性结算→将伐木斧放入产物容器"
+  },
+  {
+    "id": "RCP_0045",
+    "product_id": "ITM_0150",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0218",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 100.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 100 秒→完成后一次性结算→将铁锹放入产物容器"
+  },
+  {
+    "id": "RCP_0046",
+    "product_id": "ITM_0422",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0218",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0263",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "手工",
+    "duration_sec": 25.0,
+    "skill": "制作",
+    "required_level": 1,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 25 秒→完成后一次性结算→将简易长矛放入产物容器"
+  },
+  {
+    "id": "RCP_0047",
+    "product_id": "ITM_0209",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0218",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 5
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 95.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 95 秒→完成后一次性结算→将矿用支撑梁放入产物容器"
+  },
+  {
+    "id": "RCP_0048",
+    "product_id": "ITM_0529",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0263",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0257",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "手工",
+    "duration_sec": 25.0,
+    "skill": "生存",
+    "required_level": 1,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 25 秒→完成后一次性结算→将火把放入产物容器"
+  },
+  {
+    "id": "RCP_0049",
+    "product_id": "ITM_0079",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0081",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0542",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "水过滤器",
+    "duration_sec": 40.0,
+    "skill": "生存",
+    "required_level": 8,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 40 秒→完成后一次性结算→将过滤水放入产物容器"
+  },
+  {
+    "id": "RCP_0050",
+    "product_id": "ITM_0078",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0066",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0224",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携炉灶",
+    "duration_sec": 120.0,
+    "skill": "生存",
+    "required_level": 2,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 120 秒→完成后一次性结算→将凉开水放入产物容器"
+  },
+  {
+    "id": "RCP_0051",
+    "product_id": "ITM_0048",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0065",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0021",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0020",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0022",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携炉灶",
+    "duration_sec": 180.0,
+    "skill": "生存",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 180 秒→完成后一次性结算→将蔬菜汤放入产物容器"
+  },
+  {
+    "id": "RCP_0052",
+    "product_id": "ITM_0047",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0020",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0224",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携炉灶",
+    "duration_sec": 90.0,
+    "skill": "生存",
+    "required_level": 2,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将烤土豆放入产物容器"
+  },
+  {
+    "id": "RCP_0053",
+    "product_id": "ITM_0050",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0029",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0224",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携炉灶",
+    "duration_sec": 60.0,
+    "skill": "生存",
+    "required_level": 2,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 60 秒→完成后一次性结算→将煎鸡蛋放入产物容器"
+  },
+  {
+    "id": "RCP_0054",
+    "product_id": "ITM_0051",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0031",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0224",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "便携炉灶",
+    "duration_sec": 150.0,
+    "skill": "生存",
+    "required_level": 4,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 150 秒→完成后一次性结算→将烤肉放入产物容器"
+  },
+  {
+    "id": "RCP_0055",
+    "product_id": "ITM_0055",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0033",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0224",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "便携炉灶",
+    "duration_sec": 120.0,
+    "skill": "生存",
+    "required_level": 3,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 120 秒→完成后一次性结算→将烤鱼放入产物容器"
+  },
+  {
+    "id": "RCP_0056",
+    "product_id": "ITM_0049",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0032",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0020",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0021",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0065",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携炉灶",
+    "duration_sec": 240.0,
+    "skill": "生存",
+    "required_level": 8,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 240 秒→完成后一次性结算→将肉类炖菜放入产物容器"
+  },
+  {
+    "id": "RCP_0057",
+    "product_id": "ITM_0083",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0264",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0090",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "药物制作台",
+    "duration_sec": 40.0,
+    "skill": "医疗",
+    "required_level": 2,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 40 秒→完成后一次性结算→将普通绷带放入产物容器"
+  },
+  {
+    "id": "RCP_0058",
+    "product_id": "ITM_0084",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0083",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0089",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "药物制作台",
+    "duration_sec": 65.0,
+    "skill": "医疗",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 65 秒→完成后一次性结算→将无菌绷带放入产物容器"
+  },
+  {
+    "id": "RCP_0059",
+    "product_id": "ITM_0086",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0084",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0087",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0098",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "药物制作台",
+    "duration_sec": 80.0,
+    "skill": "医疗",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将压迫止血包放入产物容器"
+  },
+  {
+    "id": "RCP_0060",
+    "product_id": "ITM_0127",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0264",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "手工",
+    "duration_sec": 70.0,
+    "skill": "医疗",
+    "required_level": 3,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 70 秒→完成后一次性结算→将简易夹板放入产物容器"
+  },
+  {
+    "id": "RCP_0061",
+    "product_id": "ITM_0113",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0564",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0091",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0111",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "药物制作台",
+    "duration_sec": 180.0,
+    "skill": "医疗",
+    "required_level": 6,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 180 秒→完成后一次性结算→将基础抗丧尸感染药放入产物容器"
+  },
+  {
+    "id": "RCP_0062",
+    "product_id": "ITM_0114",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0113",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0567",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0091",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "药物制作台",
+    "duration_sec": 260.0,
+    "skill": "医疗",
+    "required_level": 12,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 260 秒→完成后一次性结算→将强化抗丧尸感染药放入产物容器"
+  },
+  {
+    "id": "RCP_0063",
+    "product_id": "ITM_0115",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0114",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0567",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0566",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "药物制作台",
+    "duration_sec": 360.0,
+    "skill": "医疗",
+    "required_level": 23,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 360 秒→完成后一次性结算→将高级净化血清放入产物容器"
+  },
+  {
+    "id": "RCP_0064",
+    "product_id": "ITM_0126",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0093",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0129",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0092",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "药物制作台",
+    "duration_sec": 80.0,
+    "skill": "医疗",
+    "required_level": 9,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将缝合工具放入产物容器"
+  },
+  {
+    "id": "RCP_0065",
+    "product_id": "ITM_0103",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0084",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0086",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0090",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0108",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "药物制作台",
+    "duration_sec": 130.0,
+    "skill": "医疗",
+    "required_level": 10,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 130 秒→完成后一次性结算→将急救包放入产物容器"
+  },
+  {
+    "id": "RCP_0066",
+    "product_id": "ITM_0538",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0201",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0242",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 70.0,
+    "skill": "制作",
+    "required_level": 12,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 70 秒→完成后一次性结算→将信号棒放入产物容器"
+  },
+  {
+    "id": "RCP_0067",
+    "product_id": "ITM_0243",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0223",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0545",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 60.0,
+    "skill": "制作",
+    "required_level": 4,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 60 秒→完成后一次性结算→将胶水放入产物容器"
+  },
+  {
+    "id": "RCP_0068",
+    "product_id": "ITM_0221",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0222",
+        "amount": 5
+      }
+    ],
+    "station_id_raw": "手工",
+    "duration_sec": 45.0,
+    "skill": "生存",
+    "required_level": 1,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 45 秒→完成后一次性结算→将绳索放入产物容器"
+  },
+  {
+    "id": "RCP_0069",
+    "product_id": "ITM_0264",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0263",
+        "amount": 4
+      }
+    ],
+    "station_id_raw": "裁缝台",
+    "duration_sec": 45.0,
+    "skill": "制作",
+    "required_level": 3,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 45 秒→完成后一次性结算→将布料放入产物容器"
+  },
+  {
+    "id": "RCP_0070",
+    "product_id": "ITM_0170",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 10
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 12
+      },
+      {
+        "item_id": "ITM_0218",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "手工",
+    "duration_sec": 210.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 210 秒→完成后一次性结算→将木工工作台放入产物容器"
+  },
+  {
+    "id": "RCP_0071",
+    "product_id": "ITM_0171",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0231",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0229",
+        "amount": 6
+      },
+      {
+        "item_id": "ITM_0217",
+        "amount": 6
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 12
+      }
+    ],
+    "station_id_raw": "手工",
+    "duration_sec": 310.0,
+    "skill": "制作",
+    "required_level": 12,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 310 秒→完成后一次性结算→将金属加工台放入产物容器"
+  },
+  {
+    "id": "RCP_0072",
+    "product_id": "ITM_0187",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0171",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0246",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0245",
+        "amount": 3
+      }
+    ],
+    "station_id_raw": "机械工作台",
+    "duration_sec": 220.0,
+    "skill": "电力",
+    "required_level": 10,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 220 秒→完成后一次性结算→将电气工作台放入产物容器"
+  },
+  {
+    "id": "RCP_0073",
+    "product_id": "ITM_0450",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0242",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "枪械改装台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将垂直握把放入产物容器"
+  },
+  {
+    "id": "RCP_0074",
+    "product_id": "ITM_0452",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 3
+      }
+    ],
+    "station_id_raw": "枪械改装台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 8,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将轻型枪托放入产物容器"
+  },
+  {
+    "id": "RCP_0075",
+    "product_id": "ITM_0453",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0231",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0241",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 3
+      }
+    ],
+    "station_id_raw": "枪械改装台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 13,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将重型枪托放入产物容器"
+  },
+  {
+    "id": "RCP_0076",
+    "product_id": "ITM_0456",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0231",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0241",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "枪械改装台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 19,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将消音器放入产物容器"
+  },
+  {
+    "id": "RCP_0077",
+    "product_id": "ITM_0463",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0231",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 3
+      }
+    ],
+    "station_id_raw": "枪械改装台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 9,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将枪械导轨放入产物容器"
+  },
+  {
+    "id": "RCP_0078",
+    "product_id": "ITM_0495",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0231",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0254",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "机械工作台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 11,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将车载储物箱放入产物容器"
+  },
+  {
+    "id": "RCP_0079",
+    "product_id": "ITM_0467",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0247",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0232",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0245",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "机械工作台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 14,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将汽车电瓶放入产物容器"
+  },
+  {
+    "id": "RCP_0080",
+    "product_id": "ITM_0487",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0252",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0244",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0242",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "机械工作台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将车灯放入产物容器"
+  },
+  {
+    "id": "RCP_0081",
+    "product_id": "ITM_0488",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0241",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0229",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0249",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "机械工作台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 8,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将雨刷放入产物容器"
+  },
+  {
+    "id": "RCP_0082",
+    "product_id": "ITM_0497",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 6
+      },
+      {
+        "item_id": "ITM_0264",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 5
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 4,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将单人床放入产物容器"
+  },
+  {
+    "id": "RCP_0083",
+    "product_id": "ITM_0498",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 11
+      },
+      {
+        "item_id": "ITM_0264",
+        "amount": 6
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 9
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将双人床放入产物容器"
+  },
+  {
+    "id": "RCP_0084",
+    "product_id": "ITM_0502",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 6
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 5
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 3,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将书桌放入产物容器"
+  },
+  {
+    "id": "RCP_0085",
+    "product_id": "ITM_0504",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 7
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 5
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 3,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将餐桌放入产物容器"
+  },
+  {
+    "id": "RCP_0086",
+    "product_id": "ITM_0505",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 3
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 2,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将餐椅放入产物容器"
+  },
+  {
+    "id": "RCP_0087",
+    "product_id": "ITM_0501",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 10
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 8
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将衣柜放入产物容器"
+  },
+  {
+    "id": "RCP_0088",
+    "product_id": "ITM_0525",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 8
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 6,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将货架家具放入产物容器"
+  },
+  {
+    "id": "RCP_0089",
+    "product_id": "ITM_0338",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0264",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0164",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "裁缝台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 4,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将棉夹克放入产物容器"
+  },
+  {
+    "id": "RCP_0090",
+    "product_id": "ITM_0341",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0242",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0264",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0243",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "裁缝台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 6,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将雨衣放入产物容器"
+  },
+  {
+    "id": "RCP_0091",
+    "product_id": "ITM_0365",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0265",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0264",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "裁缝台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 8,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将战术手套放入产物容器"
+  },
+  {
+    "id": "RCP_0092",
+    "product_id": "ITM_0363",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0265",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0264",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "裁缝台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将皮护臂放入产物容器"
+  },
+  {
+    "id": "RCP_0093",
+    "product_id": "ITM_0280",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 6
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 80.0,
+    "skill": "制作",
+    "required_level": 12,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 80 秒→完成后一次性结算→将铁门放入产物容器"
+  },
+  {
+    "id": "RCP_0094",
+    "product_id": "ITM_0048",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0020",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0065",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携炉灶",
+    "duration_sec": 145.0,
+    "skill": "生存",
+    "required_level": 4,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 145 秒→完成后一次性结算→将蔬菜汤放入产物容器"
+  },
+  {
+    "id": "RCP_0095",
+    "product_id": "ITM_0048",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0021",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0065",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携炉灶",
+    "duration_sec": 145.0,
+    "skill": "生存",
+    "required_level": 4,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 145 秒→完成后一次性结算→将蔬菜汤放入产物容器"
+  },
+  {
+    "id": "RCP_0096",
+    "product_id": "ITM_0048",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0022",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0065",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携炉灶",
+    "duration_sec": 145.0,
+    "skill": "生存",
+    "required_level": 4,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 145 秒→完成后一次性结算→将蔬菜汤放入产物容器"
+  },
+  {
+    "id": "RCP_0097",
+    "product_id": "ITM_0048",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0023",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0065",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携炉灶",
+    "duration_sec": 145.0,
+    "skill": "生存",
+    "required_level": 4,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 145 秒→完成后一次性结算→将蔬菜汤放入产物容器"
+  },
+  {
+    "id": "RCP_0098",
+    "product_id": "ITM_0048",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0026",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0065",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携炉灶",
+    "duration_sec": 145.0,
+    "skill": "生存",
+    "required_level": 4,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 145 秒→完成后一次性结算→将蔬菜汤放入产物容器"
+  },
+  {
+    "id": "RCP_0099",
+    "product_id": "ITM_0048",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0024",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0065",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携炉灶",
+    "duration_sec": 145.0,
+    "skill": "生存",
+    "required_level": 4,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 145 秒→完成后一次性结算→将蔬菜汤放入产物容器"
+  },
+  {
+    "id": "RCP_0100",
+    "product_id": "ITM_0048",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0025",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0065",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携炉灶",
+    "duration_sec": 145.0,
+    "skill": "生存",
+    "required_level": 4,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 145 秒→完成后一次性结算→将蔬菜汤放入产物容器"
+  },
+  {
+    "id": "RCP_0101",
+    "product_id": "ITM_0048",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0028",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0065",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携炉灶",
+    "duration_sec": 145.0,
+    "skill": "生存",
+    "required_level": 4,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 145 秒→完成后一次性结算→将蔬菜汤放入产物容器"
+  },
+  {
+    "id": "RCP_0102",
+    "product_id": "ITM_0217",
+    "product_amount": 4,
+    "ingredients": [
+      {
+        "item_id": "ITM_0210",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 25.0,
+    "skill": "制作",
+    "required_level": 1,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 25 秒→完成后一次性结算→将木板放入产物容器"
+  },
+  {
+    "id": "RCP_0103",
+    "product_id": "ITM_0217",
+    "product_amount": 4,
+    "ingredients": [
+      {
+        "item_id": "ITM_0211",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 25.0,
+    "skill": "制作",
+    "required_level": 1,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 25 秒→完成后一次性结算→将木板放入产物容器"
+  },
+  {
+    "id": "RCP_0104",
+    "product_id": "ITM_0217",
+    "product_amount": 4,
+    "ingredients": [
+      {
+        "item_id": "ITM_0212",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 25.0,
+    "skill": "制作",
+    "required_level": 1,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 25 秒→完成后一次性结算→将木板放入产物容器"
+  },
+  {
+    "id": "RCP_0105",
+    "product_id": "ITM_0217",
+    "product_amount": 3,
+    "ingredients": [
+      {
+        "item_id": "ITM_0213",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 25.0,
+    "skill": "制作",
+    "required_level": 1,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 25 秒→完成后一次性结算→将木板放入产物容器"
+  },
+  {
+    "id": "RCP_0106",
+    "product_id": "ITM_0229",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0190",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0188",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "熔炉",
+    "duration_sec": 190.0,
+    "skill": "制作",
+    "required_level": 9,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 190 秒→完成后一次性结算→将铁锭放入产物容器"
+  },
+  {
+    "id": "RCP_0107",
+    "product_id": "ITM_0229",
+    "product_amount": 3,
+    "ingredients": [
+      {
+        "item_id": "ITM_0191",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0188",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "熔炉",
+    "duration_sec": 190.0,
+    "skill": "制作",
+    "required_level": 9,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 190 秒→完成后一次性结算→将铁锭放入产物容器"
+  },
+  {
+    "id": "RCP_0108",
+    "product_id": "ITM_0230",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0192",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0188",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "熔炉",
+    "duration_sec": 190.0,
+    "skill": "制作",
+    "required_level": 9,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 190 秒→完成后一次性结算→将铜锭放入产物容器"
+  },
+  {
+    "id": "RCP_0109",
+    "product_id": "ITM_0232",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0193",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0188",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "熔炉",
+    "duration_sec": 190.0,
+    "skill": "制作",
+    "required_level": 9,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 190 秒→完成后一次性结算→将铅锭放入产物容器"
+  },
+  {
+    "id": "RCP_0110",
+    "product_id": "ITM_0233",
+    "product_amount": 2,
+    "ingredients": [
+      {
+        "item_id": "ITM_0205",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0188",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "高温熔炉",
+    "duration_sec": 190.0,
+    "skill": "制作",
+    "required_level": 9,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 190 秒→完成后一次性结算→将铝锭放入产物容器"
+  },
+  {
+    "id": "RCP_0111",
+    "product_id": "ITM_0426",
+    "product_amount": 8,
+    "ingredients": [
+      {
+        "item_id": "ITM_0269",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0268",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0270",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0232",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "弹药压装台",
+    "duration_sec": 90.0,
+    "skill": "枪械",
+    "required_level": 12,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将9毫米子弹放入产物容器"
+  },
+  {
+    "id": "RCP_0112",
+    "product_id": "ITM_0428",
+    "product_amount": 8,
+    "ingredients": [
+      {
+        "item_id": "ITM_0269",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0268",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0270",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0230",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "弹药压装台",
+    "duration_sec": 90.0,
+    "skill": "枪械",
+    "required_level": 12,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将556子弹放入产物容器"
+  },
+  {
+    "id": "RCP_0113",
+    "product_id": "ITM_0429",
+    "product_amount": 8,
+    "ingredients": [
+      {
+        "item_id": "ITM_0269",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0268",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0270",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0232",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "弹药压装台",
+    "duration_sec": 90.0,
+    "skill": "枪械",
+    "required_level": 12,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将762子弹放入产物容器"
+  },
+  {
+    "id": "RCP_0114",
+    "product_id": "ITM_0430",
+    "product_amount": 8,
+    "ingredients": [
+      {
+        "item_id": "ITM_0269",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0268",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0270",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0232",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "弹药压装台",
+    "duration_sec": 90.0,
+    "skill": "枪械",
+    "required_level": 12,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将12号霰弹放入产物容器"
+  },
+  {
+    "id": "RCP_0115",
+    "product_id": "ITM_0433",
+    "product_amount": 4,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0229",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 90.0,
+    "skill": "枪械",
+    "required_level": 12,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将弩箭放入产物容器"
+  },
+  {
+    "id": "RCP_0116",
+    "product_id": "ITM_0434",
+    "product_amount": 4,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0263",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 90.0,
+    "skill": "枪械",
+    "required_level": 12,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将普通箭放入产物容器"
+  },
+  {
+    "id": "RCP_0117",
+    "product_id": "ITM_0272",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0252",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将木窗框放入产物容器"
+  },
+  {
+    "id": "RCP_0118",
+    "product_id": "ITM_0276",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 8
+      },
+      {
+        "item_id": "ITM_0218",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 7
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将木屋顶放入产物容器"
+  },
+  {
+    "id": "RCP_0119",
+    "product_id": "ITM_0277",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 12
+      },
+      {
+        "item_id": "ITM_0218",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 10
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将木楼梯放入产物容器"
+  },
+  {
+    "id": "RCP_0120",
+    "product_id": "ITM_0274",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0273",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0229",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 4
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将加固木门放入产物容器"
+  },
+  {
+    "id": "RCP_0121",
+    "product_id": "ITM_0280",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 5
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将铁门放入产物容器"
+  },
+  {
+    "id": "RCP_0122",
+    "product_id": "ITM_0281",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0280",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0231",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 5
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将加固铁门放入产物容器"
+  },
+  {
+    "id": "RCP_0123",
+    "product_id": "ITM_0287",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0245",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将铁丝网放入产物容器"
+  },
+  {
+    "id": "RCP_0124",
+    "product_id": "ITM_0289",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0231",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 5
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将金属路障放入产物容器"
+  },
+  {
+    "id": "RCP_0125",
+    "product_id": "ITM_0288",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 5
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将木路障放入产物容器"
+  },
+  {
+    "id": "RCP_0126",
+    "product_id": "ITM_0285",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0261",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0231",
+        "amount": 2
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将混凝土柱放入产物容器"
+  },
+  {
+    "id": "RCP_0127",
+    "product_id": "ITM_0286",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0261",
+        "amount": 3
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将水泥地面放入产物容器"
+  },
+  {
+    "id": "RCP_0128",
+    "product_id": "ITM_0311",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0252",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0244",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0229",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将吊灯放入产物容器"
+  },
+  {
+    "id": "RCP_0129",
+    "product_id": "ITM_0312",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0252",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0244",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0229",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将壁灯放入产物容器"
+  },
+  {
+    "id": "RCP_0130",
+    "product_id": "ITM_0313",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0252",
+        "amount": 3
+      },
+      {
+        "item_id": "ITM_0244",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0231",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0246",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将探照灯放入产物容器"
+  },
+  {
+    "id": "RCP_0131",
+    "product_id": "ITM_0310",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0231",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0244",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0246",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将电闸盒放入产物容器"
+  },
+  {
+    "id": "RCP_0132",
+    "product_id": "ITM_0309",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0244",
+        "amount": 8
+      },
+      {
+        "item_id": "ITM_0245",
+        "amount": 4
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将电线包放入产物容器"
+  },
+  {
+    "id": "RCP_0133",
+    "product_id": "ITM_0274",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0273",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0231",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 5
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将加固木门放入产物容器"
+  },
+  {
+    "id": "RCP_0134",
+    "product_id": "ITM_0316",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0244",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0231",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0249",
+        "amount": 1
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将供电取暖器放入产物容器"
+  },
+  {
+    "id": "RCP_0135",
+    "product_id": "ITM_0321",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0249",
+        "amount": 1
+      },
+      {
+        "item_id": "ITM_0245",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0229",
+        "amount": 3
+      }
+    ],
+    "station_id_raw": "便携工作台",
+    "duration_sec": 90.0,
+    "skill": "制作",
+    "required_level": 7,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 90 秒→完成后一次性结算→将电动水泵放入产物容器"
+  },
+  {
+    "id": "RCP_0136",
+    "product_id": "ITM_0500",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 4
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 4
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 100.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 100 秒→完成后一次性结算→将床头柜放入产物容器"
+  },
+  {
+    "id": "RCP_0137",
+    "product_id": "ITM_0509",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 7
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 6
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 100.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 100 秒→完成后一次性结算→将橱柜放入产物容器"
+  },
+  {
+    "id": "RCP_0138",
+    "product_id": "ITM_0510",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 4
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 100.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 100 秒→完成后一次性结算→将吊柜放入产物容器"
+  },
+  {
+    "id": "RCP_0139",
+    "product_id": "ITM_0508",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 8
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 7
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 100.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 100 秒→完成后一次性结算→将书架放入产物容器"
+  },
+  {
+    "id": "RCP_0140",
+    "product_id": "ITM_0507",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 4
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 100.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 100 秒→完成后一次性结算→将茶几放入产物容器"
+  },
+  {
+    "id": "RCP_0141",
+    "product_id": "ITM_0506",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0264",
+        "amount": 8
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 4
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 100.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 100 秒→完成后一次性结算→将沙发放入产物容器"
+  },
+  {
+    "id": "RCP_0142",
+    "product_id": "ITM_0503",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 7
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 6
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 100.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 100 秒→完成后一次性结算→将办公桌放入产物容器"
+  },
+  {
+    "id": "RCP_0143",
+    "product_id": "ITM_0520",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 6
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 5
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 100.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 100 秒→完成后一次性结算→将金属柜放入产物容器"
+  },
+  {
+    "id": "RCP_0144",
+    "product_id": "ITM_0522",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0229",
+        "amount": 7
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 6
+      }
+    ],
+    "station_id_raw": "金属加工台",
+    "duration_sec": 100.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 100 秒→完成后一次性结算→将工具柜放入产物容器"
+  },
+  {
+    "id": "RCP_0145",
+    "product_id": "ITM_0519",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 5
+      },
+      {
+        "item_id": "ITM_0252",
+        "amount": 2
+      },
+      {
+        "item_id": "ITM_0235",
+        "amount": 5
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 100.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 100 秒→完成后一次性结算→将药柜放入产物容器"
+  },
+  {
+    "id": "RCP_0146",
+    "product_id": "ITM_0524",
+    "product_amount": 1,
+    "ingredients": [
+      {
+        "item_id": "ITM_0217",
+        "amount": 8
+      },
+      {
+        "item_id": "ITM_0259",
+        "amount": 6
+      }
+    ],
+    "station_id_raw": "木工工作台",
+    "duration_sec": 100.0,
+    "skill": "制作",
+    "required_level": 5,
+    "power_wh": 0.0,
+    "operation_text_raw": "检查材料和工作台→预留材料→处理/加工 100 秒→完成后一次性结算→将收银柜台放入产物容器"
+  }
+]

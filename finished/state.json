@@ -1,0 +1,29 @@
+{
+  "project": "OvercastVeil",
+  "spec_revision": "2D-ISO-01",
+  "agent_mode": "single_session_continuous",
+  "version": "0.0.1-prototype",
+  "release_status": "not_shippable",
+  "last_update": "2026-11-07",
+  "last_verified_godot_version": null,
+  "godot_runtime_verified": false,
+  "last_completed_feature": null,
+  "next_focus": "Open Godot 4.7.2 project; fix import/runtime errors; implement automated door/loot/save regression; then continue S0",
+  "current_feature": "S0-boot-and-core-loop",
+  "current_status": "in_progress",
+  "tests": {
+    "static": "PASS",
+    "godot_import": "SKIP (not installed in packaging environment)",
+    "godot_smoke": "SKIP (not installed in packaging environment)",
+    "godot_gameplay": "SKIP (not installed in packaging environment)",
+    "manual_play": "not_run"
+  },
+  "blocked_on": [],
+  "features_done": [],
+  "known_risks": [
+    "Godot executable availability unknown",
+    "prototype transitions and saves not production-transactional",
+    "placeholder art"
+  ],
+  "last_test_report": "finished/reports/qa_20261107T105418Z.json"
+}

@@ -1,0 +1,16 @@
+{
+  "space_id": "room:building_001:floor0:main",
+  "seed": 42,
+  "opened_containers": [
+    "cabinet_001"
+  ],
+  "looted_items": [
+    "loot_001"
+  ],
+  "dead_entities": [
+    "zombie_001"
+  ],
+  "furniture_diffs": [],
+  "ground_drops": [],
+  "last_simulated_tick": 123456
+}

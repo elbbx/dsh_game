@@ -1,0 +1,16 @@
+{
+  "portal_id": "door_house_01",
+  "source_space": "world:suburb_01:0:0",
+  "source_cell": [
+    14,
+    12
+  ],
+  "dest_space": "room:building_001:floor0:main",
+  "dest_cell": [
+    2,
+    7
+  ],
+  "entry_direction": "north",
+  "lock": "unlocked",
+  "exit_cooldown_sec": 0.3
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ItemDefinition",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "category",
+    "weight_kg",
+    "grid",
+    "stack_max",
+    "usage_effect"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ITM_[0-9]{4}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "type": "string"
+    },
+    "weight_kg": {
+      "type": "number",
+      "minimum": 0
+    },
+    "grid": {
+      "type": "string",
+      "pattern": "^[0-9]+x[0-9]+$"
+    },
+    "stack_max": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "usage_effect": {
+      "type": "string"
+    }
+  }
+}

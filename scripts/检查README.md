@@ -1,0 +1,1 @@
+运行 `python scripts/qa_cycle.py --root .`。脚本检查原始数据、2D 禁用项、全部原始占位 PNG 哈希。若 Godot 4.7.2 的 CLI 可用，则执行真正的 Godot 导入和无头启动；不存在引擎时引擎相关项标 `SKIP`，绝不能冒充 `PASS`。成功/失败日志写入 `finished/reports/`，开发代理按 `AGENTS.md` 自行持续回归。此脚本不是“自动写完游戏的AI”。

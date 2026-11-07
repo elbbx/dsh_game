@@ -1,0 +1,547 @@
+[
+  {
+    "id": "00",
+    "name": "架构与数据契约",
+    "source_chapters": [
+      1,
+      16,
+      17,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      42,
+      53,
+      54,
+      56
+    ],
+    "depends_on": [],
+    "goal": "统一世界坐标、实体ID、配置定义、运行态、事件接口、事务、时钟与系统注册",
+    "contract": "WorldClock, EntityRegistry, EventBus, ConfigCatalog, TransactionCoordinator",
+    "acceptance": "数据契约冻结后其他模块才允许并行"
+  },
+  {
+    "id": "01",
+    "name": "世界时间与动态天气",
+    "source_chapters": [
+      2,
+      43,
+      52
+    ],
+    "depends_on": [
+      "00"
+    ],
+    "goal": "昼夜季节、降雨降雪、风速湿度、室内外微气候与天气影响",
+    "contract": "WeatherSample, ClimateCell, WorldTimeSnapshot",
+    "acceptance": "同一区块重复读档天气一致"
+  },
+  {
+    "id": "02",
+    "name": "七项状态与角色成长",
+    "source_chapters": [
+      3,
+      5,
+      6,
+      20
+    ],
+    "depends_on": [
+      "00",
+      "01"
+    ],
+    "goal": "七项状态、有效力量敏捷、营养体型、十项技能0-25级逐级成长",
+    "contract": "PlayerStats, SkillProgress, NutritionDelta",
+    "acceptance": "可重算和读档不重复升级"
+  },
+  {
+    "id": "03",
+    "name": "伤势医疗感染与疾病",
+    "source_chapters": [
+      4,
+      44,
+      62,
+      103
+    ],
+    "depends_on": [
+      "00",
+      "02"
+    ],
+    "goal": "七部位伤势、出血、骨折、丧尸感染、普通伤口感染、环境疾病与动作打断",
+    "contract": "InjuryRecord, InfectionState, TreatmentTransaction",
+    "acceptance": "中断不会无提示吞掉耗材"
+  },
+  {
+    "id": "04",
+    "name": "背包装备快捷栏与输入",
+    "source_chapters": [
+      7,
+      100,
+      101,
+      104,
+      105,
+      106
+    ],
+    "depends_on": [
+      "00",
+      "02"
+    ],
+    "goal": "塔科夫网格背包、三武器共用槽位、六类别、120度三扇区、顶部栏、实时UI和疾跑",
+    "contract": "ItemInstance, InventoryContainer, EquipmentSlots, QuickUseRequest",
+    "acceptance": "轮盘和背包期间世界不暂停"
+  },
+  {
+    "id": "05",
+    "name": "圆环HUD与菜单",
+    "source_chapters": [
+      15,
+      65,
+      102,
+      106
+    ],
+    "depends_on": [
+      "02",
+      "03",
+      "04"
+    ],
+    "goal": "圆心图标+外环进度，六项常驻，体力角色旁动态显示，临时冷热疾病环",
+    "contract": "StatusRingViewModel, HUDOverlay",
+    "acceptance": "体力停耗1秒后淡出"
+  },
+  {
+    "id": "06",
+    "name": "物品库与掉落经济",
+    "source_chapters": [
+      6,
+      7,
+      13,
+      47,
+      88
+    ],
+    "depends_on": [
+      "00",
+      "04"
+    ],
+    "goal": "按区域-房间-容器配置掉落、品质、堆叠、格子、耐久、唯一实例",
+    "contract": "ItemDefinition, LootTable, LootContainerState",
+    "acceptance": "拾取不可跨世界复制"
+  },
+  {
+    "id": "07",
+    "name": "武器战斗与枪械模组",
+    "source_chapters": [
+      8,
+      46
+    ],
+    "depends_on": [
+      "00",
+      "02",
+      "04"
+    ],
+    "goal": "武器本体槽位、兼容配件、弹药、耐久、枪声、命中、近战与丧尸防护",
+    "contract": "WeaponDefinition, AttachmentDefinition, DamageEvent, SoundEvent",
+    "acceptance": "三枪槽混用远近战"
+  },
+  {
+    "id": "08",
+    "name": "敌人生成与人口调度",
+    "source_chapters": [
+      9,
+      12,
+      17,
+      29,
+      33
+    ],
+    "depends_on": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "goal": "人口池、生成锚点、动态迁徙、尸潮、视野保护、预算、远距持久化",
+    "contract": "PopulationCell, SpawnRequest, EnemyInstance",
+    "acceptance": "无视野内凭空生成和无限刷尸"
+  },
+  {
+    "id": "09",
+    "name": "丧尸AI与声光感知",
+    "source_chapters": [
+      9,
+      12,
+      27
+    ],
+    "depends_on": [
+      "07",
+      "08",
+      "11"
+    ],
+    "goal": "视觉听觉、最后已知位置、破门、翻窗、爬楼、群体包围、搜索和重置",
+    "contract": "PerceptionEvent, ZombieBlackboard, MoveIntent",
+    "acceptance": "追逐中区块切换不中断"
+  },
+  {
+    "id": "10",
+    "name": "区块流送与开放世界",
+    "source_chapters": [
+      2,
+      17,
+      22,
+      23,
+      52,
+      53,
+      94
+    ],
+    "depends_on": [
+      "00"
+    ],
+    "goal": "空间分区、加载半径、迟滞、分层LOD、数据快照、异步请求与主线程实例化",
+    "contract": "ChunkKey, ChunkManifest, ActiveEntityIndex",
+    "acceptance": "快速驾驶不出现虚空地形"
+  },
+  {
+    "id": "11",
+    "name": "导航网格与多层寻路",
+    "source_chapters": [
+      9,
+      27,
+      28,
+      39,
+      94
+    ],
+    "depends_on": [
+      "00",
+      "10"
+    ],
+    "goal": "跨区块粗路径、NavRegion连通、楼梯门窗OffMeshLink、动态障碍和寻路预算",
+    "contract": "NavChunk, PortalLink, PathQuery",
+    "acceptance": "破门后路径更新局部区域"
+  },
+  {
+    "id": "12",
+    "name": "建筑外形户型与室内结构",
+    "source_chapters": [
+      13,
+      47,
+      94
+    ],
+    "depends_on": [
+      "00",
+      "10",
+      "11"
+    ],
+    "goal": "现实尺度矩形组合、多种外立面、楼层、门窗、楼梯、停车和房间形状",
+    "contract": "BuildingDefinition, FloorPlan, Room, Opening",
+    "acceptance": "所有房间可达且门宽合理"
+  },
+  {
+    "id": "13",
+    "name": "家具摆放与室内搜刮",
+    "source_chapters": [
+      13,
+      47,
+      60,
+      61
+    ],
+    "depends_on": [
+      "06",
+      "12"
+    ],
+    "goal": "家具占地/墙面规则、动线、容器、搜索声响、污染与家具搬运",
+    "contract": "FurnitureDefinition, PlacementRule, ContainerRef",
+    "acceptance": "家具不堵塞必要通路"
+  },
+  {
+    "id": "14",
+    "name": "采矿伐木与可挖掘地形",
+    "source_chapters": [
+      86,
+      87,
+      88,
+      89,
+      90,
+      93,
+      94,
+      96,
+      97,
+      98,
+      99
+    ],
+    "depends_on": [
+      "00",
+      "10",
+      "11"
+    ],
+    "goal": "矿脉与地表线索、局部体素/网格挖掘、支护、树木倒伏、再生、矿产保存",
+    "contract": "ResourceNode, ExcavationPatch, TreeState",
+    "acceptance": "挖矿同步导航及双世界共享"
+  },
+  {
+    "id": "15",
+    "name": "制造冶炼建造与结构",
+    "source_chapters": [
+      48,
+      63,
+      91,
+      92,
+      95
+    ],
+    "depends_on": [
+      "06",
+      "12",
+      "14"
+    ],
+    "goal": "制作配方解锁、炉子冶炼、工艺时间、燃料、结构支持、维修拆解",
+    "contract": "Recipe, CraftJob, BuildPlacement, StructurePart",
+    "acceptance": "材料原子扣除，离线完成不重复"
+  },
+  {
+    "id": "16",
+    "name": "电网热源与据点运行",
+    "source_chapters": [
+      45,
+      49,
+      51,
+      64,
+      95
+    ],
+    "depends_on": [
+      "12",
+      "15"
+    ],
+    "goal": "发电机/燃烧炉/太阳能板、电池、中继器、电网负荷及自动哨塔",
+    "contract": "PowerNode, CableEdge, DemandPriority",
+    "acceptance": "同一单位Wh能量守恒"
+  },
+  {
+    "id": "17",
+    "name": "NPC交易任务与防守辅助",
+    "source_chapters": [
+      14,
+      49,
+      50,
+      95
+    ],
+    "depends_on": [
+      "06",
+      "09",
+      "12",
+      "16"
+    ],
+    "goal": "少量NPC、岗位、交易、任务状态、守卫轻辅助和庇护区",
+    "contract": "NPCRecord, QuestRecord, TradeTransaction",
+    "acceptance": "任务奖励不可重复领"
+  },
+  {
+    "id": "18",
+    "name": "载具驾驶改装与交通",
+    "source_chapters": [
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      84,
+      85
+    ],
+    "depends_on": [
+      "07",
+      "10",
+      "11",
+      "06"
+    ],
+    "goal": "最多乘员、钥匙点火、电瓶油箱、零件耐久、货箱、物理、天气/噪声与拖车",
+    "contract": "VehicleDefinition, VehicleInstance, VehicleInventory",
+    "acceptance": "高速跨区块不丢车"
+  },
+  {
+    "id": "19",
+    "name": "SAN克苏鲁AI与异常关注",
+    "source_chapters": [
+      10,
+      11,
+      27,
+      28,
+      29,
+      30,
+      31,
+      34
+    ],
+    "depends_on": [
+      "02",
+      "10",
+      "11"
+    ],
+    "goal": "T1-T5生态、视线仇恨、光源感知、掩体追踪、领地与定点怪",
+    "contract": "EldritchBlackboard, AggroState, AttentionState",
+    "acceptance": "失去视线持续慢速追踪"
+  },
+  {
+    "id": "20",
+    "name": "裂隙颠倒世界与车辆转层",
+    "source_chapters": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      81,
+      82,
+      83
+    ],
+    "depends_on": [
+      "10",
+      "18",
+      "19",
+      "23"
+    ],
+    "goal": "双世界几何数据共享、敌人分层、裂隙触手、高级抓车与乘员事务",
+    "contract": "WorldLayer, SharedEntityState, RiftTransfer",
+    "acceptance": "车和货物只存在一份且可返程"
+  },
+  {
+    "id": "21",
+    "name": "衣物防护卫生与环境疾病",
+    "source_chapters": [
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69
+    ],
+    "depends_on": [
+      "01",
+      "02",
+      "03",
+      "04"
+    ],
+    "goal": "衣物分层、热阻、出汗、湿衣、洗澡洗衣、感冒、血污、破损补丁",
+    "contract": "ClothingInstance, ThermalState, HygieneState",
+    "acceptance": "洗澡不治疗丧尸感染"
+  },
+  {
+    "id": "22",
+    "name": "地图生成与场景兴趣点",
+    "source_chapters": [
+      2,
+      12,
+      13,
+      41,
+      47
+    ],
+    "depends_on": [
+      "10",
+      "12"
+    ],
+    "goal": "道路街区分布、区划规则、POI、建筑放置、资源与敌人初始生成",
+    "contract": "WorldSeed, Parcel, POIRecord, SpawnAnchor",
+    "acceptance": "同seed同结果无重叠楼"
+  },
+  {
+    "id": "23",
+    "name": "存档事件日志与一致性",
+    "source_chapters": [
+      17,
+      23,
+      38,
+      56,
+      83,
+      96,
+      105
+    ],
+    "depends_on": [
+      "00"
+    ],
+    "goal": "存档版本化、实体拥有者、区块快照、事务去重、幂等恢复、故障注入",
+    "contract": "SaveSnapshot, EventLedger, PendingTransaction",
+    "acceptance": "跨世界读档不复制物品"
+  },
+  {
+    "id": "24",
+    "name": "音效反馈与可观察性",
+    "source_chapters": [
+      8,
+      9,
+      10,
+      12,
+      43,
+      76,
+      102
+    ],
+    "depends_on": [
+      "07",
+      "09",
+      "19"
+    ],
+    "goal": "声光事件传播、遮挡、天气衰减、AI调查和debug overlay",
+    "contract": "SoundEvent, LightStimulus, DebugMetrics",
+    "acceptance": "枪声能引怪，声源唯一"
+  },
+  {
+    "id": "25",
+    "name": "性能测试自动化与集成",
+    "source_chapters": [
+      18,
+      19,
+      32,
+      33,
+      39,
+      40,
+      54,
+      55,
+      68,
+      85,
+      99,
+      106
+    ],
+    "depends_on": [
+      "08",
+      "10",
+      "11",
+      "23"
+    ],
+    "goal": "性能预算，固定seed回归，内存稳定，延迟，功能测试与分支合并门禁",
+    "contract": "TestScenario, PerformanceBudget, AcceptanceRecord",
+    "acceptance": "30分钟进出区块/读档稳定"
+  },
+  {
+    "id": "26",
+    "name": "供水农耕食物烹饪",
+    "source_chapters": [
+      6,
+      13,
+      43,
+      60,
+      61,
+      91
+    ],
+    "depends_on": [
+      "01",
+      "06",
+      "15"
+    ],
+    "goal": "雨水收集、净化烹饪、种植农业、变质、厨房热源、饮水疾病",
+    "contract": "WaterTank, CropState, CookingJob",
+    "acceptance": "污染水不会被视为净水"
+  }
+]

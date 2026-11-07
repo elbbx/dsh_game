@@ -1,0 +1,12 @@
+{
+  "source_archive": "full3(1).zip",
+  "source_files": 761,
+  "source_bytes": 35401686,
+  "asset_rule": "original assets kept as read-only historical reference",
+  "adapted_modules": 27,
+  "original_items": 578,
+  "original_recipes": 146,
+  "godot_project": "game/project.godot",
+  "runtime_3d_models_allowed": false,
+  "stage": "prototype source + documentation, not finished game"
+}

@@ -1,0 +1,154 @@
+{
+  "id": "BLD_012",
+  "name": "汽车旅馆两层",
+  "type": "motel",
+  "levels": 2,
+  "footprint_m": [
+    29,
+    12
+  ],
+  "height_m": 6.9,
+  "floor_height_m": 3.15,
+  "roof": "平屋顶+金属雨棚",
+  "facade": "混凝土/灰泥",
+  "use": "旅馆",
+  "has_parking": true,
+  "floors": [
+    {
+      "floor": 1,
+      "rooms": [
+        {
+          "name": "客房A",
+          "x": 0.0,
+          "y": 0,
+          "w": 5.3,
+          "h": 10.3,
+          "door": "south",
+          "furniture": "床/卫生间"
+        },
+        {
+          "name": "客房B",
+          "x": 5.3,
+          "y": 0,
+          "w": 5.3,
+          "h": 10.3,
+          "door": "south",
+          "furniture": "床/卫生间"
+        },
+        {
+          "name": "客房C",
+          "x": 10.6,
+          "y": 0,
+          "w": 5.3,
+          "h": 10.3,
+          "door": "south",
+          "furniture": "床/卫生间"
+        },
+        {
+          "name": "客房D",
+          "x": 15.9,
+          "y": 0,
+          "w": 5.3,
+          "h": 10.3,
+          "door": "south",
+          "furniture": "床/卫生间"
+        },
+        {
+          "name": "客房E",
+          "x": 21.2,
+          "y": 0,
+          "w": 5.3,
+          "h": 10.3,
+          "door": "south",
+          "furniture": "床/卫生间"
+        },
+        {
+          "name": "外楼梯",
+          "x": 26.5,
+          "y": 0,
+          "w": 2.5,
+          "h": 10.3,
+          "door": "south",
+          "furniture": "台阶"
+        },
+        {
+          "name": "外走廊",
+          "x": 0,
+          "y": 10.3,
+          "w": 29,
+          "h": 1.7,
+          "door": "south",
+          "furniture": ""
+        }
+      ]
+    },
+    {
+      "floor": 2,
+      "rooms": [
+        {
+          "name": "客房A",
+          "x": 0.0,
+          "y": 0,
+          "w": 5.3,
+          "h": 10.3,
+          "door": "south",
+          "furniture": "床/卫生间"
+        },
+        {
+          "name": "客房B",
+          "x": 5.3,
+          "y": 0,
+          "w": 5.3,
+          "h": 10.3,
+          "door": "south",
+          "furniture": "床/卫生间"
+        },
+        {
+          "name": "客房C",
+          "x": 10.6,
+          "y": 0,
+          "w": 5.3,
+          "h": 10.3,
+          "door": "south",
+          "furniture": "床/卫生间"
+        },
+        {
+          "name": "客房D",
+          "x": 15.9,
+          "y": 0,
+          "w": 5.3,
+          "h": 10.3,
+          "door": "south",
+          "furniture": "床/卫生间"
+        },
+        {
+          "name": "客房E",
+          "x": 21.2,
+          "y": 0,
+          "w": 5.3,
+          "h": 10.3,
+          "door": "south",
+          "furniture": "床/卫生间"
+        },
+        {
+          "name": "外楼梯",
+          "x": 26.5,
+          "y": 0,
+          "w": 2.5,
+          "h": 10.3,
+          "door": "south",
+          "furniture": "台阶"
+        },
+        {
+          "name": "外走廊",
+          "x": 0,
+          "y": 10.3,
+          "w": 29,
+          "h": 1.7,
+          "door": "south",
+          "furniture": ""
+        }
+      ]
+    }
+  ]
+}

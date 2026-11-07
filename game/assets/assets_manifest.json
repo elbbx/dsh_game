@@ -1,0 +1,134 @@
+[
+  {
+    "id": "dirt",
+    "file": "res://art/dirt.png",
+    "origin": "original_placeholder",
+    "creator": "OvercastVeil project pack (programmatically authored)",
+    "license": "original_project_asset",
+    "source_url": null,
+    "sha256": "ba6b995f54329a7b0bca0126acd8ef4f8bf6e8db5e97a03f66512beb4c9fdbca",
+    "reviewed": true,
+    "usage": "temporary prototype; replace before release with polished original or licensed 2D pixel art"
+  },
+  {
+    "id": "exit",
+    "file": "res://art/exit.png",
+    "origin": "original_placeholder",
+    "creator": "OvercastVeil project pack (programmatically authored)",
+    "license": "original_project_asset",
+    "source_url": null,
+    "sha256": "c3a4f4e767f58ab4e017e796bf84b828b427170d8e4e0f0351519fc4f76d1b14",
+    "reviewed": true,
+    "usage": "temporary prototype; replace before release with polished original or licensed 2D pixel art"
+  },
+  {
+    "id": "floor",
+    "file": "res://art/floor.png",
+    "origin": "original_placeholder",
+    "creator": "OvercastVeil project pack (programmatically authored)",
+    "license": "original_project_asset",
+    "source_url": null,
+    "sha256": "daca8083ecce8e0703cbf4a563484d34ea944db3d320649a9c42d0c3ed0e990b",
+    "reviewed": true,
+    "usage": "temporary prototype; replace before release with polished original or licensed 2D pixel art"
+  },
+  {
+    "id": "floor2",
+    "file": "res://art/floor2.png",
+    "origin": "original_placeholder",
+    "creator": "OvercastVeil project pack (programmatically authored)",
+    "license": "original_project_asset",
+    "source_url": null,
+    "sha256": "6efc1e2f8d89182e8bba4e4a32eda3105c582568da74045538792ef539d1598d",
+    "reviewed": true,
+    "usage": "temporary prototype; replace before release with polished original or licensed 2D pixel art"
+  },
+  {
+    "id": "grass",
+    "file": "res://art/grass.png",
+    "origin": "original_placeholder",
+    "creator": "OvercastVeil project pack (programmatically authored)",
+    "license": "original_project_asset",
+    "source_url": null,
+    "sha256": "30a15d88098e6cf20e2ef902745d086f6a14c7f42e05a22b28e15dd7fec24cb1",
+    "reviewed": true,
+    "usage": "temporary prototype; replace before release with polished original or licensed 2D pixel art"
+  },
+  {
+    "id": "grass2",
+    "file": "res://art/grass2.png",
+    "origin": "original_placeholder",
+    "creator": "OvercastVeil project pack (programmatically authored)",
+    "license": "original_project_asset",
+    "source_url": null,
+    "sha256": "81344209f4b6c428d4dbcaa51570d9e44e149d5f8848615f711a182c3c010c1b",
+    "reviewed": true,
+    "usage": "temporary prototype; replace before release with polished original or licensed 2D pixel art"
+  },
+  {
+    "id": "house",
+    "file": "res://art/house.png",
+    "origin": "original_placeholder",
+    "creator": "OvercastVeil project pack (programmatically authored)",
+    "license": "original_project_asset",
+    "source_url": null,
+    "sha256": "a16228ba6366318326f9eb9cc3c0f82142a48af4749f8c8dee925b0290464f45",
+    "reviewed": true,
+    "usage": "temporary prototype; replace before release with polished original or licensed 2D pixel art"
+  },
+  {
+    "id": "loot",
+    "file": "res://art/loot.png",
+    "origin": "original_placeholder",
+    "creator": "OvercastVeil project pack (programmatically authored)",
+    "license": "original_project_asset",
+    "source_url": null,
+    "sha256": "513ae6e66c125e3d97aec6a40480e6aeb82ba016bdf3bb22bde72d32172ef7e8",
+    "reviewed": true,
+    "usage": "temporary prototype; replace before release with polished original or licensed 2D pixel art"
+  },
+  {
+    "id": "player",
+    "file": "res://art/player.png",
+    "origin": "original_placeholder",
+    "creator": "OvercastVeil project pack (programmatically authored)",
+    "license": "original_project_asset",
+    "source_url": null,
+    "sha256": "e6b9df3ec0f9c6e73b18f8e80bc4dffe86bdcdae0725c0db2fdc45af4a230cf6",
+    "reviewed": true,
+    "usage": "temporary prototype; replace before release with polished original or licensed 2D pixel art"
+  },
+  {
+    "id": "road",
+    "file": "res://art/road.png",
+    "origin": "original_placeholder",
+    "creator": "OvercastVeil project pack (programmatically authored)",
+    "license": "original_project_asset",
+    "source_url": null,
+    "sha256": "0a14deb53800e411c0ab6e98e8dac7f09926d3c0b200905dfcf634981f206ea9",
+    "reviewed": true,
+    "usage": "temporary prototype; replace before release with polished original or licensed 2D pixel art"
+  },
+  {
+    "id": "tree",
+    "file": "res://art/tree.png",
+    "origin": "original_placeholder",
+    "creator": "OvercastVeil project pack (programmatically authored)",
+    "license": "original_project_asset",
+    "source_url": null,
+    "sha256": "b5b1d1a305d0e9aaf33165afa7fddedcd92eb29149cb1aa6f8cbed67291cd408",
+    "reviewed": true,
+    "usage": "temporary prototype; replace before release with polished original or licensed 2D pixel art"
+  },
+  {
+    "id": "zombie",
+    "file": "res://art/zombie.png",
+    "origin": "original_placeholder",
+    "creator": "OvercastVeil project pack (programmatically authored)",
+    "license": "original_project_asset",
+    "source_url": null,
+    "sha256": "021297b21edd05bcb78085a06a1e2a4355adab558af64b22a5bda5f2158fa764",
+    "reviewed": true,
+    "usage": "temporary prototype; replace before release with polished original or licensed 2D pixel art"
+  }
+]

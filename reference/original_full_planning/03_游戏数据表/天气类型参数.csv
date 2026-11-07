@@ -1,0 +1,15 @@
+﻿type,base_air_temp_C,wind_mps,solar_efficiency,visibility_ratio,wetness_per_min,ai_modifier,vehicle_modifier,health
+晴朗,22,2,1.0,1.0,0,baseline,none,normal
+多云,18,3,0.55,0.94,0,baseline,none,normal
+阴天,16,3,0.3,0.86,0,baseline,none,normal
+毛毛雨,13,2,0.18,0.8,0.08,hearing_mask_low,none,normal
+小雨,12,4,0.16,0.77,0.17,hearing_mask,none,normal
+暴雨,11,9,0.07,0.48,0.54,hearing_mask_high,friction_down,normal
+雷暴,15,13,0.05,0.28,0.62,noise_spikes,none,normal
+大雾,9,2,0.4,0.2,0.11,vision_reduced,none,normal
+冷雾,0,2,0.26,0.21,0.15,thermal_chill,none,cold_stress
+小雪,-3,4,0.2,0.72,0.14,slippery,friction_down,cold_stress
+暴雪,-10,14,0.03,0.24,0.46,path_cost_high,friction_down,cold_stress
+寒潮,-12,8,0.6,0.75,0.1,cold_chill,none,cold_stress
+热浪,39,3,1.0,0.83,0,heat_stress,none,heat_stress
+沙尘,32,11,0.25,0.35,0.16,vision_noise,none,normal

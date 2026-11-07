@@ -1,0 +1,16 @@
+{
+  "date_utc": "2026-11-07T10:53:10.267527+00:00",
+  "root": "/mnt/data/OvercastVeil_2D_AI_Continuous_Development",
+  "checks": {
+    "required_files": "PASS",
+    "legacy_data": "PASS (578 items; 146 recipes)",
+    "asset_manifest": "PASS (12 original PNGs)",
+    "no_3d_models": "PASS",
+    "prototype_features": "PASS",
+    "godot_import": "SKIP: Godot executable not found",
+    "godot_smoke": "SKIP: Godot executable not found",
+    "godot_gameplay": "SKIP: Godot executable not found"
+  },
+  "godot": null,
+  "notes": []
+}

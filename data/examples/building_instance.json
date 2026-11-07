@@ -1,0 +1,13 @@
+{
+  "building_id": "building:hangzhou_suburb:uuid_001",
+  "template_id": "BLD_001_2D",
+  "region_id": "suburb_01",
+  "exterior_anchor": [
+    12,
+    10
+  ],
+  "entry_portal_id": "door_house_01",
+  "interior_seed": 42,
+  "door_lock_state": "unlocked",
+  "persistent_version": 1
+}

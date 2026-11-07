@@ -1,0 +1,16 @@
+{
+  "date_utc": "2026-11-07T11:58:45.733076+00:00",
+  "root": "D:\\A_OVERCASTVIEW\\开发流程\\OvercastVeil_2D_AI_Continuous_Development",
+  "checks": {
+    "required_files": "PASS",
+    "legacy_data": "PASS (578 items; 146 recipes)",
+    "asset_manifest": "PASS (12 original PNGs)",
+    "no_3d_models": "PASS",
+    "prototype_features": "PASS",
+    "godot_import": "FAIL: TypeError(\"unsupported operand type(s) for +: 'NoneType' and 'str'\")",
+    "godot_smoke": "SKIP: failed to invoke engine",
+    "godot_gameplay": "SKIP: failed to invoke engine"
+  },
+  "godot": "4.7.2.stable.official.ed1daf0bf",
+  "notes": []
+}

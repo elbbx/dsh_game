@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-11-03",
+  "source_file": "单人开放世界生存恐怖游戏完整项目规划文档_整合交互与HUD版.md",
+  "modules": 27,
+  "items": 578,
+  "recipes": 146,
+  "buildings": 40,
+  "floorplan_count": 75,
+  "enemies": 25,
+  "vehicles": 22,
+  "furniture_placement_rules": 35,
+  "loot_entries": 552,
+  "weather_types": 14,
+  "reference_gd_scripts": 11,
+  "notes": "Design data only, not a tested Godot game."
+}
