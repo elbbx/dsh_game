@@ -4,9 +4,18 @@
 
 这是基于用户提供的 `full3(1).zip` 修订的新开发工程。游戏采用 **Godot 4.7.2 稳定版、纯 2D、正交等距（2:1 菱形）像素画、固定等距相机**，不使用任何 3D 模型、3D 场景、3D 光照、体素转像素渲染或者 GLB。参考《僵尸毁灭工程》的视野构图、ISO-CORE 的明晰像素美术气质；房屋**进入后切换独立室内空间**，不在街道上动态剖掉屋顶或墙体。
 
+## 实际可运行游戏路径（权威）
+
+- **真实 Godot 工程位于 `D:\A_OVERCASTVIEW\game`**（用 Godot 4.7.2 打开其中的 `project.godot` 即可运行）。
+- 本开发目录内的 `game` 是指向上述顶层目录的 **Windows 目录连接（junction）**，二者是同一份文件；
+  所有 `qa_cycle.py` / 文档中的相对路径 `game/...` 因此始终指向真实工程。
+- git 仓库根仍在 `D:\A_OVERCASTVIEW\开发流程\OvercastVeil_2D_AI_Continuous_Development`，
+  仓库中以 `game/` 路径跟踪同一份源码；远端：`https://github.com/elbbx/dsh_game`（分支 `main`）。
+- 不要删除或覆盖顶层 `D:\A_OVERCASTVIEW\game`；改代码改这一份即可，无需同步两份。
+
 ## 立即使用
 
-1. 解压到一个路径简短的目录，例如 `D:\OvercastVeil_2D`；用 Godot 4.7.2 打开 `game/project.godot`。
+1. 用 Godot 4.7.2 打开 `D:\A_OVERCASTVIEW\game\project.godot`（或在编辑器里打开本目录的 `game/project.godot` junction）。
 2. 先运行 `game/scenes/main.tscn`：内含可交互的**早期 2D 等距原型**。WASD 移动；E 入屋/出屋/搜刮；Space 攻击；H 使用绷带；F5 保存；F9 读档。此原型不等于完整版成品。
 3. 在支持访问本地工作区、终端和联网检索的 AI 编程工具中，**将解压目录设置为工作区**，粘贴 `ai/直接复制给AI的启动指令.md` 的整篇内容，只使用一个主开发会话。
 4. AI 必须读 `AGENTS.md`、`doc/GAME_BIBLE.md`、`doc/优先级与旧版迁移.md`；随后自行实现→测试→修复→更新 `finished`→继续，不要等待用户逐项派单。
@@ -18,7 +27,7 @@
 - `ai/`：一次性主提示词、断点续做提示词、循环开发策略。
 - `doc/`：**游戏 Bible（设计单一真相源）**、实现方案、技术接口、27 模块 2D 适配说明。
 - `finished/`：每项真正完成并经过测试才可记录，含功能登记、报告和恢复状态。
-- `game/`：可直接用 Godot 打开的纯 2D 示例项目以及自制占位像素资产。
+- `game/`：**junction → `D:\A_OVERCASTVIEW\game`**，实际可直接用 Godot 打开的纯 2D 示例项目以及自制占位像素资产。
 - `data/`：原 578 项物品、146 条配方和 40 栋建筑数据，作为待清洗的数据源。
 - `scripts/`：一致性校验和可选 Godot 命令行测试；缺少引擎时必须报告 SKIP，不能谎称通过。
 - `reference/original_full_planning/`：原始规划全部内容保留，**仅历史参考**，原有 3D 方案不得执行。

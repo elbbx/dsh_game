@@ -8,8 +8,12 @@
   "last_verified_godot_version": "4.7.2.stable.official.ed1daf0bf",
   "godot_runtime_verified": true,
   "godot_executable": "D:\\Godot\\Godot_v4.7.2-stable_win64.exe",
+  "game_project_path": "D:\\A_OVERCASTVIEW\\game",
+  "game_path_note": "dev/game is a Windows junction to the top-level game dir; both paths are the same files",
+  "git_remote": "https://github.com/elbbx/dsh_game",
+  "git_branch": "main",
   "last_completed_feature": null,
-  "next_focus": "S1 art/map base (TileMapLayer, 4/8-direction sprites, 3 outdoor/3 interior templates); or extend S0 with heal/hunger combat regression; manual visual smoke still required before S0 done",
+  "next_focus": "Same-template dual houses with independent RoomState (no shared loot flags), per doc/独立室内切换与建筑.md; then S1 art/map base; manual visual smoke still required before S0 done",
   "current_feature": "S0-boot-and-core-loop",
   "current_status": "in_progress",
   "tests": {
