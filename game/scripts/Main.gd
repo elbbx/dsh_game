@@ -1,8 +1,9 @@
 extends Node2D
 ## 纯 2D 等距可玩原型。正式开发用 TileMapLayer 与独立场景重构，但保持逻辑坐标/交互语义。
 ##
-## 本增量：两栋同模板房屋各有独立 RoomState（搜刮标记 / 室内敌人 / 返回锚点 /
-## 室内存档坐标）。按 doc/独立室内切换与建筑.md 的「同模板双屋不串库存」验收。
+## 增量：两栋同模板房屋各有独立 RoomState（搜刮标记 / 室内敌人 / 返回锚点 /
+## 室内存档坐标 / 门锁）。按 doc/独立室内切换与建筑.md 验收：同模板双屋不串库存、
+## 门被锁、门外阻塞 fallback、转移互斥、空间加载失败回滚。
 ## 仍是示例级：状态存内存 + 单个 JSON 存档，成品级事务留待 S2。
 
 const TILE_W: float = 64.0
@@ -30,6 +31,9 @@ const HOUSES: Array[Dictionary] = [
 const INTERIOR_EXIT: Vector2 = Vector2(2.0, 7.0)
 const INTERIOR_LOOT: Vector2 = Vector2(7.0, 5.0)
 const INTERIOR_CABINET: Vector2 = Vector2(6.0, 4.0)
+## 门外锚点被占时，BFS 在合法范围内寻找最近空地的步长与最大半径。
+const FALLBACK_STEP: float = 0.5
+const FALLBACK_RADIUS: int = 12
 
 @onready var camera: Camera2D = $Camera2D
 @onready var hud: Label = $UI/HUD/Status
@@ -51,9 +55,12 @@ var attack_cooldown: float = 0.0
 var hit_cooldown: float = 0.0
 var toast_timer: float = 0.0
 var zombies: Array = []   # 室外敌人（共用一张室外图）
-## room_states[house_id] = {loot_claimed, interior_saved_cell, interior_zombies}
-## 每栋房屋独立，绝不共享已搜刮标记或击杀记录。
+## room_states[house_id] = {loot_claimed, interior_saved_cell, interior_zombies, door_locked}
+## 每栋房屋独立，绝不共享已搜刮标记、击杀记录或门锁状态。
 var room_states: Dictionary = {}
+## 上一次空间转移失败时用于回滚的快照（示例级事务）。
+var last_transition_snapshot: Dictionary = {}
+var space_load_fail_next: bool = false  # 测试注入：模拟目标空间加载失败
 
 func _ready() -> void:
     _reset_run()
@@ -61,6 +68,7 @@ func _ready() -> void:
 func _fresh_room_state() -> Dictionary:
     return {
         "loot_claimed": false,
+        "door_locked": false,
         "interior_saved_cell": Vector2(2.0, 7.0),
         "interior_zombies": [
             {"pos": Vector2(8.0, 4.0), "hp": 40.0, "inside": true}
@@ -100,6 +108,68 @@ func _room() -> Dictionary:
     if active_house_id.is_empty() or not room_states.has(active_house_id):
         return {}
     return room_states[active_house_id]
+
+func _house_by_id(house_id: String) -> Dictionary:
+    for h in HOUSES:
+        if String(h["id"]) == house_id:
+            return h
+    return {}
+
+## 门外锚点是否被室外敌人占据（示例级「门外阻塞」判定）。
+func _is_outdoor_cell_blocked(c: Vector2) -> bool:
+    for z in zombies:
+        if float(z["hp"]) > 0.0 and z["pos"].distance_to(c) < 1.0:
+            return true
+    return false
+
+## BFS 在合法室外范围内寻找距离锚点最近、且未被敌人占据的空地。
+## 找不到时返回原锚点（调用方再决定是否拒绝离开）。
+func _find_safe_outdoor_cell(anchor: Vector2) -> Vector2:
+    if _walkable(anchor) and not _is_outdoor_cell_blocked(anchor):
+        return anchor
+    var visited: Dictionary = {}
+    var queue: Array[Vector2] = [anchor]
+    var key: String = "%d,%d" % [roundi(anchor.x / FALLBACK_STEP), roundi(anchor.y / FALLBACK_STEP)]
+    visited[key] = true
+    var head: int = 0
+    while head < queue.size():
+        var cur: Vector2 = queue[head]
+        head += 1
+        for dir in [Vector2(1, 0), Vector2(-1, 0), Vector2(0, 1), Vector2(0, -1)]:
+            var nxt: Vector2 = cur + dir * FALLBACK_STEP
+            var k: String = "%d,%d" % [roundi(nxt.x / FALLBACK_STEP), roundi(nxt.y / FALLBACK_STEP)]
+            if visited.has(k):
+                continue
+            visited[k] = true
+            if nxt.distance_to(anchor) > FALLBACK_STEP * FALLBACK_RADIUS:
+                continue
+            if _walkable(nxt) and not _is_outdoor_cell_blocked(nxt):
+                return nxt
+            queue.append(nxt)
+    return anchor
+
+## 转移前保存完整可回滚快照；加载失败时 _rollback_transition 恢复。
+func _snapshot_transition() -> void:
+    last_transition_snapshot = {
+        "player_cell": player_cell,
+        "outdoor_saved_cell": outdoor_saved_cell,
+        "inside": inside,
+        "active_house_id": active_house_id,
+        "room_states": room_states.duplicate(true),
+    }
+
+func _rollback_transition() -> void:
+    if last_transition_snapshot.is_empty():
+        return
+    player_cell = last_transition_snapshot["player_cell"]
+    outdoor_saved_cell = last_transition_snapshot["outdoor_saved_cell"]
+    inside = bool(last_transition_snapshot["inside"])
+    active_house_id = String(last_transition_snapshot["active_house_id"])
+    room_states = last_transition_snapshot["room_states"].duplicate(true)
+    last_transition_snapshot = {}
+    camera.position = cell_to_screen(player_cell).round()
+    _toast("Space load failed - rolled back to previous space", 3.0)
+    queue_redraw()
 
 func cell_to_screen(c: Vector2) -> Vector2:
     return Vector2((c.x - c.y) * TILE_W * 0.5, (c.x + c.y) * TILE_H * 0.5)
@@ -178,6 +248,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
                 _toast("Used bandage", 1.4)
         KEY_F5: _save_game()
         KEY_F9: _load_game()
+        KEY_U: _toggle_door_lock()
         KEY_R:
             if player_hp <= 0.0:
                 _reset_run()
@@ -188,6 +259,21 @@ func _house_near_player() -> Dictionary:
         if player_cell.distance_to(h["door"]) < 2.1:
             return h
     return {}
+
+## 在门前按 U 切换门锁；仅影响当前靠近的那一栋，不串到其他房屋。
+func _toggle_door_lock() -> void:
+    if transitioning or player_hp <= 0.0 or inside:
+        return
+    var h: Dictionary = _house_near_player()
+    if h.is_empty():
+        _toast("Stand near a door to toggle its lock", 1.6)
+        return
+    var hid: String = String(h["id"])
+    var r: Dictionary = room_states.get(hid, _fresh_room_state())
+    var locked: bool = not bool(r.get("door_locked", false))
+    r["door_locked"] = locked
+    room_states[hid] = r
+    _toast("%s door %s" % [hid, "LOCKED" if locked else "UNLOCKED"], 1.8)
 
 func _interact() -> void:
     if transitioning or player_hp <= 0.0: return
@@ -206,7 +292,12 @@ func _interact() -> void:
         return
     var h: Dictionary = _house_near_player()
     if not h.is_empty():
-        _transition(true, String(h["id"]))
+        var hid: String = String(h["id"])
+        var rs: Dictionary = room_states.get(hid, _fresh_room_state())
+        if bool(rs.get("door_locked", false)):
+            _toast("%s door is LOCKED  |  Press U to unlock" % hid, 2.2)
+            return
+        _transition(true, hid)
         return
     _toast("Go to a front door", 1.5)
 
@@ -223,6 +314,10 @@ func _attack() -> void:
     _toast("HIT" if found else "Miss", 0.35)
 
 func _transition(to_inside: bool, house_id: String = "") -> void:
+    ## 转移硬锁：期间攻击/交互/存读档/再次进屋全部被抑制（互斥）。
+    if transitioning:
+        return
+    _snapshot_transition()
     transitioning = true
     var tween: Tween = create_tween()
     tween.tween_property(fade, "color:a", 1.0, 0.14)
@@ -234,6 +329,11 @@ func _finish_transition() -> void:
     transitioning = false
 
 func _set_space(to_inside: bool, house_id: String) -> void:
+    ## 模拟目标空间加载失败：回滚快照，保持原空间与位置不变。
+    if space_load_fail_next:
+        space_load_fail_next = false
+        _rollback_transition()
+        return
     if to_inside:
         outdoor_saved_cell = player_cell
         active_house_id = house_id
@@ -244,10 +344,20 @@ func _set_space(to_inside: bool, house_id: String) -> void:
     else:
         var r: Dictionary = _room()
         r["interior_saved_cell"] = player_cell
-        player_cell = outdoor_saved_cell
+        ## 先切回室外判定，再让 BFS 用室外 _walkable 找最近合法空地，
+        ## 否则会用室内边界把室外坐标全部判为非法。
         inside = false
         active_house_id = ""
-        _toast("RETURNED OUTSIDE", 2.0)
+        ## 门外锚点被占时 BFS 找最近合法空地，不把玩家塞进墙/敌人里。
+        var anchor: Vector2 = outdoor_saved_cell
+        var safe: Vector2 = _find_safe_outdoor_cell(anchor)
+        player_cell = safe
+        outdoor_saved_cell = safe
+        if safe.distance_to(anchor) < 0.001:
+            _toast("RETURNED OUTSIDE", 2.0)
+        else:
+            _toast("RETURNED OUTSIDE (door blocked - moved to safe spot)", 2.6)
+    last_transition_snapshot = {}
     camera.position = cell_to_screen(player_cell).round()
     queue_redraw()
 
@@ -266,11 +376,12 @@ func _save_game() -> void:
         var r: Dictionary = room_states.get(hid, _fresh_room_state())
         rooms[hid] = {
             "loot_claimed": bool(r.get("loot_claimed", false)),
+            "door_locked": bool(r.get("door_locked", false)),
             "interior_saved": [r["interior_saved_cell"].x, r["interior_saved_cell"].y],
             "interior_zombies": _serialize_zombies(r["interior_zombies"]),
         }
     var state: Dictionary = {
-        "version": 2, "inside": inside, "house": active_house_id,
+        "version": 3, "inside": inside, "house": active_house_id,
         "player": [player_cell.x, player_cell.y],
         "outside": [outdoor_saved_cell.x, outdoor_saved_cell.y],
         "hp": player_hp, "hunger": hunger, "hour": hour,
@@ -319,7 +430,7 @@ func _load_game() -> void:
         return
     var p: Dictionary = parsed
     var ver: int = int(p.get("version", 0))
-    if ver != 2 and ver != 1:
+    if ver != 3 and ver != 2 and ver != 1:
         _toast("Unsupported save", 2.0)
         return
     var a: Array = p.get("player", [7, 9])
@@ -348,7 +459,7 @@ func _load_game() -> void:
     room_states = {}
     for h in HOUSES:
         room_states[String(h["id"])] = _fresh_room_state()
-    if ver == 2:
+    if ver == 3 or ver == 2:
         active_house_id = String(p.get("house", ""))
         var rooms: Dictionary = p.get("rooms", {})
         for h in HOUSES:
@@ -357,6 +468,7 @@ func _load_game() -> void:
                 var rs: Dictionary = rooms[hid]
                 var st: Dictionary = _fresh_room_state()
                 st["loot_claimed"] = bool(rs.get("loot_claimed", false))
+                st["door_locked"] = bool(rs.get("door_locked", false)) if ver == 3 else false
                 var ip: Array = rs.get("interior_saved", [2, 7])
                 if ip.size() == 2:
                     st["interior_saved_cell"] = Vector2(float(ip[0]), float(ip[1]))
@@ -379,11 +491,17 @@ func _toast(message: String, seconds: float) -> void:
 func _update_ui() -> void:
     var time_text: String = "%02d:%02d" % [int(hour), int(fmod(hour, 1.0) * 60.0)]
     var where: String = "INTERIOR %s" % active_house_id if inside else "EXTERIOR"
-    hud.text = "OVERCASTVEIL / %s / %s\nHP:%d   HUNGER:%d   BANDAGE:%d   SCRAP:%d" % [where, time_text, int(player_hp), int(hunger), bandages, scrap]
+    var door_note: String = ""
+    if not inside:
+        var near: Dictionary = _house_near_player()
+        if not near.is_empty():
+            var rs: Dictionary = room_states.get(String(near["id"]), _fresh_room_state())
+            door_note = "  |  %s: %s" % [String(near["id"]), "LOCKED" if bool(rs.get("door_locked", false)) else "OPEN"]
+    hud.text = "OVERCASTVEIL / %s / %s%s\nHP:%d   HUNGER:%d   BANDAGE:%d   SCRAP:%d" % [where, time_text, door_note, int(player_hp), int(hunger), bandages, scrap]
     if inside:
         instructions.text = "WASD Move  |  E Loot / Exit  |  Space Attack  |  H Heal  |  F5 Save  F9 Load  |  R New run (on death)"
     else:
-        instructions.text = "WASD Move  |  E Enter house (2 doors)  |  Space Attack  |  H Heal  |  F5 Save  F9 Load  |  R New run (on death)"
+        instructions.text = "WASD Move  |  E Enter  |  U Lock/Unlock door  |  Space Attack  |  H Heal  |  F5 Save  F9 Load  |  R New run (on death)"
 
 func _ground_tex(x: int, y: int) -> Texture2D:
     if inside: return FLOOR if posmod(x + y, 4) != 0 else FLOOR2

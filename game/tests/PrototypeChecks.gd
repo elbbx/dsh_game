@@ -160,5 +160,78 @@ func _run_checks() -> void:
         _fail("100 transitions changed loot state")
         return
 
-    print("TEST_PASS: iso math; 2 independent houses (same template, no shared loot/kills); loot/exit; save/load v2; melee kill; death restart; 100x transitions")
+    # --- Locked door: U toggles only the nearby house; E must be refused ---
+    game.player_cell = Vector2(14.0, 12.0)
+    game._toggle_door_lock()
+    if not bool(game.room_states["BLD_A"]["door_locked"]):
+        _fail("U did not lock the nearby house door")
+        return
+    if bool(game.room_states["BLD_B"]["door_locked"]):
+        _fail("Locking BLD_A leaked to BLD_B")
+        return
+    game._interact()
+    if game.inside:
+        _fail("Locked door still allowed entry")
+        return
+    game._toggle_door_lock()
+    if bool(game.room_states["BLD_A"]["door_locked"]):
+        _fail("U did not unlock the door")
+        return
+
+    # --- Transition mutual exclusion: a second transition is a no-op ---
+    game._transition(true, "BLD_A")
+    if not game.transitioning:
+        _fail("Transition lock was not set")
+        return
+    game._attack()
+    game._save_game()
+    game._transition(false, "")
+    await create_timer(0.45).timeout
+    if not game.inside or game.active_house_id != "BLD_A":
+        _fail("Re-entrant transition broke the in-progress one")
+        return
+
+    # --- Space load failure: rollback keeps the original space and position ---
+    var cell_before: Vector2 = Vector2(7.0, 5.0)
+    game.player_cell = cell_before
+    game.space_load_fail_next = true
+    game._transition(false, "")
+    await create_timer(0.45).timeout
+    if not game.inside or game.player_cell.distance_to(cell_before) > 0.001:
+        _fail("Failed space load did not roll back")
+        return
+
+    # --- Blocked exit: fallback to nearest legal empty outdoor cell ---
+    game.player_cell = Vector2(2.0, 7.0)
+    game.outdoor_saved_cell = Vector2(5.0, 15.0)  # occupied by outdoor zombie[0]
+    game.zombies[0]["pos"] = Vector2(5.0, 15.0)
+    game.zombies[0]["hp"] = 55.0
+    if not game._is_outdoor_cell_blocked(Vector2(5.0, 15.0)):
+        _fail("Blocked-cell detection failed")
+        return
+    game._set_space(false, "")
+    if game.inside:
+        _fail("Exit did not leave the interior")
+        return
+    if game._is_outdoor_cell_blocked(game.player_cell) or not game._walkable(game.player_cell):
+        _fail("Exit fallback placed player in a blocked/wall cell")
+        return
+    if game.player_cell.distance_to(Vector2(5.0, 15.0)) < 0.001:
+        _fail("Exit fallback did not move away from the blocked anchor")
+        return
+
+    # --- v3 save/load preserves door locks per house ---
+    game.room_states["BLD_B"]["door_locked"] = true
+    game._save_game()
+    game.room_states["BLD_A"]["door_locked"] = false
+    game.room_states["BLD_B"]["door_locked"] = false
+    game._load_game()
+    if not bool(game.room_states["BLD_B"]["door_locked"]):
+        _fail("v3 save/load lost BLD_B door lock")
+        return
+    if bool(game.room_states["BLD_A"]["door_locked"]):
+        _fail("v3 save/load leaked door lock to BLD_A")
+        return
+
+    print("TEST_PASS: iso math; 2 independent houses; loot/exit; save/load v1-v3; melee kill; death restart; 100x transitions; locked door; transition mutex; load-fail rollback; blocked-exit fallback")
     quit(0)
