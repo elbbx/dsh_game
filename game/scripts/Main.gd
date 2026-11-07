@@ -40,6 +40,26 @@ var toast_timer: float = 0.0
 var zombies: Array[Dictionary] = []
 
 func _ready() -> void:
+    _reset_run()
+
+## Restart a fresh run after death. Keeps the save file intact (F9 still works),
+## resets the same state fields as _ready so a new run cannot inherit a dead
+## player, cleared loot, moved zombies or a stale interior flag.
+func _reset_run() -> void:
+    player_cell = Vector2(7.0, 9.0)
+    outdoor_saved_cell = Vector2(7.0, 9.0)
+    interior_saved_cell = Vector2(2.0, 7.0)
+    inside = false
+    transitioning = false
+    player_hp = 100.0
+    hunger = 4.0
+    bandages = 2
+    scrap = 0
+    loot_claimed = false
+    hour = 8.0
+    attack_cooldown = 0.0
+    hit_cooldown = 0.0
+    toast_timer = 0.0
     zombies = [
         {"pos": Vector2(5.0, 15.0), "hp": 55.0, "inside": false},
         {"pos": Vector2(19.0, 13.0), "hp": 55.0, "inside": false},
@@ -47,8 +67,10 @@ func _ready() -> void:
         {"pos": Vector2(8.0, 4.0), "hp": 40.0, "inside": true}
     ]
     fade.color = Color(0, 0, 0, 0)
+    camera.position = cell_to_screen(player_cell).round()
     _toast("EXTERIOR  |  Go to the house door and press E", 4.5)
     _update_ui()
+    queue_redraw()
 
 func cell_to_screen(c: Vector2) -> Vector2:
     return Vector2((c.x - c.y) * TILE_W * 0.5, (c.x + c.y) * TILE_H * 0.5)
@@ -102,7 +124,7 @@ func _process_zombies(delta: float) -> void:
             player_hp = maxf(0.0, player_hp - 8.0)
             hit_cooldown = 0.9
             _toast("ZOMBIE HIT!", 1.0)
-    if player_hp <= 0.0: _toast("YOU DIED  |  F9 Load last save", 10.0)
+    if player_hp <= 0.0: _toast("YOU DIED  |  R New run  |  F9 Load last save", 10.0)
 
 func _unhandled_key_input(event: InputEvent) -> void:
     if not (event is InputEventKey): return
@@ -118,6 +140,10 @@ func _unhandled_key_input(event: InputEvent) -> void:
                 _toast("Used bandage", 1.4)
         KEY_F5: _save_game()
         KEY_F9: _load_game()
+        KEY_R:
+            if player_hp <= 0.0:
+                _reset_run()
+                _toast("NEW RUN  |  Back to the street", 2.2)
 
 func _interact() -> void:
     if transitioning or player_hp <= 0.0: return
@@ -240,9 +266,9 @@ func _update_ui() -> void:
     var time_text: String = "%02d:%02d" % [int(hour), int(fmod(hour, 1.0) * 60.0)]
     hud.text = "OVERCASTVEIL / %s / %s\nHP:%d   HUNGER:%d   BANDAGE:%d   SCRAP:%d" % ["INTERIOR" if inside else "EXTERIOR", time_text, int(player_hp), int(hunger), bandages, scrap]
     if inside:
-        instructions.text = "WASD Move  |  E Loot / Exit  |  Space Attack  |  H Heal  |  F5 Save  F9 Load"
+        instructions.text = "WASD Move  |  E Loot / Exit  |  Space Attack  |  H Heal  |  F5 Save  F9 Load  |  R New run (on death)"
     else:
-        instructions.text = "WASD Move  |  E Enter house  |  Space Attack  |  H Heal  |  F5 Save  F9 Load"
+        instructions.text = "WASD Move  |  E Enter house  |  Space Attack  |  H Heal  |  F5 Save  F9 Load  |  R New run (on death)"
 
 func _ground_tex(x: int, y: int) -> Texture2D:
     if inside: return FLOOR if posmod(x + y, 4) != 0 else FLOOR2

@@ -41,7 +41,7 @@ def main():
     bad=[str(p.relative_to(root)) for p in (root/'game').rglob('*') if p.is_file() and p.suffix.lower() in {'.glb','.gltf','.fbx','.blend','.obj','.vox','.bbmodel','.stl','.dae'}]
     report['checks']['no_3d_models']='FAIL: '+str(bad) if bad else 'PASS'
     script=(root/'game/scripts/Main.gd').read_text('utf8')
-    report['checks']['prototype_features']='PASS' if all(t in script for t in ['func _transition','func _save_game','func _load_game','func cell_to_screen','func _attack','func _process_zombies']) else 'FAIL: missing core functions'
+    report['checks']['prototype_features']='PASS' if all(t in script for t in ['func _transition','func _save_game','func _load_game','func _reset_run','func cell_to_screen','func _attack','func _process_zombies']) else 'FAIL: missing core functions'
     godot=args.godot or shutil.which('godot') or shutil.which('godot4')
     if args.no_engine or not godot:
         report['checks']['godot_import']='SKIP: no engine requested' if args.no_engine else 'SKIP: Godot executable not found'

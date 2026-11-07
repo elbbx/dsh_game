@@ -47,5 +47,40 @@ func _run_checks() -> void:
     if game.scrap != 3 or not game.loot_claimed:
         _fail("Save/load state mismatch")
         return
-    print("TEST_PASS: iso math; exterior->interior; loot; exit; save/load")
+
+    # Combat: repeated attacks must kill a zombie, and a dead zombie must
+    # stop being a threat (hp <= 0 is filtered by _process_zombies/_attack).
+    game.player_cell = Vector2(5.0, 15.0)
+    for i in range(4):
+        game.attack_cooldown = 0.0
+        game._attack()
+    var outdoor_zombie: Dictionary = game.zombies[0]
+    if float(outdoor_zombie["hp"]) > 0.0:
+        _fail("Melee attacks did not kill the zombie")
+        return
+
+    # Death + restart: force lethal damage, then restart and verify every
+    # run-level field is reset while the save file remains loadable.
+    game.player_hp = 0.0
+    game.hour = 22.0
+    game.bandages = 0
+    game.scrap = 77
+    game.loot_claimed = true
+    game._reset_run()
+    if game.inside or game.player_hp != 100.0 or game.scrap != 0 or game.bandages != 2 or game.loot_claimed:
+        _fail("New run did not reset player/world state")
+        return
+    if game.player_cell.distance_to(Vector2(7.0, 9.0)) > 0.001:
+        _fail("New run did not restore the starting cell")
+        return
+    if float(game.zombies[0]["hp"]) != 55.0:
+        _fail("New run did not respawn the initial zombie population")
+        return
+    game.scrap = 1234
+    game._load_game()
+    if game.scrap != 3:
+        _fail("New run destroyed the saved game")
+        return
+
+    print("TEST_PASS: iso math; exterior->interior; loot; exit; save/load; melee kill; death restart; save survives restart")
     quit(0)
