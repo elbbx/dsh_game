@@ -535,7 +535,8 @@ func _load_game() -> void:
         stats.hp = player_hp
         stats.hunger = hunger
     consumables.inventory.clear()
-    if ver >= 5 and p.get("consumables") is Dictionary:        consumables.inventory_from_dict(p["consumables"])
+    if ver >= 5 and p.get("consumables") is Dictionary:
+        consumables.inventory_from_dict(p["consumables"])
     zombies.clear()
     var outdoor: Array[Dictionary] = []
     for z in p.get("zombies", []):
