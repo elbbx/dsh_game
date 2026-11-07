@@ -55,6 +55,8 @@ var attack_cooldown: float = 0.0
 var hit_cooldown: float = 0.0
 var toast_timer: float = 0.0
 var zombies: Array = []   # 室外敌人（共用一张室外图）
+## 生存状态纯数据（M02）。固定步长结算，与 FPS 解耦；存档保留 clock_ticks。
+var stats: SurvivalStats = SurvivalStats.new()
 ## room_states[house_id] = {loot_claimed, interior_saved_cell, interior_zombies, door_locked}
 ## 每栋房屋独立，绝不共享已搜刮标记、击杀记录或门锁状态。
 var room_states: Dictionary = {}
@@ -84,6 +86,7 @@ func _reset_run() -> void:
     active_house_id = ""
     player_hp = 100.0
     hunger = 4.0
+    stats.reset()
     bandages = 2
     scrap = 0
     hour = 8.0
@@ -194,9 +197,13 @@ func _process(delta: float) -> void:
     toast_timer -= delta
     if toast_timer <= 0.0: toast.text = ""
     hour = fmod(hour + delta / 48.0, 24.0)
-    hunger = minf(100.0, hunger + delta / 150.0)
-    if hunger > 85.0:
-        player_hp = maxf(0.0, player_hp - delta * 0.6)
+    ## 固定时钟结算生存状态：把当前权威值喂给纯数据类，按固定步长推进，
+    ## 再同步回来。因此数值推进只取决于累计时长，与渲染帧率无关。
+    stats.hp = player_hp
+    stats.hunger = hunger
+    stats.advance(delta)
+    hunger = stats.hunger
+    player_hp = stats.hp
     if not transitioning and player_hp > 0.0: _process_zombies(delta)
     camera.position = cell_to_screen(player_cell).round()
     _update_ui()
@@ -380,12 +387,16 @@ func _save_game() -> void:
             "interior_saved": [r["interior_saved_cell"].x, r["interior_saved_cell"].y],
             "interior_zombies": _serialize_zombies(r["interior_zombies"]),
         }
+    ## 存档保存 SurvivalStats 的完整快照（含固定时钟 ticks/accumulator 与
+    ## 上次统计值），符合 doc/功能系统落地细则.md 的「时间戳 + 上次统计值」。
+    stats.hp = player_hp
+    stats.hunger = hunger
     var state: Dictionary = {
-        "version": 3, "inside": inside, "house": active_house_id,
+        "version": 4, "inside": inside, "house": active_house_id,
         "player": [player_cell.x, player_cell.y],
         "outside": [outdoor_saved_cell.x, outdoor_saved_cell.y],
         "hp": player_hp, "hunger": hunger, "hour": hour,
-        "bandages": bandages, "scrap": scrap,
+        "bandages": bandages, "scrap": scrap, "stats": stats.to_dict(),
         "zombies": _serialize_zombies(zombies), "rooms": rooms,
     }
     var file: FileAccess = FileAccess.open(SAVE_PATH, FileAccess.WRITE)
@@ -430,7 +441,7 @@ func _load_game() -> void:
         return
     var p: Dictionary = parsed
     var ver: int = int(p.get("version", 0))
-    if ver != 3 and ver != 2 and ver != 1:
+    if ver != 4 and ver != 3 and ver != 2 and ver != 1:
         _toast("Unsupported save", 2.0)
         return
     var a: Array = p.get("player", [7, 9])
@@ -444,6 +455,13 @@ func _load_game() -> void:
     hour = float(p.get("hour", 8))
     bandages = int(p.get("bandages", 0))
     scrap = int(p.get("scrap", 0))
+    if ver == 4 and p.get("stats") is Dictionary:
+        stats.from_dict(p["stats"])
+    else:
+        ## 旧存档无 stats 快照：以读到的 hp/hunger 为基值重建，时钟归零。
+        stats.reset()
+        stats.hp = player_hp
+        stats.hunger = hunger
     zombies.clear()
     var outdoor: Array[Dictionary] = []
     for z in p.get("zombies", []):
@@ -459,7 +477,7 @@ func _load_game() -> void:
     room_states = {}
     for h in HOUSES:
         room_states[String(h["id"])] = _fresh_room_state()
-    if ver == 3 or ver == 2:
+    if ver == 4 or ver == 3 or ver == 2:
         active_house_id = String(p.get("house", ""))
         var rooms: Dictionary = p.get("rooms", {})
         for h in HOUSES:
@@ -468,7 +486,7 @@ func _load_game() -> void:
                 var rs: Dictionary = rooms[hid]
                 var st: Dictionary = _fresh_room_state()
                 st["loot_claimed"] = bool(rs.get("loot_claimed", false))
-                st["door_locked"] = bool(rs.get("door_locked", false)) if ver == 3 else false
+                st["door_locked"] = bool(rs.get("door_locked", false)) if ver >= 3 else false
                 var ip: Array = rs.get("interior_saved", [2, 7])
                 if ip.size() == 2:
                     st["interior_saved_cell"] = Vector2(float(ip[0]), float(ip[1]))
@@ -497,7 +515,7 @@ func _update_ui() -> void:
         if not near.is_empty():
             var rs: Dictionary = room_states.get(String(near["id"]), _fresh_room_state())
             door_note = "  |  %s: %s" % [String(near["id"]), "LOCKED" if bool(rs.get("door_locked", false)) else "OPEN"]
-    hud.text = "OVERCASTVEIL / %s / %s%s\nHP:%d   HUNGER:%d   BANDAGE:%d   SCRAP:%d" % [where, time_text, door_note, int(player_hp), int(hunger), bandages, scrap]
+    hud.text = "OVERCASTVEIL / %s / %s%s\nHP:%d  HUNGER:%d  THIRST:%d  FATIGUE:%d  SAN:%d  INF:%d  COLD:%d\nBANDAGE:%d  SCRAP:%d  TICK:%d" % [where, time_text, door_note, int(player_hp), int(hunger), int(stats.thirst), int(stats.fatigue), int(stats.sanity), int(stats.infection), int(stats.cold), bandages, scrap, stats.clock_ticks]
     if inside:
         instructions.text = "WASD Move  |  E Loot / Exit  |  Space Attack  |  H Heal  |  F5 Save  F9 Load  |  R New run (on death)"
     else:

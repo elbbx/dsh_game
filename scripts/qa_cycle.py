@@ -11,7 +11,7 @@ def main():
     args=ap.parse_args()
     root=pathlib.Path(args.root).resolve()
     report={'date_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'root':str(root),'checks':{},'godot':None,'notes':[]}
-    required=['AGENTS.md','doc/GAME_BIBLE.md','doc/独立室内切换与建筑.md','finished/state.json','game/project.godot','game/scenes/main.tscn','game/scripts/Main.gd','data/items_original.json','data/recipes_original.json','game/assets/assets_manifest.json','game/tests/PrototypeChecks.gd']
+    required=['AGENTS.md','doc/GAME_BIBLE.md','doc/独立室内切换与建筑.md','finished/state.json','game/project.godot','game/scenes/main.tscn','game/scripts/Main.gd','game/scripts/SurvivalStats.gd','data/items_original.json','data/recipes_original.json','game/assets/assets_manifest.json','game/tests/PrototypeChecks.gd']
     missing=[i for i in required if not (root/i).exists()]
     report['checks']['required_files']='FAIL: '+str(missing) if missing else 'PASS'
     try:
@@ -42,6 +42,8 @@ def main():
     report['checks']['no_3d_models']='FAIL: '+str(bad) if bad else 'PASS'
     script=(root/'game/scripts/Main.gd').read_text('utf8')
     report['checks']['prototype_features']='PASS' if all(t in script for t in ['func _transition','func _save_game','func _load_game','func _reset_run','func cell_to_screen','func _attack','func _process_zombies']) else 'FAIL: missing core functions'
+    stats_script=(root/'game/scripts/SurvivalStats.gd').read_text('utf8')
+    report['checks']['survival_stats']='PASS' if all(t in stats_script for t in ['class_name SurvivalStats','func advance','func _tick','func to_dict','func from_dict','const STEP_SECONDS']) else 'FAIL: missing SurvivalStats API'
     godot=args.godot or shutil.which('godot') or shutil.which('godot4')
     if args.no_engine or not godot:
         report['checks']['godot_import']='SKIP: no engine requested' if args.no_engine else 'SKIP: Godot executable not found'

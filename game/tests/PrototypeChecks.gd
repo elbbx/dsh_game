@@ -220,18 +220,81 @@ func _run_checks() -> void:
         _fail("Exit fallback did not move away from the blocked anchor")
         return
 
-    # --- v3 save/load preserves door locks per house ---
+    # --- save/load preserves door locks per house (v3+ format) ---
     game.room_states["BLD_B"]["door_locked"] = true
     game._save_game()
     game.room_states["BLD_A"]["door_locked"] = false
     game.room_states["BLD_B"]["door_locked"] = false
     game._load_game()
     if not bool(game.room_states["BLD_B"]["door_locked"]):
-        _fail("v3 save/load lost BLD_B door lock")
+        _fail("save/load lost BLD_B door lock")
         return
     if bool(game.room_states["BLD_A"]["door_locked"]):
-        _fail("v3 save/load leaked door lock to BLD_A")
+        _fail("save/load leaked door lock to BLD_A")
         return
 
-    print("TEST_PASS: iso math; 2 independent houses; loot/exit; save/load v1-v3; melee kill; death restart; 100x transitions; locked door; transition mutex; load-fail rollback; blocked-exit fallback")
+    # --- SurvivalStats: fixed-step, frame-rate independent progression ---
+    # Two different delta sequences covering the same total time must produce
+    # the same tick count and the same stat values (M02 acceptance).
+    var s1: SurvivalStats = SurvivalStats.new()
+    var s2: SurvivalStats = SurvivalStats.new()
+    var total: float = 10.0
+    # Use exact loop counts so both sequences cover precisely the same total
+    # time (avoids floating-point loop-bound drift skewing the tick count).
+    for i in range(600):        # 60 fps-ish: 600 x 1/60 = 10.0 s
+        s1.advance(1.0 / 60.0)
+    for i in range(100):        # 10 fps-ish: 100 x 0.1 = 10.0 s
+        s2.advance(0.1)
+    if s1.clock_ticks != s2.clock_ticks:
+        _fail("Fixed-step clock depends on frame rate (%d vs %d ticks)" % [s1.clock_ticks, s2.clock_ticks])
+        return
+    if abs(s1.hunger - s2.hunger) > 0.0001 or abs(s1.thirst - s2.thirst) > 0.0001:
+        _fail("Survival stats diverge across frame rates")
+        return
+    var expected: int = int(total / SurvivalStats.STEP_SECONDS)
+    if absi(s1.clock_ticks - expected) > 1:
+        _fail("Unexpected tick count for fixed step (%d, expected ~%d)" % [s1.clock_ticks, expected])
+        return
+    # Boundary clamping
+    s1.hunger = 999.0
+    s1.fatigue = -50.0
+    s1.clamp_all()
+    if s1.hunger != 100.0 or s1.fatigue != 0.0:
+        _fail("Stat clamping failed")
+        return
+    # to_dict / from_dict round trip preserves the clock
+    var snap: Dictionary = s1.to_dict()
+    var s3: SurvivalStats = SurvivalStats.new()
+    s3.from_dict(snap)
+    if s3.clock_ticks != s1.clock_ticks or abs(s3.hunger - s1.hunger) > 0.0001:
+        _fail("SurvivalStats snapshot round trip failed")
+        return
+
+    # --- Save/load v4 preserves stats clock and values ---
+    game.player_hp = 73.0
+    game.hunger = 41.0
+    game.stats.thirst = 22.0
+    game.stats.clock_ticks = 137
+    game._save_game()
+    game.player_hp = 1.0
+    game.hunger = 99.0
+    game.stats.thirst = 0.0
+    game.stats.clock_ticks = 0
+    game._load_game()
+    if int(game.player_hp) != 73 or int(game.hunger) != 41 or int(game.stats.thirst) != 22 or game.stats.clock_ticks != 137:
+        _fail("v4 save/load did not restore SurvivalStats")
+        return
+    # Stats must survive a space transition (no reset on enter/exit)
+    var ticks_before: int = game.stats.clock_ticks
+    game.player_cell = Vector2(14.0, 12.0)
+    game._transition(true, "BLD_A")
+    await create_timer(0.45).timeout
+    game.player_cell = Vector2(2.0, 7.0)
+    game._transition(false, "")
+    await create_timer(0.45).timeout
+    if game.stats.clock_ticks < ticks_before:
+        _fail("SurvivalStats clock reset on space transition")
+        return
+
+    print("TEST_PASS: iso math; 2 independent houses; loot/exit; save/load v1-v4; melee kill; death restart; 100x transitions; locked door; transition mutex; load-fail rollback; blocked-exit fallback; SurvivalStats fixed-step/FPS-independent/clamp/snapshot")
     quit(0)
