@@ -5,25 +5,32 @@
   "version": "0.0.1-prototype",
   "release_status": "not_shippable",
   "last_update": "2026-11-07",
-  "last_verified_godot_version": null,
-  "godot_runtime_verified": false,
+  "last_verified_godot_version": "4.7.2.stable.official.ed1daf0bf",
+  "godot_runtime_verified": true,
+  "godot_executable": "D:\\Godot\\Godot_v4.7.2-stable_win64.exe",
   "last_completed_feature": null,
-  "next_focus": "Open Godot 4.7.2 project; fix import/runtime errors; implement automated door/loot/save regression; then continue S0",
+  "next_focus": "Extend automated regression to cover zombie combat/death/heal; keep main branch bootable; then continue S1 art/map base after manual visual smoke",
   "current_feature": "S0-boot-and-core-loop",
   "current_status": "in_progress",
   "tests": {
     "static": "PASS",
-    "godot_import": "SKIP (not installed in packaging environment)",
-    "godot_smoke": "SKIP (not installed in packaging environment)",
-    "godot_gameplay": "SKIP (not installed in packaging environment)",
-    "manual_play": "not_run"
+    "godot_import": "PASS",
+    "godot_smoke": "PASS",
+    "godot_gameplay": "PASS",
+    "manual_play": "manual_pending"
+  },
+  "test_flags": {
+    "engine_verified": true,
+    "automated_regression": "iso math; exterior->interior; loot; exit; save/load",
+    "manual_visual_smoke": "manual_pending"
   },
   "blocked_on": [],
   "features_done": [],
   "known_risks": [
-    "Godot executable availability unknown",
     "prototype transitions and saves not production-transactional",
-    "placeholder art"
+    "placeholder art (12 original PNGs, self-authored)",
+    "manual visual/feel inspection not yet performed"
   ],
-  "last_test_report": "finished/reports/qa_20261107T105418Z.json"
+  "last_test_report": "finished/reports/qa_20261107T115910Z.json",
+  "git_save_points": ["918e937", "8fbda4d"]
 }
