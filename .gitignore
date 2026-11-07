@@ -1,0 +1,11 @@
+# Godot 4 generated caches / import artifacts (never commit)
+game/.godot/
+# Godot export/build outputs
+game/build/
+game/export/
+*.exe
+*.pck
+*.zip
+# Python bytecode
+__pycache__/
+*.pyc
