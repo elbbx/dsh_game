@@ -1,0 +1,19 @@
+{
+  "date_utc": "2026-11-07T12:30:24.327672+00:00",
+  "root": "D:\\A_OVERCASTVIEW\\开发流程\\OvercastVeil_2D_AI_Continuous_Development",
+  "checks": {
+    "required_files": "PASS",
+    "legacy_data": "PASS (578 items; 146 recipes)",
+    "asset_manifest": "PASS (12 original PNGs)",
+    "no_3d_models": "PASS",
+    "prototype_features": "PASS",
+    "godot_import": "PASS",
+    "godot_smoke": "PASS",
+    "godot_gameplay": "FAIL: exit code 1"
+  },
+  "godot": "4.7.2.stable.official.ed1daf0bf",
+  "notes": [],
+  "godot_import_log": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\n[   0% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Started 项目初始化 (5 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | 正在扫描文件结构……\u001b[39m\u001b[0m\n[  16% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | 正在加载全局类名……\u001b[39m\u001b[0m\n[  33% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | 正在校验 GDExtension……\u001b[39m\u001b[0m\n[  50% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | 正在创建自动加载脚本……\u001b[39m\u001b[0m\n[  66% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | 正在初始化插件……\u001b[39m\u001b[0m\n[  83% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | 正在启动文件扫描……\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mfirst_scan_filesystem\u001b[22m\n\u001b[0m\n[   0% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | Started 正在加载编辑器 (5 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | 正在加载编辑器布局……\u001b[39m\u001b[0m\n[  16% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | 正在加载停靠面板……\u001b[39m\u001b[0m\n[  33% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | 正在重新打开场景……\u001b[39m\u001b[0m\n[  50% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | 正在加载中央编辑器布局……\u001b[39m\u001b[0m\n[  66% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | 正在加载插件窗口布局……\u001b[39m\u001b[0m\n[  83% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | 编辑器布局就绪。\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mloading_editor_layout\u001b[22m\n\u001b[0m\n\n",
+  "godot_smoke_log": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\n\n",
+  "godot_gameplay_log": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\n\nSCRIPT ERROR: Invalid type in function '_serialize_zombies' in base 'Node2D (Main.gd)'. The array of argument 1 (Array) does not have the same element type as the expected typed array argument.\n   at: _save_game (res://scripts/Main.gd:267)\n   GDScript backtrace (most recent call first):\n       [0] _save_game (res://scripts/Main.gd:267)\n       [1] _run_checks (res://tests/PrototypeChecks.gd:101)\nTEST_FAIL: Save/load did not restore per-house loot state\n"
+}
